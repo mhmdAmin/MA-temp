@@ -66,7 +66,7 @@
 .butn {
   display: inline-block;
   outline: none !important;
-  font-family: "Hind Vadodara", "sans-serif";
+  font-family: "Montserrat", "sans-serif";
   font-size: 1.15rem;
   min-width: 150px;
   padding: .5rem;
@@ -86,7 +86,7 @@
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   padding-bottom: 1.25rem;
-  font-family: "Hind Vadodara", "sans-serif";
+  font-family: "Montserrat", "sans-serif";
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: .6px;
@@ -151,13 +151,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Slab", "sans-serif";
+  font-family: "Montserrat", "sans-serif";
   letter-spacing: .4px;
   font-weight: 700; }
 
 a {
   text-decoration: none !important;
-  font-family: "Hind Vadodara", "sans-serif"; }
+  font-family: "Montserrat", "sans-serif"; }
 
 /*==========================  END GLOBAL RULES  ==========================*/
 /* ==========================     START NAVBAR    ========================== */
@@ -166,7 +166,7 @@ a {
   max-height: 90px; }
   .navbar .navbar-brand {
     font-weight: 700;
-    font-family: "Roboto Slab", "sans-serif";
+    font-family: "Montserrat", "sans-serif";
     font-size: 1.5rem;
     transition: all .3s ease-in-out; }
     .navbar .navbar-brand span {
@@ -198,7 +198,7 @@ a {
     position: relative;
     padding: 1rem 0;
     cursor: pointer;
-    font-family: "Hind Vadodara", "sans-serif";
+    font-family: "Montserrat", "sans-serif";
     font-size: 1rem;
     font-weight: normal;
     transition: all .3s ease-in-out;
@@ -251,7 +251,7 @@ a {
             width: 0 !important; }
           .navbar .navbar-mobile-menu-wrapper .navbar-mobile-menu .nav-item .nav-link {
             padding: 1rem;
-            font-family: "Hind Vadodara", "sans-serif";
+            font-family: "Montserrat", "sans-serif";
             transition: all .3s ease-in-out; }
         .navbar .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
           transition: color .3s ease-in-out; }
@@ -267,19 +267,6 @@ header {
   position: relative;
   z-index: 1;
   overflow: hidden; }
-@keyframes bg-animation {
-  0% {
-    transform: scale(1.05); }
-  100% {
-    transform: scale(1); } }
-  header .animated-bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    animation: bg-animation 8s 1 linear; }
   header .header-wraper {
     position: relative;
     z-index: 3;
@@ -292,7 +279,7 @@ header {
     header .header-wraper .desc span {
       font-size: 3.333333334rem;
       font-weight: 400;
-      font-family: "Roboto Slab", "sans-serif"; }
+      font-family: "Montserrat", "sans-serif"; }
     header .header-wraper .desc .disc-heading {
       font-size: 40px;
       font-weight: 400; }
@@ -367,7 +354,7 @@ header {
     margin: 5px;
     padding: 5px 10px;
     text-align: center;
-    font-family: "Hind Vadodara", "sans-serif";
+    font-family: "Montserrat", "sans-serif";
     font-size: 1rem;
     letter-spacing: 1px;
     border-bottom: 2px solid;
@@ -401,7 +388,7 @@ header {
     .gallery .filter-group .gallery-item .info-link {
       display: block;
       font-size: 1.25rem;
-      font-family: "Roboto Slab", "sans-serif";
+      font-family: "Montserrat", "sans-serif";
       transition: all .3s ease-in-out; }
     .gallery .filter-group .gallery-item span {
       font-size: .85rem;
@@ -433,7 +420,7 @@ header {
   margin: 15px auto;
   border-radius: 1rem 1rem .25rem .25rem; }
   .testmonials .swiper-wrapper .swiper-slide .testmonial-content .content .testmonial-text {
-    font-family: "Roboto Slab", "sans-serif";
+    font-family: "Montserrat", "sans-serif";
     overflow-y: auto; }
   .testmonials .swiper-wrapper .swiper-slide .testmonial-content .customer-info {
     margin-top: 0;
@@ -520,7 +507,7 @@ header {
       padding-top: 12px;
       padding-bottom: 12px;
       border-bottom: 1px solid;
-      font-family: "Hind Vadodara", "sans-serif";
+      font-family: "Montserrat", "sans-serif";
       font-size: 1rem; }
   .pricing .plan .order-now {
     margin: 10px auto; }
@@ -610,7 +597,7 @@ header {
   .about-us .tab-content .user-message-form label {
     text-transform: capitalize;
     margin-bottom: 0;
-    font-family: "Hind Vadodara", "sans-serif";
+    font-family: "Montserrat", "sans-serif";
     font-weight: bold; }
     @media (max-width: 991px) {
       .about-us .tab-content .user-message-form label {
@@ -652,7 +639,7 @@ header {
   /*========================== End Newsletter section  ==========================*/ }
   .page-footer a,
   .page-footer address {
-    font-family: "Hind Vadodara", "sans-serif"; }
+    font-family: "Montserrat", "sans-serif"; }
   .page-footer .map {
     width: 100%;
     min-height: 230px;

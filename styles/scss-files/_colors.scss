@@ -1,0 +1,316 @@
+/*****************************************************************
+*
+* Project Name:Robo Theme.
+* description: a Multi-purpose one-page theme for createve, corporates and business uses;
+* version: 1.0  
+*               
+<=======>  CSS RULES MAP <=======>
+
+1- Start Global Varibals
+2- color group
+2- Background color group
+3- borders group
+4- box-shadow group
+*****************************************************************/
+
+/* 1- Start Global Varibals*/
+
+$orangeThemeColor: #ff5100;
+$blueThemeColor: #01ceff;
+$yellowThemeColor: #d8b205;
+$greenThemeColor: #00af58;
+$pinkThemeColor: #da00ff;
+$WhiteColor: #FFF;
+$BlackColor: #000;
+$darkColor: #343a40;
+$lightColor: #a1a1a1;
+$extraLightColor: #f5f5f5;
+$BordersLightColor: #d6d6d6;
+$socialIconsColors: #CCC;
+$transparent: transparent;
+/* End Global Varibals*/
+
+/*======================== 2- color group ========================*/
+
+.pricing .plan-details li,
+.text-dark-color,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $darkColor;
+}
+
+.about-us .tab-content .faq-accordion .card-header .btn-link,
+.about-us .tab-head,
+.features .feature-content .fa,
+.gallery .filter-btn-list .filter-btn,
+.gallery .filter-group .hidden-info a.info-link:hover,
+.goals .goal-icon i,
+.navbar .navbar-brand span,
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-toggler,
+.newsletter-form .newsletter-email .submit-btun,
+.option-box .box-handel,
+.page-footer .adress-info ul li a:hover,
+.page-footer .useful-links ul li a:hover,
+.testmonials .customer-testmonial i.fa-quote-left,
+.testmonials .swiper-container .swiper-button-next i,
+.testmonials .swiper-container .swiper-button-prev i,
+.testmonials .testmonial-content .customer-details .customer-role,
+.useful-links ul li a:before,
+header .desc span,
+header .desc span {
+    color: $mainThemeColor;
+}
+
+.about-us .tab-head.active,
+.about-us .tab-head:hover,
+.butn,
+.custom-link,
+.custom-link:hover,
+.features .feature-content:hover span.icon,
+.gallery .filter-group .hidden-info,
+.gallery .filter-group .hidden-info:hover,
+.img-desc,
+.img-heading,
+.navbar .navbar-brand,
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link,
+.page-footer .adress-info,
+.page-footer .adress-info ul li a,
+.page-footer .useful-links ul li a,
+.page-header .desc a.butn,
+.pricing .plan .plan-cost,
+.pricing .plan-cost h4,
+.pricing .plan-details ul,
+.pricing .plan-highlight,
+.title-center-border .active,
+.to-top-div,
+a,
+a:focus,
+a:hover,
+a:visited,
+footer .copyrights {
+    color: $WhiteColor;
+}
+
+.option-box .color-options .color-options-title,
+.text-extra-light-color,
+header .header-wraper p.paragraph {
+    color: $extraLightColor;
+}
+
+footer .footer-social-icons a:hover i.fa {
+    color: rgba( $mainThemeColor, .7);
+}
+
+/*==================== 2- Background color group=================*/
+
+.pricing .plan .plan-cost,
+nav {
+    background-color: $darkColor;
+}
+
+@media(max-width:991px) {
+    .navbar-mobile-menu-wrapper .navbar-mobile-menu {
+        background-color: $darkColor;
+    }
+}
+
+.gallery .filter-group .gallery-item:hover a.pic-link:after,
+.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show,
+.overlay {
+    background-color: rgba($BlackColor, .5);
+}
+
+.about-us .tab-head.active,
+.about-us .tab-head:hover,
+.butn,
+.loading-screen .spinner>div,
+.features .feature-content:hover span.icon,
+.option-box .color-options li span,
+.pricing .plan-highlight,
+.to-top-div {
+    background-color: $mainThemeColor;
+}
+
+.about-us .tab-content .faq-accordion .card-header .btn-link.active {
+    background-color: rgba($mainThemeColor, .8);
+}
+
+.loading-screen,
+.features .feature-content,
+.pricing .plan,
+section {
+    background-color: $WhiteColor;
+}
+
+.footer-social-icons,
+.option-box,
+.option-box .box-handel,
+.option-box .options-wraper,
+.page-footer {
+    background-color: $darkColor;
+}
+
+@media(max-width:991px) {
+    .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
+        color: $WhiteColor !important;
+    }
+    .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
+        background-color: rgba( $mainThemeColor, .8);
+    }
+    .navbar-mobile-menu-wrapper .navbar-mobile-menu .nav-link:hover {
+        background-color: rgba($mainThemeColor, .5) !important;
+        color: $WhiteColor !important;
+    }
+}
+
+.option-box {
+    .options-wraper {
+        .color-options {
+            ul {
+                li {
+                    .orange-theme {
+                        background-color: $orangeThemeColor;
+                    }
+                    .blue-theme {
+                        background-color: $blueThemeColor;
+                    }
+                    .yellow-theme {
+                        background-color: $yellowThemeColor;
+                    }
+                    .green-theme {
+                        background-color: $greenThemeColor;
+                    }
+                    .pink-theme {
+                        background-color: $pinkThemeColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-us .tab-content .faq-accordion .card-header,
+.about-us .tab-content .faq-accordion .card-header .btn-link,
+.about-us .tab-content .user-message-form input[type=email],
+.about-us .tab-content .user-message-form input[type=text],
+.about-us .tab-content .user-message-form textarea,
+.gallery .filter-btn-list .filter-btn,
+.img-frame,
+.info-tab .tab-head,
+.newsletter-form .newsletter-email .submit-btun,
+.page-footer input[type=email] {
+    background-color: $transparent;
+}
+
+section:nth-child(odd) {
+    background-color: $WhiteColor;
+}
+
+section:nth-child(even) {
+    background-color: $extraLightColor;
+}
+
+/*=================== 3- borders group ==================*/
+
+.pricing .plan .plan-cost .plan-highlight:after {
+    border-color: $transparent $transparent $transparent $mainThemeColor;
+}
+
+.gallery .filter-btn-list .filter-btn {
+    border-color: $transparent;
+}
+
+.about-us .tab-head.active,
+.about-us .tab-head:hover {
+    border-color: $darkColor;
+}
+
+.about-us .tab-content .faq-accordion .card-body,
+.about-us .tab-content .faq-accordion .card-header,
+.about-us .tab-content .user-message-form input[type=email]:focus,
+.about-us .tab-content .user-message-form input[type=text]:focus,
+.about-us .tab-content .user-message-form textarea:focus,
+.about-us .tab-head,
+.active:after,
+.box-handel,
+.butn,
+.gallery .filter-btn-list,
+.gallery .filter-btn-list .filter-btn.active,
+.gallery .filter-btn-list .filter-btn:hover,
+.goals .goal-icon i,
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link:after,
+.option-box .options-wraper,
+.pricing .plan .plan-cost,
+.testmonials .customer-info .customer-details,
+.title-center-border:after,
+.title-left-border:after,
+.to-top-div {
+    border-color: $mainThemeColor;
+}
+
+.about-us .tab-content .user-message-form input[type=email],
+.about-us .tab-content .user-message-form input[type=text],
+.about-us .tab-content .user-message-form textarea,
+.news-letter input[type=email],
+.page-footer .copyrights,
+.page-footer .newsletter-form .newsletter-email input[type=email] {
+    border-color: rgba($mainThemeColor, .5);
+}
+
+.pricing .plan .plan-cost h3 {
+    border-color: $WhiteColor;
+}
+
+.pricing .plan .plan-details ul li,
+.testmonials .customer-info {
+    border-color: $BordersLightColor;
+}
+
+/*=================== 4- box-shadow group====================*/
+
+.about-us .tab-content .faq-accordion .card,
+.features .feature-content,
+.img-frame,
+.pricing .plan,
+.testmonials .testmonial-content,
+header {
+    box-shadow: 0 0 10px 1px $lightColor;
+}
+
+.butn:hover,
+.to-top-div {
+    box-shadow: 0 5px 15px -5px $darkColor;
+}
+
+//selection-group
+a,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+li,
+p,
+span {
+    &::selection {
+        color: $WhiteColor;
+        background: rgba( $mainThemeColor, .7);
+    }
+    &::-moz-selection {
+        color: $WhiteColor;
+        background: rgba( $mainThemeColor, .7);
+    }
+}
+
+.navbar .navbar-toggler {
+    outline-color: $mainThemeColor;
+}

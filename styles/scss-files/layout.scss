@@ -1,0 +1,1036 @@
+/*****************************************************************
+*
+* Project Name: Robo Theme.
+* description: a Multi-purpose one-page theme for createve, corporates and business uses;
+*             
+* version: 1.0  
+<=======>  CSS RULES MAP <=======>
+
+ Start Imorting Custome Mixins
+ START GLOBAL RULES
+ START NAVBAR
+ START HEADER 
+  START FEATURES SECTION
+ START GALLERY SECTION
+ START TESTMOIALS SECTION
+ START PRICING SECTION
+ START PARTNERS SECTION
+ START ABOUT-US SECTION
+ START PAGE-FOOTER 
+ START BACK TO TOP BUTTON
+ START OPTION BOX ASIDE 
+ START lOADING SCREEN DIV
+
+*****************************************************************/
+
+@import 'mixins.scss';
+@include responsive-heading-font-size();
+@include wider-container();
+/*==========================    START GLOBAL RULES  ==========================*/
+
+// $headingFontFamily: 'IBM Plex Sans Condensed', 'sans-serif';
+$headingFontFamily: 'Roboto Slab',
+'sans-serif';
+$bodyFontFamily: 'Hind Vadodara',
+'sans-serif';
+.no-scroll {
+    @media screen AND (max-width: 991px) {
+        overflow: hidden;
+    }
+}
+
+.butn {
+    display: inline-block;
+    outline: none !important;
+    font-family: $bodyFontFamily;
+    font-size: 1.15rem;
+    min-width: 150px;
+    padding: .5rem;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    @media (max-width: 991px) {
+        font-size: 1rem;
+        line-height: 1;
+        min-width: auto;
+        padding: .5rem;
+    }
+}
+
+//used as a selector to manipulate the <p> element as needed
+.paragraph {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 1.25rem;
+    font-family: $bodyFontFamily;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: .6px;
+    font-weight: normal;
+}
+
+// to make a nice frame on the imgs that has this class
+.img-frame {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+// to enable any element that previously had the .disabled-element class.
+.enabeld-element {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+// to disable any element and prevent the mouse action on it
+.disabled-element {
+    opacity: .2;
+    pointer-events: none;
+}
+
+// add a short border after an element such as headings
+.title-center-border:after,
+.title-left-border:after,
+.title-right-border:after {
+    content: '';
+    border-bottom: 4px solid;
+    border-radius: 5px;
+    width: 65px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+// to add a left aligned border after the element use this class
+.title-left-border {
+    &:after {
+        margin-right: auto;
+    }
+}
+
+// to add a right aligned border after the element use this class
+.title-right-border {
+    &:after {
+        margin-left: auto;
+    }
+}
+
+// to add a center aligned border after the element use this class
+.title-center-border {
+    &:after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// an overlay to use in multibale places
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; //set the parent of this class z-index=1 and the content div after this class with z-index=3 to be always on the top of overlay
+}
+
+body {
+    position: relative; // ncessary for the bootstrap scroll-spy 
+}
+
+section {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media (max-width: 991px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headingFontFamily;
+    letter-spacing: .4px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none !important;
+    font-family: $bodyFontFamily;
+}
+
+/*==========================  END GLOBAL RULES  ==========================*/
+
+/* ==========================     START NAVBAR    ========================== */
+
+.navbar {
+    transition: all .3s ease-in-out;
+    max-height: 90px;
+    .navbar-brand {
+        font-weight: 700;
+        font-family: $headingFontFamily;
+        font-size: 1.5rem;
+        transition: all .3s ease-in-out;
+        span {
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+    .menu-opend-btn {
+        height: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        i {
+            display: block;
+            width: 30px;
+            height: 1px;
+            background-color: #fff;
+            border-radius: 1px;
+            transition: all .3s ease-in-out;
+            &:nth-child(2) {
+                transform: translate(-5px);
+            }
+        }
+    }
+    .menu-closed-btn {
+        i {
+            &:first-child {
+                transform: rotate(225deg) translateY(-8px);
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:last-child {
+                transform: rotate(-45deg) translateY(-8px);
+            }
+        }
+    }
+    .navbar-menu-wrapper {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    i.fa {
+                        margin-right: 10px;
+                    }
+                    position: relative;
+                    padding: 1rem 0; //removing y-padding to make the adjust bottom border with the link text
+                    cursor: pointer;
+                    font-family: $bodyFontFamily;
+                    font-size: 1rem;
+                    font-weight:normal;
+                    transition: all .3s ease-in-out;
+                    width: 100%;
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: 7px;
+                        border-bottom: 3px solid;
+                        border-radius: 5px;
+                        width: 0;
+                        opacity: 0;
+                        transition: opacity, width .3s ease-in-out; //transition only on width BUT we can mix other transisioning effects like[ opacity - top - bottom - color ] 
+                    }
+                }
+                .nav-link.active {
+                    &:after {
+                        width: 100% !important;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:991px) {
+        .mobile-navbar-show {
+            left: 0 !important;
+            .navbar-mobile-menu {
+                min-width: 75% !important;
+                left: 0 !important;
+            }
+        }
+        .navbar-mobile-menu-wrapper {
+            position: fixed;
+            left: -100vw;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            cursor: url(../../assets/Images/Close-Icon.png), auto;
+            transition: all .6s ease-in-out;
+            .navbar-mobile-menu {
+                margin: 0 !important;
+                overflow: auto;
+                position: absolute;
+                min-width: 100%;
+                left: -100vw;
+                top: 0;
+                height: 100%;
+                transition: all .6s ease-in-out;
+                cursor: pointer;
+                .nav-item {
+                    transition: all .3s ease-in-out;
+                    margin-right: 0 !important;
+                    width: 100%;
+                    &:hover .nav-link::after {
+                        width: 0 !important;
+                    }
+                    .nav-link {
+                        padding: 1rem;
+                        font-family: $bodyFontFamily;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                .active {
+                    transition: color .3s ease-in-out;
+                    &::after {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==========================  END NAVBAR   ==========================*/
+
+/*==========================   START HEADER  ========================== */
+
+header {
+    @keyframes bg-animation {
+        0% {
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    background: url('../../assets/Images/header/main-header.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .animated-bg-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        animation: bg-animation 8s 1 linear;
+    }
+    .header-wraper {
+        position: relative;
+        z-index: 3;
+        max-height: 100vh;
+        height: 100vh;
+        .desc {
+            h1 {
+                font-size: 5rem;
+                font-weight: 700;
+                display: inline-block;
+            }
+            span {
+                font-size: 3.333333334rem;
+                font-weight: 400;
+                font-family: $headingFontFamily;
+            }
+            .disc-heading {
+                font-size: 40px;
+                font-weight: 400;
+            }
+            .paragraph {
+                margin-bottom: 0;
+            }
+            @media(max-width:767px) {
+                h1 {
+                    font-size: 3rem;
+                }
+                span {
+                    font-size: 2rem;
+                }
+                .disc-heading {
+                    font-size: 2rem;
+                    font-weight: 400;
+                }
+                .paragraph {
+                    margin-bottom: 0;
+                    font-size: 1.1rem;
+                    line-height: 1.6;
+                }
+            }
+            @media(max-height:450px) {
+                h1 {
+                    font-size: 3rem;
+                }
+                span {
+                    font-size: 1rem;
+                }
+                .disc-heading {
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+                .paragraph {
+                    margin-bottom: 0;
+                    font-size: .9rem;
+                    line-height: 1.6;
+                }
+                .cta {
+                    min-width: 150px;
+                }
+            }
+        }
+    }
+}
+
+/*==========================  END HEADER  ==========================*/
+
+/*==========================   START PARTNERS SECTION  ==========================*/
+
+/*==========================  END PARTNERS SECTION  ==========================*/
+
+/*========================== START FEATURES SECTION  ==========================*/
+
+.features {
+    overflow: hidden;
+    .feature-box {
+        transition: all .3s ease-in-out;
+        .feature-content {
+            border-radius: 1rem 1rem .25rem .25rem;
+            transition: all .3s ease-in-out;
+            max-width: 400px;
+            margin: 0 auto;
+            .feat-title .fa {
+                font-size: inherit;
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .feat-img {
+                padding: 5px 5px 0;
+                border-radius: 1rem 1rem 0 0;
+                width: 100%;
+                display: block;
+            }
+            .feat-title {
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+            .feat-text {
+                padding-left: .5rem;
+                padding-right: .5rem;
+            }
+        }
+    }
+}
+
+/*==========================  End FEATURES SECTION  ==========================*/
+
+// //////////////////////
+// ////////////////////
+/*==========================    START gallery SECTION  ==========================*/
+
+.gallery {
+    .filter-wraper {
+        overflow: hidden;
+    }
+    .filter-btn-list {
+        padding-top: 5px;
+        padding-bottom: 25px;
+        margin-bottom: 0;
+        .filter-btn {
+            min-width: 80px;
+            margin: 5px;
+            padding: 5px 10px;
+            text-align: center;
+            font-family: $bodyFontFamily;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            border-bottom: 2px solid;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+        }
+    }
+    .filter-group {
+        position: relative;
+        .pic-link {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            outline: none;
+            z-index: 1;
+            transition: all .3s ease-in-out;
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                transition: background-color .6s ease-in-out;
+            }
+        }
+        .gallery-item {
+            position: relative;
+            &:hover {
+                .hidden-info {
+                    bottom: 20px;
+                    opacity: 1;
+                }
+            }
+            img {
+                transition: all .3s ease-in-out;
+            }
+            .info-link {
+                display: block;
+                font-size: 1.25rem;
+                font-family: $headingFontFamily;
+                transition: all .3s ease-in-out;
+            }
+            span {
+                font-size: .85rem;
+                display: block;
+            }
+            @media(max-width:991px) {
+                .info-link {
+                    font-size: 1rem;
+                }
+                span {
+                    font-size: .75rem;
+                }
+            }
+            @media(max-width:576px) {
+                .info-link {
+                    font-size: .85rem;
+                }
+                span {
+                    font-size: .65rem;
+                }
+            }
+            .hidden-info {
+                position: absolute;
+                left: 10px;
+                bottom: 15px;
+                padding: 0;
+                margin: 0;
+                opacity: 0;
+                z-index: 5;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+/*  ==========================END gallery SECTION  ==========================*/
+
+/*==========================  START TESTMOIALS SECTION  ==========================*/
+
+.testmonials {
+    .swiper-wrapper {
+        .swiper-slide {
+            .testmonial-content {
+                max-width: 90%;
+                margin: 15px auto;
+                border-radius: 1rem 1rem .25rem .25rem;
+                .content {
+                    .testmonial-text {
+                        font-family: $headingFontFamily;
+                        overflow-y: auto;
+                    }
+                }
+                .customer-info {
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    img {
+                        padding: 3px;
+                    }
+                    .customer-details {
+                        padding-left: .75rem;
+                        transform: translateY(12px);
+                        display: inline-block;
+                        .customer-name {
+                            font-size: 1rem;
+                            font-weight: bold;
+                            margin-bottom: .5rem;
+                        }
+                        .customer-role {
+                            font-size: .85rem;
+                            margin-bottom: .5rem;
+                        }
+                    }
+                }
+                .customer-testmonial {
+                    @media(max-width: 991px) {
+                        padding: 0 10px;
+                    }
+                }
+                i.fa-quote-left {
+                    display: block;
+                    font-size: 60px;
+                    opacity: .4;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+    div.swiper-button-next,
+    div.swiper-button-prev {
+        background-image: none;
+        i {
+            font-family: 'fontawesome';
+            font-size: 60px;
+            font-weight: 300;
+        }
+    }
+    div.swiper-button-prev {
+        left: 15px;
+    }
+}
+
+/*==========================  END TESTMOIALS SECTION  ==========================*/
+
+/*==========================  START PRICING SECTION  ==========================*/
+
+.pricing {
+    .plan {
+        padding-bottom: 1rem;
+        transition: all .3s ease-in-out;
+        border-radius: 1rem 1rem .25rem .25rem;
+        max-width: 320px; // @media(min-width:768px) and (max-width:991px) {
+        //   width: 60%;
+        // }
+        // @media (min-width:320px) and (max-width:767px) {
+        //   width: 80%;
+        // }
+        // @media (max-width:320px)   {
+        //   width: 100%;
+        // }
+        .plan-cost {
+            padding-top: 3.5rem;
+            border-bottom: .25rem solid;
+            position: relative;
+            border-radius: 1rem 1rem 0 0;
+            h3 {
+                border-bottom: 1px solid;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .plan-price {
+                font-size: 4rem;
+                font-weight: 700;
+                sup.plan-currency {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    position: relative;
+                    top: -2rem;
+                    left: -.5rem;
+                    line-height: 0;
+                    vertical-align: baseline;
+                    display: inline-block;
+                }
+            }
+            .plan-highlight {
+                position: absolute;
+                top: 20px;
+                left: -14px;
+                padding: 5px;
+                &:after {
+                    content: '';
+                    display: block;
+                    border: 10px solid;
+                    top: 24px;
+                    left: 4px;
+                    width: 15px;
+                    position: absolute;
+                    z-index: 26;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        .plan-details {
+            ul {
+                list-style: none;
+                padding: 0 10px;
+                li {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    border-bottom: 1px solid;
+                    font-family: $bodyFontFamily;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .order-now {
+            margin: 10px auto;
+            &:hover i.fa {
+                opacity: 1;
+                transform: translateX(5px);
+            }
+            i.fa {
+                font-size: .9rem;
+                opacity: .6;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+/*==========================  END PRICING SECTION  ==========================*/
+
+.partners {
+    border: none;
+    height: auto;
+    padding: 40px 0;
+    @media (max-height: 500px) AND (max-width:360px) {
+        display: none;
+    }
+    @media (max-height:500px) {
+        display: none;
+    }
+    @media (max-width:360px) {
+        display: none;
+    }
+}
+
+/*  ==========================   START About Us SECTION ==========================*/
+
+.about-us {
+    .tab-list {
+        margin-bottom: 40px;
+    }
+    .tab-head {
+        position: relative;
+        padding: 5px;
+        min-width: 10%;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        border-radius: .25rem .25rem 0 0;
+        border-bottom: 2px solid;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        @media (max-width: 991px) {
+            font-size: .9rem;
+        }
+    }
+    .tab-content {
+        display: none;
+        .content-heading {
+            margin-bottom: 1rem;
+        }
+        .faq-accordion {
+            .card {
+                border: none;
+                border-radius: 0;
+            }
+            .card-header {
+                padding: 0;
+                position: relative;
+                border: 1px solid;
+                .btn-link {
+                    width: 100%;
+                    padding-left: 10px;
+                    padding-right: 20px;
+                    text-align: left;
+                    text-decoration: none;
+                    border-radius: 0;
+                    font-weight: bold;
+                    white-space: normal; //to break the text to another line if the text is so long   
+                    &::after {
+                        content: "\f106";
+                        font-family: fontawesome;
+                        font-size: inherit;
+                        font-weight: bold;
+                        line-height: 1.1;
+                        font-size: inherit;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        left: auto;
+                    }
+                    &.collapsed::after {
+                        content: '\f107';
+                    }
+                }
+            }
+            .card-body {
+                border: 1px solid;
+            }
+        }
+        .user-message-form {
+            label {
+                text-transform: capitalize;
+                margin-bottom: 0;
+                font-family: $bodyFontFamily;
+                font-weight: bold;
+                @media(max-width: 991px) {
+                    font-size: .75rem;
+                }
+            }
+            input[type=email],
+            input[type=text],
+            textarea {
+                display: block;
+                width: 100%;
+                padding: 5px;
+                outline: none;
+                border: 1px solid;
+                border-radius: .25rem;
+                margin-bottom: .5rem;
+                transition: border-color .3s ease-in-out;
+                font-size: 1rem;
+                @media(max-width: 991px) {
+                    font-size: .75rem;
+                }
+            }
+            textarea {
+                min-height: 8rem;
+            }
+            input[type=submit] {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+            }
+        }
+    }
+    .tab-content-1 {
+        display: block;
+    }
+}
+
+/* ========================== END About Us SECTION  ========================== */
+
+/*==========================  START page-footer   ==========================*/
+
+.page-footer {
+    a,
+    address {
+        font-family: $bodyFontFamily;
+    }
+    /*Start Google Map*/
+    .map {
+        width: 100%;
+        min-height: 230px;
+        height: 100%;
+    }
+    /*End Google Map*/
+    .adress-info ul li {
+        margin-bottom: 1rem;
+        font-size: .85rem;
+        a {
+            text-decoration: none;
+            transition: all .3s ease-in;
+        }
+        i {
+            padding-right: 1rem;
+        }
+    }
+    /* Start Footer Social Icons */
+    .footer-social-icons {
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+            margin-right: 10px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            i.fa {
+                transition: color .3s ease-in-out;
+            }
+        }
+        /* End Footer Social Icons */
+    }
+    /*========================== start Newsletter section  ==========================*/
+    .newsletter-form {
+        .newsletter-email {
+            position: relative;
+            input[type=email] {
+                padding: 6px;
+                font-size: 1rem;
+                outline: none;
+                width: 100%;
+                font-size: 1rem;
+                border: 1px solid;
+                border-radius: .25rem;
+                transition: all .3s ease-in-out;
+            }
+            .submit-btun {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                transform: translatey(-50%);
+                right: 10px;
+                cursor: pointer;
+                border: none;
+                outline: none !important;
+                padding: 5px;
+            }
+        }
+    }
+    /*========================== End Newsletter section  ==========================*/
+    .copyrights {
+        padding: 1rem;
+        border-top: 1px solid;
+    }
+}
+
+/*==========================  END page-footer   ==========================*/
+
+/*==========================  15- START BACK TO TOP BUTTON ==========================*/
+
+.to-top-div {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 1 rem;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    cursor: pointer;
+    z-index: 20;
+    i.fa {
+        font-size: 1.5rem;
+    }
+}
+
+/*==========================  END BACK TO TOP BUTTON ==========================*/
+
+/*==========================  16- START OPTION BOX ASIDE  ==========================*/
+
+.show-options-box {
+    left: 0 !important;
+}
+
+.option-box {
+    .options-wraper {
+        position: fixed;
+        left: -300px;
+        width: 300px;
+        top: 25vh;
+        transform: translateY(-25%);
+        border: 1px solid;
+        border-left: none;
+        z-index: 999;
+        transition: left .3s ease-in-out;
+        @media(max-width: 991px) {
+            left: -200px;
+            width: 200px;
+            top: 81px;
+        }
+        .box-handel {
+            font-size: 1rem;
+            font-weight: lighter;
+            position: absolute;
+            top: 90px;
+            left: calc(300px - 1px);
+            width: 30px;
+            height: 30px;
+            line-height: 26px;
+            border: 1px solid;
+            border-left: none;
+            text-align: center;
+            cursor: pointer;
+            @media(max-width: 991px) {
+                left: calc( 200px - 1px);
+            }
+        }
+        .color-options {
+            padding: 50px 20px;
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                li {
+                    width: 40px;
+                    height: 40px;
+                    span {
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==========================  END OPTION BOX ASIDE  ==========================*/
+
+/*==========================   START lOADING SCREEN DIV  ==========================*/
+
+.loading-screen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    .spinner {
+        margin: 50vh auto 0;
+        text-align: center;
+    }
+    .spinner>div {
+        width: 18px;
+        height: 18px;
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    }
+    .spinner .bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+    }
+    .spinner .bounce2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+    }
+    @-webkit-keyframes sk-bouncedelay {
+        0%,
+        100%,
+        80% {
+            -webkit-transform: scale(0);
+        }
+        40% {
+            -webkit-transform: scale(1.0);
+        }
+    }
+    @keyframes sk-bouncedelay {
+        0%,
+        100%,
+        80% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+        40% {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+        }
+    }
+}
+
+/*==========================  END lOADING SCREEN DIV  ==========================*/

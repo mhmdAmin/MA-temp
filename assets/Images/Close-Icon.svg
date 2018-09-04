@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.707 30.707">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Union_1" data-name="Union 1" class="cls-1" d="M15,640,0,655l15-15L0,625l15,15,15-15L15,640l15,15Z" transform="translate(0.354 -624.646)"/>
+</svg>

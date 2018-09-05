@@ -151,7 +151,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "sans-serif";
+  font-family: "Roboto Slab", "sans-serif";
   letter-spacing: .4px;
   font-weight: 700; }
 
@@ -166,7 +166,7 @@ a {
   max-height: 90px; }
   .navbar .navbar-brand {
     font-weight: 700;
-    font-family: "Montserrat", "sans-serif";
+    font-family: "Roboto Slab", "sans-serif";
     font-size: 1.5rem;
     transition: all .3s ease-in-out; }
     .navbar .navbar-brand span {
@@ -212,12 +212,11 @@ a {
       bottom: 7px;
       border-bottom: 3px solid;
       border-radius: 5px;
-      width: 0;
-      opacity: 0;
-      transition: opacity, width .3s ease-in-out; }
+      width: 100%;
+      transform: scale(0);
+      transition: all .5s ease-in-out; }
   .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.active:after {
-    width: 100% !important;
-    opacity: 1; }
+    transform: scale(1); }
   @media (max-width: 991px) {
     .navbar .mobile-navbar-show {
       left: 0 !important; }
@@ -279,7 +278,7 @@ header {
     header .header-wraper .desc span {
       font-size: 3.333333334rem;
       font-weight: 400;
-      font-family: "Montserrat", "sans-serif"; }
+      font-family: "Roboto Slab", "sans-serif"; }
     header .header-wraper .desc .disc-heading {
       font-size: 40px;
       font-weight: 400; }
@@ -388,7 +387,7 @@ header {
     .gallery .filter-group .gallery-item .info-link {
       display: block;
       font-size: 1.25rem;
-      font-family: "Montserrat", "sans-serif";
+      font-family: "Roboto Slab", "sans-serif";
       transition: all .3s ease-in-out; }
     .gallery .filter-group .gallery-item span {
       font-size: .85rem;
@@ -420,7 +419,7 @@ header {
   margin: 15px auto;
   border-radius: 1rem 1rem .25rem .25rem; }
   .testmonials .swiper-wrapper .swiper-slide .testmonial-content .content .testmonial-text {
-    font-family: "Montserrat", "sans-serif";
+    font-family: "Roboto Slab", "sans-serif";
     overflow-y: auto; }
   .testmonials .swiper-wrapper .swiper-slide .testmonial-content .customer-info {
     margin-top: 0;

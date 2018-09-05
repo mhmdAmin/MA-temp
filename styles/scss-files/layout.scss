@@ -29,7 +29,7 @@
 /*==========================    START GLOBAL RULES  ==========================*/
 
 // $headingFontFamily: 'IBM Plex Sans Condensed', 'sans-serif';
-$headingFontFamily: 'Montserrat',
+$headingFontFamily: 'Roboto Slab',
 'sans-serif';
 $bodyFontFamily: 'Montserrat',
 'sans-serif';
@@ -235,15 +235,15 @@ a {
                         bottom: 7px;
                         border-bottom: 3px solid;
                         border-radius: 5px;
-                        width: 0;
-                        opacity: 0;
-                        transition: opacity, width .3s ease-in-out; //transition only on width BUT we can mix other transisioning effects like[ opacity - top - bottom - color ] 
+                        width: 100%; // opacity: 0;
+                        transform: scale(0);
+                        transition: all .5s ease-in-out; //transition only on width BUT we can mix other transisioning effects like[ opacity - top - bottom - color ] 
                     }
                 }
                 .nav-link.active {
                     &:after {
-                        width: 100% !important;
-                        opacity: 1;
+                        // width: 100% !important;
+                        transform: scale(1); // opacity: 1;
                     }
                 }
             }

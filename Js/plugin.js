@@ -146,6 +146,17 @@ $(function () {
       // using Math.ceil To get rid Of the fractions of the values 
       scrollTop: Math.ceil($(link).offset().top) - Math.ceil(navMain.innerHeight())
     }, 1000);
+
+    console.log(link);
+    console.log($(link).offset().top);
+    console.log(Math.ceil($(link).offset().top));
+
+    console.log(navMain.innerHeight());
+    console.log(Math.ceil(navMain.innerHeight()));
+
+    console.log(Math.ceil($(link).offset().top) - Math.ceil(navMain.innerHeight()));
+
+
   });
 
   //End Smooth Scrolling To page Sections

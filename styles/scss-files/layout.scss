@@ -45,7 +45,7 @@ $bodyFontFamily: 'Montserrat',
     font-family: $bodyFontFamily;
     font-size: 1.15rem;
     min-width: 150px;
-    padding: .5rem;
+    padding: .75rem;
     border: none;
     border-radius: .25rem;
     cursor: pointer;
@@ -55,7 +55,7 @@ $bodyFontFamily: 'Montserrat',
         font-size: 1rem;
         line-height: 1;
         min-width: auto;
-        padding: .5rem;
+        padding: .75rem;
     }
 }
 
@@ -389,28 +389,25 @@ header {
     .feature-box {
         transition: all .3s ease-in-out;
         .feature-content {
-            border-radius: 1rem 1rem .25rem .25rem;
             transition: all .3s ease-in-out;
             max-width: 400px;
             margin: 0 auto;
-            .feat-title .fa {
-                font-size: inherit;
+            .fa {
+                font-size: 2rem;
                 display: inline-block;
-                margin-right: 10px;
-            }
-            .feat-img {
-                padding: 5px 5px 0;
-                border-radius: 1rem 1rem 0 0;
-                width: 100%;
-                display: block;
+                margin-right: 2rem;
             }
             .feat-title {
-                margin-bottom: 30px;
-                margin-top: 30px;
+                margin-bottom: 1rem;
+                margin-top: .5rem;
+                @media screen and(max-width: 576px) {
+                    font-size: .85rem;
+                    margin-bottom: .5rem;
+                    margin-top: .5rem;
+                }
             }
             .feat-text {
-                padding-left: .5rem;
-                padding-right: .5rem;
+                font-size: .8rem;
             }
         }
     }

@@ -224,8 +224,9 @@ a {
                     padding: 1rem 0; //removing y-padding to make the adjust bottom border with the link text
                     cursor: pointer;
                     font-family: $bodyFontFamily;
-                    font-size: 1rem;
+                    font-size: .85rem;
                     font-weight:normal;
+                    letter-spacing: 1px;
                     transition: all .3s ease-in-out;
                     width: 100%;
                     &::after {

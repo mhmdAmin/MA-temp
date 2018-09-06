@@ -249,8 +249,7 @@ a {
                 }
                 .nav-link.active {
                     &:after {
-                        // width: 100% !important;
-                        transform: scale(1); // opacity: 1;
+                        transform: scale(1); 
                     }
                 }
             }

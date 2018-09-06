@@ -19,6 +19,14 @@ $(function () {
 
   /*                   START GENERAL FUNCTIONS                   */
 
+  $(bdy).scrollspy({
+    target: navMain,
+    // offset: navMain.innerHeight()
+    offset: Math.ceil(navMain.innerHeight())
+
+  });
+
+
 
   //Global function To Change icons acording the state of the container element
   function iconChanger(ele, primaryClass, secondryClass) {
@@ -31,13 +39,9 @@ $(function () {
     ;
   }
   /*                    END GENERAL FUNCTIONS                   */
-  // Start Fire Scrrollspy 
-  $(bdy).scrollspy({
-    target: navMain, offset: Math.ceil(navMain.innerHeight())   /*to insure that the section will have the .active when its offset top under the navbar not under the body  */
 
-  }
 
-  ); //hide the navbar when click out side the menu
+  //hide the navbar when click out side the menu
 
   $(navMobile).on("click", function () {
     if ($(this).hasClass('mobile-navbar-show')) {
@@ -69,7 +73,7 @@ $(function () {
     e.stopPropagation()
   }
   ); //initialize swiper [testmonial Section] when document ready
-  var mySwiper = new Swiper('.testmonials .swiper-container', {
+  var testmonialsSlider = new Swiper('.testmonials .swiper-container', {
     // Optional parameters
     speed: 500,
     loop: true,
@@ -82,10 +86,15 @@ $(function () {
       nextEl: '.testmonials .swiper-button-next', prevEl: '.testmonials .swiper-button-prev',
     }
   }
-  ); //initialize swiper [partners Section] when document ready
-  var mySwiper = new Swiper('.partners .swiper-container', {
+  );
+
+  //initialize swiper [partners Section] when document ready
+  var partenersSlider = new Swiper('.partners .swiper-container', {
     // Optional parameters
-    speed: 600, loop: true, spaceBetween: 30, autoplay: {
+    speed: 600,
+    loop: true,
+    spaceBetween: 30,
+    autoplay: {
       delay: 2000,
     }
     , //showing 6 logo items in screen larger than 991px wide
@@ -97,7 +106,11 @@ $(function () {
     }
     ,
   }
-  ); // gallery fancy box initializer
+
+  );
+
+
+  // gallery fancy box initializer
   $().fancybox({
     selector: '[data-fancybox=".filter"]:visible', loop: true, buttons: ['zoom', 'close'],
   }
@@ -141,21 +154,12 @@ $(function () {
   // 1- Start Smooth Scrolling To page Sections
   $(".navbar .nav-link").on("click", function (e) {
     e.preventDefault();
+
     var link = $(this).attr("href");
     $("html,body").animate({
       // using Math.ceil To get rid Of the fractions of the values 
-      scrollTop: Math.ceil($(link).offset().top) - Math.ceil(navMain.innerHeight())
+      scrollTop: Math.ceil($(link).offset().top) - Math.ceil(navMain.innerHeight()) + 1
     }, 1000);
-
-    console.log(link);
-    console.log($(link).offset().top);
-    console.log(Math.ceil($(link).offset().top));
-
-    console.log(navMain.innerHeight());
-    console.log(Math.ceil(navMain.innerHeight()));
-
-    console.log(Math.ceil($(link).offset().top) - Math.ceil(navMain.innerHeight()));
-
 
   });
 
@@ -182,6 +186,7 @@ $(function () {
   /*              Start Window scroll functions               */
   var lastScrollTop = 0;
   $(window).on('scroll', function () {
+
     //Start show/hide navbar
     /* To have more space on mobile screen ==> the nav bar will hide in scrolling down and show-up again when scrolling up.*/
     //On screens  less than 992px Width
@@ -277,6 +282,8 @@ $(function () {
   }
   );
   /*************** End Loading Screen   */
+
+
 }
 
 );

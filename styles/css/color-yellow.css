@@ -26,6 +26,7 @@ h5,
 h6 {
   color: #343a40; }
 
+.super-paragraph,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
 .about-us .tab-head,
 .features .feature-content .fa,
@@ -47,7 +48,7 @@ h6 {
 .useful-links ul li a:before,
 header .desc span,
 header .desc span {
-  color: #d8b205; }
+  color: #ff9700; }
 
 .about-us .tab-head.active,
 .about-us .tab-head:hover,
@@ -84,7 +85,7 @@ header .header-wraper p.paragraph {
   color: #f5f5f5; }
 
 footer .footer-social-icons a:hover i.fa {
-  color: rgba(216, 178, 5, 0.7); }
+  color: rgba(255, 151, 0, 0.7); }
 
 /*==================== 2- Background color group=================*/
 .pricing .plan .plan-cost,
@@ -107,10 +108,12 @@ nav {
 .option-box .color-options li span,
 .pricing .plan-highlight,
 .to-top-div {
-  background-color: #d8b205; }
+  background-color: #ff9700; }
 
-.about-us .tab-content .faq-accordion .card-header .btn-link.active {
-  background-color: rgba(216, 178, 5, 0.8); }
+.about-us .tab-content .faq-accordion .card-header .btn-link.active,
+.goals .goal-img:before,
+.goals .goal-img:after {
+  background-color: rgba(255, 151, 0, 0.5); }
 
 .loading-screen,
 .features .feature-content,
@@ -130,17 +133,17 @@ section {
     color: #FFF !important; }
 
   .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
-    background-color: rgba(216, 178, 5, 0.8); }
+    background-color: rgba(255, 151, 0, 0.8); }
 
   .navbar-mobile-menu-wrapper .navbar-mobile-menu .nav-link:hover {
-    background-color: rgba(216, 178, 5, 0.5) !important;
+    background-color: rgba(255, 151, 0, 0.5) !important;
     color: #FFF !important; } }
 .option-box .options-wraper .color-options ul li .orange-theme {
   background-color: #ff5100; }
 .option-box .options-wraper .color-options ul li .blue-theme {
   background-color: #01ceff; }
 .option-box .options-wraper .color-options ul li .yellow-theme {
-  background-color: #d8b205; }
+  background-color: #ff9700; }
 .option-box .options-wraper .color-options ul li .green-theme {
   background-color: #00af58; }
 .option-box .options-wraper .color-options ul li .pink-theme {
@@ -166,7 +169,7 @@ section:nth-child(even) {
 
 /*=================== 3- borders group ==================*/
 .pricing .plan .plan-cost .plan-highlight:after {
-  border-color: transparent transparent transparent #d8b205; }
+  border-color: transparent transparent transparent #ff9700; }
 
 .gallery .filter-btn-list .filter-btn {
   border-color: transparent; }
@@ -195,7 +198,7 @@ section:nth-child(even) {
 .title-center-border:after,
 .title-left-border:after,
 .to-top-div {
-  border-color: #d8b205; }
+  border-color: #ff9700; }
 
 .about-us .tab-content .user-message-form input[type=email],
 .about-us .tab-content .user-message-form input[type=text],
@@ -203,7 +206,7 @@ section:nth-child(even) {
 .news-letter input[type=email],
 .page-footer .copyrights,
 .page-footer .newsletter-form .newsletter-email input[type=email] {
-  border-color: rgba(216, 178, 5, 0.5); }
+  border-color: rgba(255, 151, 0, 0.5); }
 
 .pricing .plan .plan-cost h3 {
   border-color: #FFF; }
@@ -237,7 +240,7 @@ li::selection,
 p::selection,
 span::selection {
   color: #FFF;
-  background: rgba(216, 178, 5, 0.7); }
+  background: rgba(255, 151, 0, 0.7); }
 a::-moz-selection,
 div::-moz-selection,
 h1::-moz-selection,
@@ -251,9 +254,9 @@ li::-moz-selection,
 p::-moz-selection,
 span::-moz-selection {
   color: #FFF;
-  background: rgba(216, 178, 5, 0.7); }
+  background: rgba(255, 151, 0, 0.7); }
 
 .navbar .navbar-toggler {
-  outline-color: #d8b205; }
+  outline-color: #ff9700; }
 
 /*# sourceMappingURL=color-yellow.css.map */

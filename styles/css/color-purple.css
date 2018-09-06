@@ -25,6 +25,7 @@ h5,
 h6 {
   color: #343a40; }
 
+.super-paragraph,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
 .about-us .tab-head,
 .features .feature-content .fa,
@@ -108,8 +109,10 @@ nav {
 .to-top-div {
   background-color: #7a19a7; }
 
-.about-us .tab-content .faq-accordion .card-header .btn-link.active {
-  background-color: rgba(122, 25, 167, 0.8); }
+.about-us .tab-content .faq-accordion .card-header .btn-link.active,
+.goals .goal-img:before,
+.goals .goal-img:after {
+  background-color: rgba(122, 25, 167, 0.5); }
 
 .loading-screen,
 .features .feature-content,
@@ -139,7 +142,7 @@ section {
 .option-box .options-wraper .color-options ul li .blue-theme {
   background-color: #01ceff; }
 .option-box .options-wraper .color-options ul li .yellow-theme {
-  background-color: #d8b205; }
+  background-color: #ff9700; }
 .option-box .options-wraper .color-options ul li .green-theme {
   background-color: #00af58; }
 .option-box .options-wraper .color-options ul li .pink-theme {

@@ -17,7 +17,7 @@
 
 $orangeThemeColor: #ff5100;
 $blueThemeColor: #01ceff;
-$yellowThemeColor: #d8b205;
+$yellowThemeColor: #ff9700;
 $greenThemeColor: #00af58;
 $pinkThemeColor: #da00ff;
 $WhiteColor: #FFF;
@@ -43,6 +43,7 @@ h6 {
     color: $darkColor;
 }
 
+.super-paragraph,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
 .about-us .tab-head,
 .features .feature-content .fa,
@@ -137,8 +138,10 @@ nav {
     background-color: $mainThemeColor;
 }
 
-.about-us .tab-content .faq-accordion .card-header .btn-link.active {
-    background-color: rgba($mainThemeColor, .8);
+.about-us .tab-content .faq-accordion .card-header .btn-link.active,
+.goals .goal-img:before,
+.goals .goal-img:after {
+    background-color: rgba($mainThemeColor, .5);
 }
 
 .loading-screen,

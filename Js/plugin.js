@@ -24,6 +24,7 @@ $(function () {
     offset: Math.ceil(navMain.innerHeight())
   });
 
+
   //Global function To Change icons acording the state of the container element
   function iconChanger(ele, primaryClass, secondryClass) {
     if ($(ele).hasClass(primaryClass)) {

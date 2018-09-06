@@ -600,7 +600,7 @@ header {
     text-transform: capitalize;
     margin-bottom: 0;
     font-family: "Montserrat", "sans-serif";
-    font-weight: bold; }
+    font-weight: normal; }
     @media (max-width: 991px) {
       .about-us .tab-content .user-message-form label {
         font-size: .75rem; } }

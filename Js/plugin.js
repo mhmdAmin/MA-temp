@@ -21,12 +21,8 @@ $(function () {
 
   $(bdy).scrollspy({
     target: navMain,
-    // offset: navMain.innerHeight()
     offset: Math.ceil(navMain.innerHeight())
-
   });
-
-
 
   //Global function To Change icons acording the state of the container element
   function iconChanger(ele, primaryClass, secondryClass) {

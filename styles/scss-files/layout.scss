@@ -798,7 +798,7 @@ header {
                 text-transform: capitalize;
                 margin-bottom: 0;
                 font-family: $bodyFontFamily;
-                font-weight: bold;
+                font-weight: normal;
                 @media(max-width: 991px) {
                     font-size: .75rem;
                 }

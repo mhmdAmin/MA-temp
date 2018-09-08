@@ -222,9 +222,12 @@ section:nth-child(even) {
 header {
   box-shadow: 0 0 10px 1px #a1a1a1; }
 
-.butn:hover,
+.butn,
 .to-top-div {
   box-shadow: 0 5px 15px -5px #343a40; }
+
+.butn:hover {
+  box-shadow: 0 8px 25px -5px #343a40; }
 
 a::selection,
 div::selection,

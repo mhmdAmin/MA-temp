@@ -204,8 +204,8 @@ a {
     padding: 1rem 0;
     cursor: pointer;
     font-family: "Montserrat", "sans-serif";
-    font-size: .85rem;
-    font-weight: bold;
+    font-size: .75rem;
+    font-weight: 700;
     letter-spacing: 1px;
     transition: all .3s ease-in-out;
     width: 100%; }
@@ -278,16 +278,17 @@ header {
     max-height: 100vh;
     height: 100vh; }
     header .header-wraper .desc h1 {
-      font-size: 5rem;
-      font-weight: 700;
+      font-size: 6rem;
+      font-weight: 500;
       display: inline-block; }
     header .header-wraper .desc span {
       font-size: 3.333333334rem;
       font-weight: 400;
       font-family: "Roboto Slab", "sans-serif"; }
     header .header-wraper .desc .disc-heading {
-      font-size: 40px;
-      font-weight: 400; }
+      font-size: 2rem;
+      font-weight: 400;
+      font-style: italic; }
     header .header-wraper .desc .paragraph {
       margin-bottom: 0; }
     @media (max-width: 767px) {

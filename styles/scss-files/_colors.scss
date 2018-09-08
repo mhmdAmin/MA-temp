@@ -281,13 +281,17 @@ section:nth-child(even) {
 .img-frame,
 .pricing .plan,
 .testmonials .testmonial-content,
-header{
+header {
     box-shadow: 0 0 10px 1px $lightColor;
 }
 
-.butn:hover,
+.butn,
 .to-top-div {
     box-shadow: 0 5px 15px -5px $darkColor;
+}
+
+.butn:hover {
+    box-shadow: 0 8px 25px -5px $darkColor;
 }
 
 //selection-group

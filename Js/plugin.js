@@ -76,6 +76,7 @@ $(function () {
     loop: true,
     grabCursor: true,
     slidesPerView: 1,
+    delay: 5000,
     autoplay: {
       delay: 5000,
     }
@@ -91,8 +92,9 @@ $(function () {
     speed: 600,
     loop: true,
     spaceBetween: 30,
+    delay: 5000,
     autoplay: {
-      delay: 2000,
+      delay: 5000,
     }
     , //showing 6 logo items in screen larger than 991px wide
     slidesPerView: 6, breakpoints: {

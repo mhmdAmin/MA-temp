@@ -40,6 +40,7 @@ $bodyFontFamily: 'Montserrat',
 }
 
 .butn {
+    position: relative;
     display: inline-block;
     outline: none !important;
     font-family: $bodyFontFamily;
@@ -51,9 +52,39 @@ $bodyFontFamily: 'Montserrat',
     cursor: pointer;
     transition: all .3s ease-in-out;
     text-align: center;
+    z-index: 0;
+    overflow: hidden;
+    &:hover {
+        transform: translateY(-1px);
+        &:before {
+            left: 150%;
+        }
+        &:after {
+            right: 150%;
+        }
+    }
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        border-radius: .25rem;
+        top: 0;
+        bottom: 0;
+        width: 20%;
+        transition: all .8s ease-in-out; // transition-delay: .1s;
+        filter: blur(10px);
+        opacity: .5;
+        z-index: -1;
+    }
+    &:before {
+        left: -100%;
+    }
+    &:after {
+        right: -100%;
+    }
     @media (max-width: 991px) {
         font-size: .8rem;
-        line-height: 1;
+        line-height: -1;
         min-width: auto;
         padding: .75rem;
     }
@@ -146,6 +177,7 @@ body {
 
 section {
     position: relative;
+    overflow: hidden;
     padding-top: 80px;
     padding-bottom: 80px;
     @media (max-width: 991px) {
@@ -693,11 +725,10 @@ header {
         .order-now {
             margin: 10px auto;
             &:hover i.fa {
-                opacity: 1;
-                transform: translateX(5px);
+                transform: translateX(3px);
             }
             i.fa {
-                font-size: .9rem;
+                font-size: .8rem;
                 transition: all .3s ease-in-out;
             }
         }

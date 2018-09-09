@@ -75,10 +75,16 @@ $(function () {
     speed: 500,
     loop: true,
     grabCursor: true,
-    slidesPerView: 1,
+    slidesPerView: 3,
     delay: 5000,
     autoplay: {
       delay: 5000,
+    },
+    breakpoints: {
+      // showing only 3 logo items in screens smaller than 991px wide
+      991: {
+        slidesPerView: 1
+      }
     }
     , navigation: {
       nextEl: '.testmonials .swiper-button-next', prevEl: '.testmonials .swiper-button-prev',
@@ -97,7 +103,8 @@ $(function () {
       delay: 5000,
     }
     , //showing 6 logo items in screen larger than 991px wide
-    slidesPerView: 6, breakpoints: {
+    slidesPerView: 6,
+    breakpoints: {
       // showing only 3 logo items in screens smaller than 991px wide
       991: {
         slidesPerView: 3

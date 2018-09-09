@@ -147,7 +147,9 @@ nav {
 .loading-screen,
 .features .feature-content,
 .pricing .plan,
-section {
+section,
+.butn:before,
+.butn:after {
     background-color: $WhiteColor;
 }
 
@@ -211,14 +213,12 @@ section {
     background-color: $transparent;
 }
 
-section:nth-child(odd) {
-    background-color: $WhiteColor;
-}
-
-section:nth-child(even) {
-    background-color: $extraLightColor;
-}
-
+// section:nth-child(odd) {
+//     background-color: $WhiteColor;
+// }
+// section:nth-child(even) {
+//     background-color: $extraLightColor;
+// }
 /*=================== 3- borders group ==================*/
 
 .pricing .plan .plan-cost .plan-highlight:after {

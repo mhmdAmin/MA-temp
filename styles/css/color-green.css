@@ -118,7 +118,9 @@ nav {
 .loading-screen,
 .features .feature-content,
 .pricing .plan,
-section {
+section,
+.butn:before,
+.butn:after {
   background-color: #FFF; }
 
 .footer-social-icons,
@@ -160,12 +162,6 @@ section {
 .newsletter-form .newsletter-email .submit-btun,
 .page-footer input[type=email] {
   background-color: transparent; }
-
-section:nth-child(odd) {
-  background-color: #FFF; }
-
-section:nth-child(even) {
-  background-color: #f5f5f5; }
 
 /*=================== 3- borders group ==================*/
 .pricing .plan .plan-cost .plan-highlight:after {

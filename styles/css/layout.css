@@ -64,6 +64,7 @@
     overflow: hidden; } }
 
 .butn {
+  position: relative;
   display: inline-block;
   outline: none !important;
   font-family: "Montserrat", "sans-serif";
@@ -74,11 +75,34 @@
   border-radius: .25rem;
   cursor: pointer;
   transition: all .3s ease-in-out;
-  text-align: center; }
+  text-align: center;
+  z-index: 0;
+  overflow: hidden; }
+  .butn:hover {
+    transform: translateY(-1px); }
+    .butn:hover:before {
+      left: 150%; }
+    .butn:hover:after {
+      right: 150%; }
+  .butn:before, .butn:after {
+    content: '';
+    position: absolute;
+    border-radius: .25rem;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    transition: all .8s ease-in-out;
+    filter: blur(10px);
+    opacity: .5;
+    z-index: -1; }
+  .butn:before {
+    left: -100%; }
+  .butn:after {
+    right: -100%; }
   @media (max-width: 991px) {
     .butn {
       font-size: .8rem;
-      line-height: 1;
+      line-height: -1;
       min-width: auto;
       padding: .75rem; } }
 
@@ -143,6 +167,7 @@ body {
 
 section {
   position: relative;
+  overflow: hidden;
   padding-top: 80px;
   padding-bottom: 80px; }
   @media (max-width: 991px) {
@@ -516,10 +541,9 @@ header {
   .pricing .plan .order-now {
     margin: 10px auto; }
     .pricing .plan .order-now:hover i.fa {
-      opacity: 1;
-      transform: translateX(5px); }
+      transform: translateX(3px); }
     .pricing .plan .order-now i.fa {
-      font-size: .9rem;
+      font-size: .8rem;
       transition: all .3s ease-in-out; }
 
 /*==========================  END PRICING SECTION  ==========================*/

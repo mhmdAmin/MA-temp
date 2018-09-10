@@ -12,7 +12,7 @@ $(function () {
   //GLOBAL VARIBALES
   var bdy = $("body"), navMain = $("nav.main-navbar"),
     navMobile = $("nav .navbar-mobile-menu-wrapper"),
-    backToTopButton = $(".to-top-div"),
+    backToTopButton = $(".back-to-top"),
     optionBoxWraper = $(".option-box .options-wraper");
 
 

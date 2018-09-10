@@ -71,7 +71,7 @@ header .desc span {
 .pricing .plan-details ul,
 .pricing .plan-highlight,
 .title-center-border .active,
-.to-top-div,
+.back-to-top,
 a,
 a:focus,
 a:hover,
@@ -107,7 +107,7 @@ nav {
 .features .feature-content:hover span.icon,
 .option-box .color-options li span,
 .pricing .plan-highlight,
-.to-top-div {
+.back-to-top {
   background-color: #00af58; }
 
 .about-us .tab-content .faq-accordion .card-header .btn-link.active,
@@ -193,7 +193,7 @@ section,
 .testmonials .customer-info .customer-details,
 .title-center-border:after,
 .title-left-border:after,
-.to-top-div {
+.back-to-top {
   border-color: #00af58; }
 
 .about-us .tab-content .user-message-form input[type=email],
@@ -220,7 +220,7 @@ header {
   box-shadow: 0 0 10px 1px #a1a1a1; }
 
 .butn,
-.to-top-div {
+.back-to-top {
   box-shadow: 0 5px 15px -5px #343a40; }
 
 .butn:hover {

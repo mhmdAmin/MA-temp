@@ -10,12 +10,13 @@
  START GLOBAL RULES
  START NAVBAR
  START HEADER 
-  START FEATURES SECTION
+ START FEATURES SECTION
  START GALLERY SECTION
  START TESTMOIALS SECTION
  START PRICING SECTION
  START PARTNERS SECTION
  START ABOUT-US SECTION
+ START PARTNERS SECTION
  START PAGE-FOOTER 
  START BACK TO TOP BUTTON
  START OPTION BOX ASIDE 
@@ -59,10 +60,6 @@
   .container {
     max-width: 540px; } }
 /*==========================    START GLOBAL RULES  ==========================*/
-@media screen and (max-width: 991px) {
-  .no-scroll {
-    overflow: hidden; } }
-
 .butn {
   position: relative;
   display: inline-block;
@@ -92,7 +89,6 @@
     bottom: 0;
     width: 20%;
     transition: all .8s ease-in-out;
-    filter: blur(10px);
     opacity: .5;
     z-index: -1; }
   .butn:before {
@@ -162,14 +158,18 @@
   bottom: 0;
   z-index: 2; }
 
+@media screen and (max-width: 991px) {
+  .no-scroll {
+    overflow: hidden; } }
+
 body {
   position: relative; }
 
 section {
   position: relative;
   overflow: hidden;
-  padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
   @media (max-width: 991px) {
     section {
       padding-top: 60px;
@@ -344,8 +344,6 @@ header {
         min-width: 150px; } }
 
 /*==========================  END HEADER  ==========================*/
-/*==========================   START PARTNERS SECTION  ==========================*/
-/*==========================  END PARTNERS SECTION  ==========================*/
 /*========================== START FEATURES SECTION  ==========================*/
 .features {
   overflow: hidden; }
@@ -547,20 +545,6 @@ header {
       transition: all .3s ease-in-out; }
 
 /*==========================  END PRICING SECTION  ==========================*/
-.partners {
-  border: none;
-  height: auto;
-  padding: 40px 0; }
-  @media (max-height: 500px) and (max-width: 360px) {
-    .partners {
-      display: none; } }
-  @media (max-height: 500px) {
-    .partners {
-      display: none; } }
-  @media (max-width: 360px) {
-    .partners {
-      display: none; } }
-
 /*  ==========================   START About Us SECTION ==========================*/
 .about-us .tab-list {
   margin-bottom: 40px; }
@@ -657,6 +641,22 @@ header {
   display: block; }
 
 /* ========================== END About Us SECTION  ========================== */
+/*==========================   START PARTNERS SECTION  ==========================*/
+.partners {
+  border: none;
+  height: auto;
+  padding: 40px 0; }
+  @media (max-height: 500px) and (max-width: 360px) {
+    .partners {
+      display: none; } }
+  @media (max-height: 500px) {
+    .partners {
+      display: none; } }
+  @media (max-width: 360px) {
+    .partners {
+      display: none; } }
+
+/*==========================  END PARTNERS SECTION  ==========================*/
 /*==========================  START page-footer   ==========================*/
 .page-footer {
   /*Start Google Map*/
@@ -715,29 +715,7 @@ header {
     border-top: 1px solid; }
 
 /*==========================  END page-footer   ==========================*/
-/*==========================  15- START BACK TO TOP BUTTON ==========================*/
-.to-top-div {
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  font-size: 1 rem;
-  border: 1px solid;
-  border-radius: 50%;
-  text-align: center;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  display: none;
-  cursor: pointer;
-  z-index: 20; }
-  .to-top-div i.fa {
-    font-size: 1.5rem; }
-
-/*==========================  END BACK TO TOP BUTTON ==========================*/
 /*==========================  16- START OPTION BOX ASIDE  ==========================*/
-.show-options-box {
-  left: 0 !important; }
-
 .option-box .options-wraper {
   position: fixed;
   left: -300px;
@@ -785,7 +763,29 @@ header {
           border-radius: 50%;
           cursor: pointer; }
 
+.show-options-box {
+  left: 0 !important; }
+
 /*==========================  END OPTION BOX ASIDE  ==========================*/
+/*==========================  15- START BACK TO TOP BUTTON ==========================*/
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  font-size: 1 rem;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  cursor: pointer;
+  z-index: 20; }
+  .back-to-top i.fa {
+    font-size: 1.5rem; }
+
+/*==========================  END BACK TO TOP BUTTON ==========================*/
 /*==========================   START lOADING SCREEN DIV  ==========================*/
 .loading-screen {
   position: fixed;

@@ -1,0 +1,85 @@
+/*==========================  START PRICING SECTION  ==========================*/
+
+.pricing {
+    .plan {
+        padding-bottom: 1rem;
+        transition: all .3s ease-in-out;
+        border-radius: 1rem 1rem .25rem .25rem;
+        max-width: 320px; // @media(min-width:768px) and (max-width:991px) {
+        //   width: 60%;
+        // }
+        // @media (min-width:320px) and (max-width:767px) {
+        //   width: 80%;
+        // }
+        // @media (max-width:320px)   {
+        //   width: 100%;
+        // }
+        .plan-cost {
+            padding-top: 3.5rem;
+            border-bottom: .25rem solid;
+            position: relative;
+            border-radius: 1rem 1rem 0 0;
+            h3 {
+                border-bottom: 1px solid;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .plan-price {
+                font-size: 4rem;
+                font-weight: 700;
+                sup.plan-currency {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    position: relative;
+                    top: -2rem;
+                    left: -.5rem;
+                    line-height: 0;
+                    vertical-align: baseline;
+                    display: inline-block;
+                }
+            }
+            .plan-highlight {
+                position: absolute;
+                top: 20px;
+                left: -14px;
+                padding: 5px;
+                &:after {
+                    content: '';
+                    display: block;
+                    border: 10px solid;
+                    top: 24px;
+                    left: 4px;
+                    width: 15px;
+                    position: absolute;
+                    z-index: 26;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        .plan-details {
+            ul {
+                list-style: none;
+                padding: 0 10px;
+                li {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    border-bottom: 1px solid;
+                    font-family: $bodyFontFamily;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .order-now {
+            margin: 10px auto;
+            &:hover i.fa {
+                transform: translateX(3px);
+            }
+            i.fa {
+                font-size: .8rem;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+/*==========================  END PRICING SECTION  ==========================*/

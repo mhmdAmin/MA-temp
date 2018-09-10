@@ -1,0 +1,95 @@
+/*==========================    START gallery SECTION  ==========================*/
+
+.gallery {
+    .filter-wraper {
+        overflow: hidden;
+    }
+    .filter-btn-list {
+        padding-top: 5px;
+        padding-bottom: 25px;
+        margin-bottom: 0;
+        .filter-btn {
+            min-width: 80px;
+            margin: 5px;
+            padding: 5px 10px;
+            text-align: center;
+            font-family: $bodyFontFamily;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            border-bottom: 2px solid;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+        }
+    }
+    .filter-group {
+        position: relative;
+        .pic-link {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            outline: none;
+            z-index: 1;
+            transition: all .3s ease-in-out;
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                transition: background-color .6s ease-in-out;
+            }
+        }
+        .gallery-item {
+            position: relative;
+            &:hover {
+                .hidden-info {
+                    bottom: 20px;
+                    opacity: 1;
+                }
+            }
+            img {
+                transition: all .3s ease-in-out;
+            }
+            .info-link {
+                display: block;
+                font-size: 1.25rem;
+                font-family: $headingFontFamily;
+                transition: all .3s ease-in-out;
+            }
+            span {
+                font-size: .85rem;
+                display: block;
+            }
+            @media(max-width:991px) {
+                .info-link {
+                    font-size: 1rem;
+                }
+                span {
+                    font-size: .75rem;
+                }
+            }
+            @media(max-width:576px) {
+                .info-link {
+                    font-size: .85rem;
+                }
+                span {
+                    font-size: .65rem;
+                }
+            }
+            .hidden-info {
+                position: absolute;
+                left: 10px;
+                bottom: 15px;
+                padding: 0;
+                margin: 0;
+                opacity: 0;
+                z-index: 5;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+/*  ==========================END gallery SECTION  ==========================*/

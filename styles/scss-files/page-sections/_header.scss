@@ -1,0 +1,75 @@
+/*==========================   START HEADER  ========================== */
+
+header {
+    background: url('../../assets/Images/header/main-header.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .header-wraper {
+        position: relative;
+        z-index: 3;
+        max-height: 100vh;
+        height: 100vh;
+        .desc {
+            h1 {
+                font-size: 6rem;
+                font-weight: 500;
+                display: inline-block;
+            }
+            span {
+                font-size: 3.333333334rem;
+                font-weight: 400;
+                font-family: $headingFontFamily;
+            }
+            .disc-heading {
+                font-size: 2rem;
+                font-weight: 400;
+                font-style: italic;
+            }
+            .paragraph {
+                margin-bottom: 0;
+            }
+            @media(max-width:767px) {
+                h1 {
+                    font-size: 3rem;
+                }
+                span {
+                    font-size: 2rem;
+                }
+                .disc-heading {
+                    font-size: 2rem;
+                    font-weight: 400;
+                }
+                .paragraph {
+                    margin-bottom: 0;
+                    font-size: 1.1rem;
+                    line-height: 1.6;
+                }
+            }
+            @media(max-height:450px) {
+                h1 {
+                    font-size: 3rem;
+                }
+                span {
+                    font-size: 1rem;
+                }
+                .disc-heading {
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+                .paragraph {
+                    margin-bottom: 0;
+                    font-size: .9rem;
+                    line-height: 1.6;
+                }
+                .cta {
+                    min-width: 150px;
+                }
+            }
+        }
+    }
+}
+
+/*==========================  END HEADER  ==========================*/

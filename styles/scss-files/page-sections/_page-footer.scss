@@ -1,0 +1,75 @@
+/*==========================  START page-footer   ==========================*/
+
+.page-footer {
+    a,
+    address {
+        font-family: $bodyFontFamily;
+    }
+    /*Start Google Map*/
+    .map {
+        width: 100%;
+        min-height: 230px;
+        height: 100%;
+    }
+    /*End Google Map*/
+    .adress-info ul li {
+        margin-bottom: 1rem;
+        font-size: .85rem;
+        a {
+            text-decoration: none;
+            transition: all .3s ease-in;
+        }
+        i {
+            padding-right: 1rem;
+        }
+    }
+    /* Start Footer Social Icons */
+    .footer-social-icons {
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+            margin-right: 10px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            i.fa {
+                transition: color .3s ease-in-out;
+            }
+        }
+        /* End Footer Social Icons */
+    }
+    /*========================== start Newsletter section  ==========================*/
+    .newsletter-form {
+        .newsletter-email {
+            position: relative;
+            input[type=email] {
+                padding: 6px;
+                font-size: 1rem;
+                outline: none;
+                width: 100%;
+                font-size: 1rem;
+                border: 1px solid;
+                border-radius: .25rem;
+                transition: all .3s ease-in-out;
+            }
+            .submit-btun {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                transform: translatey(-50%);
+                right: 10px;
+                cursor: pointer;
+                border: none;
+                outline: none !important;
+                padding: 5px;
+            }
+        }
+    }
+    /*========================== End Newsletter section  ==========================*/
+    .copyrights {
+        padding: 1rem;
+        border-top: 1px solid;
+    }
+}
+
+/*==========================  END page-footer   ==========================*/

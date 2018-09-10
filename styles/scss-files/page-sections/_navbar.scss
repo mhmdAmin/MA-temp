@@ -1,0 +1,135 @@
+/* ==========================     START NAVBAR    ========================== */
+
+.navbar {
+    transition: all .3s ease-in-out;
+    max-height: 90px;
+    .navbar-brand {
+        font-weight: 700;
+        font-family: $headingFontFamily;
+        font-size: 1.5rem;
+        transition: all .3s ease-in-out;
+        span {
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+    .menu-opend-btn {
+        height: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        i {
+            display: block;
+            width: 30px;
+            height: 1px;
+            background-color: #fff;
+            border-radius: 1px;
+            transition: all .3s ease-in-out;
+            &:nth-child(2) {
+                transform: translate(-5px);
+            }
+        }
+    }
+    .menu-closed-btn {
+        i {
+            &:first-child {
+                transform: rotate(225deg) translateY(-8px);
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:last-child {
+                transform: rotate(-45deg) translateY(-8px);
+            }
+        }
+    }
+    .navbar-menu-wrapper {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    i.fa {
+                        margin-right: 10px;
+                    }
+                    position: relative;
+                    padding: 1rem 0; //removing y-padding to make the adjust bottom border with the link text
+                    cursor: pointer;
+                    font-family: $bodyFontFamily;
+                    font-size: .75rem;
+                    font-weight:700;
+                    letter-spacing: 1px;
+                    transition: all .3s ease-in-out;
+                    width: 100%;
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: 7px;
+                        border-bottom: 3px solid;
+                        border-radius: 5px;
+                        width: 100%; // opacity: 0;
+                        transform: scale(0);
+                        transition: all .5s ease-in-out; //transition only on width BUT we can mix other transisioning effects like[ opacity - top - bottom - color ] 
+                    }
+                }
+                .nav-link.active {
+                    &:after {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:991px) {
+        .mobile-navbar-show {
+            left: 0 !important;
+            .navbar-mobile-menu {
+                min-width: 75% !important;
+                left: 0 !important;
+            }
+        }
+        .navbar-mobile-menu-wrapper {
+            position: fixed;
+            left: -100vw;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            cursor: url(../../assets/Images/Close-Icon.png), auto;
+            transition: all .6s ease-in-out;
+            .navbar-mobile-menu {
+                margin: 0 !important;
+                overflow: auto;
+                position: absolute;
+                min-width: 100%;
+                left: -100vw;
+                top: 0;
+                height: 100%;
+                transition: all .6s ease-in-out;
+                cursor: pointer;
+                .nav-item {
+                    transition: all .3s ease-in-out;
+                    margin-right: 0 !important;
+                    width: 100%;
+                    &:hover .nav-link::after {
+                        width: 0 !important;
+                    }
+                    .nav-link {
+                        padding: 1rem;
+                        font-family: $bodyFontFamily;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                .active {
+                    transition: color .3s ease-in-out;
+                    &::after {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==========================  END NAVBAR   ==========================*/

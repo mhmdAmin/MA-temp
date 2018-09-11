@@ -95,8 +95,7 @@ nav {
   .navbar-mobile-menu-wrapper .navbar-mobile-menu {
     background-color: #343a40; } }
 .gallery .filter-group .gallery-item:hover a.pic-link:after,
-.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show,
-.overlay {
+.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .about-us .tab-head.active,
@@ -256,5 +255,8 @@ span::-moz-selection {
 
 .navbar .navbar-toggler {
   outline-color: #7a19a7; }
+
+.overlay {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); }
 
 /*# sourceMappingURL=color-purple.css.map */

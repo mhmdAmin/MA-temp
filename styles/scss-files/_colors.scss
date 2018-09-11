@@ -121,9 +121,9 @@ nav {
     }
 }
 
+// .overlay,
 .gallery .filter-group .gallery-item:hover a.pic-link:after,
-.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show,
-.overlay {
+.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
     background-color: rgba($BlackColor, .5);
 }
 
@@ -319,4 +319,8 @@ span {
 
 .navbar .navbar-toggler {
     outline-color: $mainThemeColor;
+}
+
+.overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5));
 }

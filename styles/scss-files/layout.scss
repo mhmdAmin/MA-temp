@@ -25,9 +25,8 @@
 *****************************************************************/
 
 @import 'mixins.scss';
-@include responsive-heading-font-size();
-@include wider-container();
-//
+// @include responsive-heading-font-size();
+// @include wider-container();//
 @import 'page-sections/_globals.scss';
 @import 'page-sections/_navbar.scss';
 @import 'page-sections/_header.scss';

@@ -78,7 +78,7 @@ $(function () {
     slidesPerView: 3,
     delay: 5000,
     autoplay: {
-      delay: 5000,
+      delay: 9000,
     },
     breakpoints: {
       // showing only 3 logo items in screens smaller than 991px wide

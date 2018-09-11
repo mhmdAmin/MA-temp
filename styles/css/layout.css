@@ -23,42 +23,6 @@
  START lOADING SCREEN DIV
 
 *****************************************************************/
-@media (max-width: 991px) {
-  h1.responsive-heading {
-    font-size: 2rem; } }
-
-@media (max-width: 991px) {
-  h2.responsive-heading {
-    font-size: 1.75rem; } }
-
-@media (max-width: 991px) {
-  h3.responsive-heading {
-    font-size: 1.5rem; } }
-
-@media (max-width: 991px) {
-  h4.responsive-heading {
-    font-size: 1.3rem; } }
-
-@media (max-width: 991px) {
-  h5.responsive-heading {
-    font-size: 1.2rem; } }
-
-@media (max-width: 991px) {
-  h6.responsive-heading {
-    font-size: 1rem; } }
-
-@media (min-width: 1300px) {
-  .container {
-    max-width: 1170px; } }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .container {
-    max-width: 990px; } }
-@media (min-width: 768px) and (max-width: 991px) {
-  .container {
-    max-width: 750px; } }
-@media (min-width: 576px) and (max-width: 767px) {
-  .container {
-    max-width: 540px; } }
 /*==========================    START GLOBAL RULES  ==========================*/
 .butn {
   position: relative;

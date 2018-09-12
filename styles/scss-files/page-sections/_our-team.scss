@@ -6,6 +6,12 @@
         text-align: center;
         .tm-img {
             margin-bottom: 1rem;
+            img {
+                transition: transform .3s ease-in-out;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
         }
         .tm-details {
             .tm-name {

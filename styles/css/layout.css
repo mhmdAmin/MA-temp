@@ -796,6 +796,10 @@ header {
   text-align: center; }
   .our-team .tm-member-card .tm-img {
     margin-bottom: 1rem; }
+    .our-team .tm-member-card .tm-img img {
+      transition: transform .3s ease-in-out; }
+      .our-team .tm-member-card .tm-img img:hover {
+        transform: scale(1.05); }
   .our-team .tm-member-card .tm-details .tm-name {
     margin-bottom: .25rem;
     letter-spacing: 1px; }

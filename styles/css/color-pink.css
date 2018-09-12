@@ -26,6 +26,8 @@ h5,
 h6 {
   color: #343a40; }
 
+.our-team .tm-social-icons a:hover i.fa,
+.our-team .tm-role,
 .super-paragraph,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
 .about-us .tab-head,
@@ -84,6 +86,7 @@ footer .copyrights {
 header .header-wraper p.paragraph {
   color: #f5f5f5; }
 
+.our-team .tm-social-icons a i.fa,
 footer .footer-social-icons a:hover i.fa {
   color: rgba(218, 0, 255, 0.7); }
 

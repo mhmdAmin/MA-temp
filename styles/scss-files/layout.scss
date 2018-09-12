@@ -24,7 +24,7 @@
 
 *****************************************************************/
 
-@import 'mixins.scss';
+// @import 'mixins.scss';
 // @include responsive-heading-font-size();
 // @include wider-container();//
 @import 'page-sections/_globals.scss';
@@ -40,3 +40,4 @@
 @import 'page-sections/_options-box.scss';
 @import 'page-sections/_back-to-top.scss';
 @import 'page-sections/_loading-screen.scss';
+@import 'page-sections/_our-team.scss';

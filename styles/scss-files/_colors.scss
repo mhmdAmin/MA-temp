@@ -43,6 +43,8 @@ h6 {
     color: $darkColor;
 }
 
+.our-team .tm-social-icons a:hover i.fa,
+.our-team .tm-role,
 .super-paragraph,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
 .about-us .tab-head,
@@ -104,6 +106,7 @@ header .header-wraper p.paragraph {
     color: $extraLightColor;
 }
 
+.our-team .tm-social-icons a i.fa,
 footer .footer-social-icons a:hover i.fa {
     color: rgba( $mainThemeColor, .7);
 }

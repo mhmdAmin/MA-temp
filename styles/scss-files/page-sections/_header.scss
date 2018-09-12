@@ -13,7 +13,7 @@ header {
         max-height: 100vh;
         height: 100vh;
         .desc {
-            h1 {
+            .disc-heading-1 {
                 font-size: 6rem;
                 font-weight: 500;
                 display: inline-block;
@@ -23,7 +23,7 @@ header {
                 font-weight: 400;
                 font-family: $headingFontFamily;
             }
-            .disc-heading {
+            .disc-heading-2 {
                 font-size: 2rem;
                 font-weight: 400;
                 font-style: italic;
@@ -32,36 +32,36 @@ header {
                 margin-bottom: 0;
             }
             @media(max-width:767px) {
-                h1 {
+                .disc-heading-1 {
                     font-size: 3rem;
                 }
                 span {
                     font-size: 2rem;
                 }
-                .disc-heading {
-                    font-size: 2rem;
+                .disc-heading-2 {
+                    font-size: 1.5rem;
                     font-weight: 400;
                 }
                 .paragraph {
                     margin-bottom: 0;
-                    font-size: 1.1rem;
+                    font-size: .85rem;
                     line-height: 1.6;
                 }
             }
             @media(max-height:450px) {
-                h1 {
+                .disc-heading-1 {
                     font-size: 3rem;
                 }
                 span {
                     font-size: 1rem;
                 }
-                .disc-heading {
+                .disc-heading-2 {
                     font-size: 1rem;
                     font-weight: 400;
                 }
                 .paragraph {
                     margin-bottom: 0;
-                    font-size: .9rem;
+                    font-size: .85rem;
                     line-height: 1.6;
                 }
                 .cta {

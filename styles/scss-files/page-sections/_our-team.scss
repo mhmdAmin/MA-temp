@@ -1,0 +1,48 @@
+/* Start our-team Social Icons */
+
+.our-team {
+    .tm-member-card {
+        margin: 0;
+        text-align: center;
+        .tm-img {
+            margin-bottom: 1rem;
+        }
+        .tm-details {
+            .tm-name {
+                margin-bottom: .25rem;
+                letter-spacing: 1px;
+            }
+            .tm-role {
+                display: block;
+                font-family: $bodyFontFamily;
+                font-size: .8rem;
+                font-weight: 700;
+                margin-bottom: .5rem;
+            }
+        }
+        .tm-social-icons {
+            a {
+                text-decoration: none;
+                margin-right: 10px;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+                i.fa {
+                    font-size: 1.25rem;
+                    transition: color .3s ease-in-out;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:991px) {
+        .tm-member-card {
+            margin: 0 1rem 2rem;
+            text-align: center;
+            .tm-img {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+/* End our-team Social Icons */

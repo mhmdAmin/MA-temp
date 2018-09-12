@@ -62,7 +62,6 @@
   @media (max-width: 991px) {
     .butn {
       font-size: .8rem;
-      line-height: -1;
       min-width: auto;
       padding: .75rem; } }
 
@@ -266,7 +265,7 @@ header {
     z-index: 3;
     max-height: 100vh;
     height: 100vh; }
-    header .header-wraper .desc h1 {
+    header .header-wraper .desc .disc-heading-1 {
       font-size: 6rem;
       font-weight: 500;
       display: inline-block; }
@@ -274,35 +273,35 @@ header {
       font-size: 3.333333334rem;
       font-weight: 400;
       font-family: "Roboto Slab", "sans-serif"; }
-    header .header-wraper .desc .disc-heading {
+    header .header-wraper .desc .disc-heading-2 {
       font-size: 2rem;
       font-weight: 400;
       font-style: italic; }
     header .header-wraper .desc .paragraph {
       margin-bottom: 0; }
     @media (max-width: 767px) {
-      header .header-wraper .desc h1 {
+      header .header-wraper .desc .disc-heading-1 {
         font-size: 3rem; }
       header .header-wraper .desc span {
         font-size: 2rem; }
-      header .header-wraper .desc .disc-heading {
-        font-size: 2rem;
+      header .header-wraper .desc .disc-heading-2 {
+        font-size: 1.5rem;
         font-weight: 400; }
       header .header-wraper .desc .paragraph {
         margin-bottom: 0;
-        font-size: 1.1rem;
+        font-size: .85rem;
         line-height: 1.6; } }
     @media (max-height: 450px) {
-      header .header-wraper .desc h1 {
+      header .header-wraper .desc .disc-heading-1 {
         font-size: 3rem; }
       header .header-wraper .desc span {
         font-size: 1rem; }
-      header .header-wraper .desc .disc-heading {
+      header .header-wraper .desc .disc-heading-2 {
         font-size: 1rem;
         font-weight: 400; }
       header .header-wraper .desc .paragraph {
         margin-bottom: 0;
-        font-size: .9rem;
+        font-size: .85rem;
         line-height: 1.6; }
       header .header-wraper .desc .cta {
         min-width: 150px; } }
@@ -791,5 +790,36 @@ header {
     -webkit-transform: scale(1);
     transform: scale(1); } }
 /*==========================  END lOADING SCREEN DIV  ==========================*/
+/* Start our-team Social Icons */
+.our-team .tm-member-card {
+  margin: 0;
+  text-align: center; }
+  .our-team .tm-member-card .tm-img {
+    margin-bottom: 1rem; }
+  .our-team .tm-member-card .tm-details .tm-name {
+    margin-bottom: .25rem;
+    letter-spacing: 1px; }
+  .our-team .tm-member-card .tm-details .tm-role {
+    display: block;
+    font-family: "Montserrat", "sans-serif";
+    font-size: .8rem;
+    font-weight: 700;
+    margin-bottom: .5rem; }
+  .our-team .tm-member-card .tm-social-icons a {
+    text-decoration: none;
+    margin-right: 10px; }
+    .our-team .tm-member-card .tm-social-icons a:last-of-type {
+      margin-right: 0; }
+    .our-team .tm-member-card .tm-social-icons a i.fa {
+      font-size: 1.25rem;
+      transition: color .3s ease-in-out; }
+@media screen and (max-width: 991px) {
+  .our-team .tm-member-card {
+    margin: 0 1rem 2rem;
+    text-align: center; }
+    .our-team .tm-member-card .tm-img {
+      margin-bottom: 1rem; } }
+
+/* End our-team Social Icons */
 
 /*# sourceMappingURL=layout.css.map */

@@ -10,10 +10,14 @@ $(function () {
   "use strict";
 
   //GLOBAL VARIBALES
-  var bdy = $("body"), navMain = $("nav.main-navbar"),
+  var root = $('html, body'),
+    bdy = $("body"),
+    navMain = $("nav.main-navbar"),
     navMobile = $("nav .navbar-mobile-menu-wrapper"),
     backToTopButton = $(".back-to-top"),
-    optionBoxWraper = $(".option-box .options-wraper");
+    optionBoxWraper = $(".option-box .options-wraper"),
+    navHeight = navMain.innerHeight();
+
 
 
 
@@ -21,7 +25,7 @@ $(function () {
 
   $(bdy).scrollspy({
     target: navMain,
-    offset: Math.ceil(navMain.innerHeight())
+    offset: navHeight
   });
 
 
@@ -98,6 +102,7 @@ $(function () {
     speed: 600,
     loop: true,
     spaceBetween: 30,
+    grabCursor: true,
     delay: 5000,
     autoplay: {
       delay: 5000,
@@ -158,15 +163,18 @@ $(function () {
 
 
   // 1- Start Smooth Scrolling To page Sections
-  $(".navbar .nav-link").on("click", function (e) {
-    e.preventDefault();
 
-    var link = $(this).attr("href");
-    $("html,body").animate({
-      // using Math.ceil To get rid Of the fractions of the values 
-      scrollTop: Math.ceil($(link).offset().top) - Math.ceil(navMain.innerHeight()) + 1
-    }, 1000);
+  $(".navbar .nav-link").on('click', function (e) {
+    var link = $(this).attr("href")
 
+    if (link.charAt(0) === "#") {
+      e.preventDefault();
+      var target = this.hash;
+
+      $(root).animate({
+        scrollTop: $(target).offset().top - navHeight + 1
+      }, 1000);
+    }
   });
 
   //End Smooth Scrolling To page Sections
@@ -265,6 +273,7 @@ $(function () {
     e.stopPropagation()
   }
   ); //hide the option-box when click out side the option-box
+
   $(bdy).on("click", function (e) {
     if ($(optionBoxWraper).hasClass('show-options-box')) {
       $(optionBoxWraper).removeClass('show-options-box') //change .box-handel icon

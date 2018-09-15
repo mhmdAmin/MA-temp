@@ -1,69 +1,56 @@
 @mixin responsive-heading-font-size {
-  h1.responsive-heading {
-    @media(max-width:991px) {
-      font-size: 2rem;
-      // font-weight: 300;
+    h1.responsive-heading {
+        @media(max-width: 991px) {
+            font-size: 2rem;
+        }
     }
-  }
-
-  h2.responsive-heading {
-    @media(max-width:991px) {
-      font-size: 1.75rem;
-      // font-weight: 300;
+    h2.responsive-heading {
+        @media(max-width: 991px) {
+            font-size: 1.5rem;
+        }
     }
-  }
-
-  h3.responsive-heading {
-    @media(max-width:991px) {
-      font-size: 1.5rem;
-      // font-weight: 300;
+    h3.responsive-heading {
+        @media(max-width: 991px) {
+            font-size: 1.25rem;
+        }
     }
-  }
-
-  h4.responsive-heading {
-    @media(max-width:991px) {
-      font-size: 1.3rem;
-      // font-weight: 300;
+    h4.responsive-heading {
+        @media(max-width: 991px) {
+            font-size: 1.1rem;
+        }
     }
-  }
-
-  h5.responsive-heading {
-    @media(max-width:991px) {
-      font-size: 1.2rem;
-      // font-weight: 300;
+    h5.responsive-heading {
+        @media(max-width: 991px) {
+            font-size: 1rem;
+        }
     }
-  }
-
-  h6.responsive-heading {
-    @media(max-width:991px) {
-      font-size: 1rem;
-      // font-weight: 300;
+    h6.responsive-heading {
+        @media(max-width: 991px) {
+            font-size: .9rem;
+        }
     }
-  }
 }
 
-
 // a mixin to give the Bootstrab .container class an extra space in-Wide 
-@mixin wider-container{
-  @media(min-width:1300px){
-    .container{
-    max-width: 1170px; 
+@mixin wider-container {
+    @media(min-width: 1300px) {
+        .container {
+            max-width: 1170px;
+        }
     }
-  } 
-  @media(min-width:992px) and (max-width:1199px) {
-    .container{
-      max-width: 990px;
+    @media(min-width:992px) and (max-width:1199px) {
+        .container {
+            max-width: 990px;
+        }
     }
-  } 
-  @media(min-width:768px)and (max-width:991px){
-    .container{
-      max-width: 750px;
+    @media(min-width:768px)and (max-width:991px) {
+        .container {
+            max-width: 750px;
+        }
     }
-  } 
-  @media  (min-width:576px) and (max-width:767px){
-    .container{
-      max-width: 540px;
+    @media (min-width:576px) and (max-width:767px) {
+        .container {
+            max-width: 540px;
+        }
     }
-  } 
- 
 }

@@ -1,0 +1,48 @@
+/*****************************************************************
+*
+* Project Name: Robo Theme.
+* description: a Multi-purpose one-page theme for createve, corporates and business uses;
+*             
+* version: 1.0  
+<=======>  CSS RULES MAP <=======>
+
+ Start Imorting Custome Mixins
+ START GLOBAL RULES
+ START NAVBAR
+ START HEADER 
+ START FEATURES SECTION
+ START GALLERY SECTION
+ START TESTMOIALS SECTION
+ START PRICING SECTION
+ START PARTNERS SECTION
+ START ABOUT-US SECTION
+ START PARTNERS SECTION
+ START PAGE-FOOTER 
+ START BACK TO TOP BUTTON
+ START OPTION BOX ASIDE 
+ START lOADING SCREEN DIV
+
+*****************************************************************/
+
+@import 'mixins.scss';
+@include responsive-heading-font-size();
+// @include wider-container();//
+// Start global Includes
+@import 'global-includes/_globals.scss';
+@import 'global-includes/_navbar.scss';
+@import 'global-includes/_page-footer.scss';
+@import 'global-includes/_options-box.scss';
+@import 'global-includes/_back-to-top.scss';
+@import 'global-includes/_loading-screen.scss';
+// End global Includes
+//
+// Start page Styles  
+@import 'pages-styles/index-page-sections/_header.scss';
+@import 'pages-styles/index-page-sections/_features.scss';
+@import 'pages-styles/index-page-sections/_gallery.scss';
+@import 'pages-styles/index-page-sections/_testmonials.scss';
+@import 'pages-styles/index-page-sections/_pricing.scss';
+@import 'pages-styles/index-page-sections/_about-us.scss';
+@import 'pages-styles/index-page-sections/_partners.scss';
+@import 'pages-styles/index-page-sections/_our-team.scss';
+// End page Styles

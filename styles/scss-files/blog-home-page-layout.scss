@@ -1,0 +1,22 @@
+@import 'mixins.scss';
+@include responsive-heading-font-size();
+// @include wider-container();//
+// 
+// 
+/*
+
+
+*/
+
+body {
+    height: 1000px;
+}
+
+// Start global Includes
+@import 'global-includes/_globals.scss';
+@import 'global-includes/_navbar.scss';
+@import 'global-includes/_page-footer.scss';
+@import 'global-includes/_options-box.scss';
+@import 'global-includes/_back-to-top.scss';
+@import 'global-includes/_loading-screen.scss';
+// End global Includes

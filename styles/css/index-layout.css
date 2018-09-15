@@ -23,6 +23,30 @@
  START lOADING SCREEN DIV
 
 *****************************************************************/
+@media (max-width: 991px) {
+  h1.responsive-heading {
+    font-size: 2rem; } }
+
+@media (max-width: 991px) {
+  h2.responsive-heading {
+    font-size: 1.5rem; } }
+
+@media (max-width: 991px) {
+  h3.responsive-heading {
+    font-size: 1.25rem; } }
+
+@media (max-width: 991px) {
+  h4.responsive-heading {
+    font-size: 1.1rem; } }
+
+@media (max-width: 991px) {
+  h5.responsive-heading {
+    font-size: 1rem; } }
+
+@media (max-width: 991px) {
+  h6.responsive-heading {
+    font-size: .9rem; } }
+
 /*==========================    START GLOBAL RULES  ==========================*/
 .butn {
   position: relative;
@@ -252,6 +276,176 @@ a {
             display: none !important; } }
 
 /*==========================  END NAVBAR   ==========================*/
+/*==========================  START page-footer   ==========================*/
+.page-footer {
+  /*Start Google Map*/
+  /*End Google Map*/
+  /* Start Footer Social Icons */
+  /*========================== start Newsletter section  ==========================*/
+  /*========================== End Newsletter section  ==========================*/ }
+  .page-footer a,
+  .page-footer address {
+    font-family: "Montserrat", "sans-serif"; }
+  .page-footer .map {
+    width: 100%;
+    min-height: 230px;
+    height: 100%; }
+  .page-footer .adress-info ul li {
+    margin-bottom: 1rem;
+    font-size: .85rem; }
+    .page-footer .adress-info ul li a {
+      text-decoration: none;
+      transition: all .3s ease-in; }
+    .page-footer .adress-info ul li i {
+      padding-right: 1rem; }
+  .page-footer .footer-social-icons {
+    margin-top: 20px;
+    /* End Footer Social Icons */ }
+    .page-footer .footer-social-icons a {
+      text-decoration: none;
+      margin-right: 10px; }
+      .page-footer .footer-social-icons a:last-of-type {
+        margin-right: 0; }
+      .page-footer .footer-social-icons a i.fa {
+        transition: color .3s ease-in-out; }
+  .page-footer .newsletter-form .newsletter-email {
+    position: relative; }
+    .page-footer .newsletter-form .newsletter-email input[type=email] {
+      padding: 6px;
+      font-size: 1rem;
+      outline: none;
+      width: 100%;
+      font-size: 1rem;
+      border: 1px solid;
+      border-radius: .25rem;
+      transition: all .3s ease-in-out; }
+    .page-footer .newsletter-form .newsletter-email .submit-btun {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translatey(-50%);
+      right: 10px;
+      cursor: pointer;
+      border: none;
+      outline: none !important;
+      padding: 5px; }
+  .page-footer .copyrights {
+    padding: 1rem;
+    border-top: 1px solid; }
+
+/*==========================  END page-footer   ==========================*/
+/*==========================  16- START OPTION BOX ASIDE  ==========================*/
+.option-box .options-wraper {
+  position: fixed;
+  left: -300px;
+  width: 300px;
+  top: 25vh;
+  transform: translateY(-25%);
+  border: 1px solid;
+  border-left: none;
+  z-index: 999;
+  transition: left .3s ease-in-out; }
+  @media (max-width: 991px) {
+    .option-box .options-wraper {
+      left: -200px;
+      width: 200px;
+      top: 81px; } }
+  .option-box .options-wraper .box-handel {
+    font-size: 1rem;
+    font-weight: lighter;
+    position: absolute;
+    top: 90px;
+    left: calc(300px - 1px);
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    border: 1px solid;
+    border-left: none;
+    text-align: center;
+    cursor: pointer; }
+    @media (max-width: 991px) {
+      .option-box .options-wraper .box-handel {
+        left: calc( 200px - 1px); } }
+  .option-box .options-wraper .color-options {
+    padding: 50px 20px; }
+    .option-box .options-wraper .color-options ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .option-box .options-wraper .color-options ul li {
+        width: 40px;
+        height: 40px; }
+        .option-box .options-wraper .color-options ul li span {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          cursor: pointer; }
+
+.show-options-box {
+  left: 0 !important; }
+
+/*==========================  END OPTION BOX ASIDE  ==========================*/
+/*==========================  15- START BACK TO TOP BUTTON ==========================*/
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  font-size: 1 rem;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  cursor: pointer;
+  z-index: 20; }
+  .back-to-top i.fa {
+    font-size: 1.5rem; }
+
+/*==========================  END BACK TO TOP BUTTON ==========================*/
+/*==========================   START lOADING SCREEN DIV  ==========================*/
+.loading-screen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999; }
+  .loading-screen .spinner {
+    margin: 50vh auto 0;
+    text-align: center; }
+  .loading-screen .spinner > div {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both; }
+  .loading-screen .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s; }
+  .loading-screen .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s; }
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+        100%,
+        80% {
+    -webkit-transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1); } }
+@keyframes sk-bouncedelay {
+  0%,
+        100%,
+        80% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+/*==========================  END lOADING SCREEN DIV  ==========================*/
 /*==========================   START HEADER  ========================== */
 header {
   background: url("../../assets/Images/header/main-header.jpg") no-repeat;
@@ -317,9 +511,8 @@ header {
       max-width: 400px;
       margin: 0 auto; }
       .features .feature-box .feature-content .fa {
-        font-size: 2rem;
-        display: inline-block;
-        margin-right: 2rem; }
+        font-size: 4rem;
+        display: inline-block; }
       .features .feature-box .feature-content .feat-title {
         margin-bottom: 1rem;
         margin-top: .5rem; }
@@ -620,176 +813,6 @@ header {
       display: none; } }
 
 /*==========================  END PARTNERS SECTION  ==========================*/
-/*==========================  START page-footer   ==========================*/
-.page-footer {
-  /*Start Google Map*/
-  /*End Google Map*/
-  /* Start Footer Social Icons */
-  /*========================== start Newsletter section  ==========================*/
-  /*========================== End Newsletter section  ==========================*/ }
-  .page-footer a,
-  .page-footer address {
-    font-family: "Montserrat", "sans-serif"; }
-  .page-footer .map {
-    width: 100%;
-    min-height: 230px;
-    height: 100%; }
-  .page-footer .adress-info ul li {
-    margin-bottom: 1rem;
-    font-size: .85rem; }
-    .page-footer .adress-info ul li a {
-      text-decoration: none;
-      transition: all .3s ease-in; }
-    .page-footer .adress-info ul li i {
-      padding-right: 1rem; }
-  .page-footer .footer-social-icons {
-    margin-top: 20px;
-    /* End Footer Social Icons */ }
-    .page-footer .footer-social-icons a {
-      text-decoration: none;
-      margin-right: 10px; }
-      .page-footer .footer-social-icons a:last-of-type {
-        margin-right: 0; }
-      .page-footer .footer-social-icons a i.fa {
-        transition: color .3s ease-in-out; }
-  .page-footer .newsletter-form .newsletter-email {
-    position: relative; }
-    .page-footer .newsletter-form .newsletter-email input[type=email] {
-      padding: 6px;
-      font-size: 1rem;
-      outline: none;
-      width: 100%;
-      font-size: 1rem;
-      border: 1px solid;
-      border-radius: .25rem;
-      transition: all .3s ease-in-out; }
-    .page-footer .newsletter-form .newsletter-email .submit-btun {
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      transform: translatey(-50%);
-      right: 10px;
-      cursor: pointer;
-      border: none;
-      outline: none !important;
-      padding: 5px; }
-  .page-footer .copyrights {
-    padding: 1rem;
-    border-top: 1px solid; }
-
-/*==========================  END page-footer   ==========================*/
-/*==========================  16- START OPTION BOX ASIDE  ==========================*/
-.option-box .options-wraper {
-  position: fixed;
-  left: -300px;
-  width: 300px;
-  top: 25vh;
-  transform: translateY(-25%);
-  border: 1px solid;
-  border-left: none;
-  z-index: 999;
-  transition: left .3s ease-in-out; }
-  @media (max-width: 991px) {
-    .option-box .options-wraper {
-      left: -200px;
-      width: 200px;
-      top: 81px; } }
-  .option-box .options-wraper .box-handel {
-    font-size: 1rem;
-    font-weight: lighter;
-    position: absolute;
-    top: 90px;
-    left: calc(300px - 1px);
-    width: 30px;
-    height: 30px;
-    line-height: 26px;
-    border: 1px solid;
-    border-left: none;
-    text-align: center;
-    cursor: pointer; }
-    @media (max-width: 991px) {
-      .option-box .options-wraper .box-handel {
-        left: calc( 200px - 1px); } }
-  .option-box .options-wraper .color-options {
-    padding: 50px 20px; }
-    .option-box .options-wraper .color-options ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-      .option-box .options-wraper .color-options ul li {
-        width: 40px;
-        height: 40px; }
-        .option-box .options-wraper .color-options ul li span {
-          display: inline-block;
-          width: 35px;
-          height: 35px;
-          border-radius: 50%;
-          cursor: pointer; }
-
-.show-options-box {
-  left: 0 !important; }
-
-/*==========================  END OPTION BOX ASIDE  ==========================*/
-/*==========================  15- START BACK TO TOP BUTTON ==========================*/
-.back-to-top {
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  font-size: 1 rem;
-  border: 1px solid;
-  border-radius: 50%;
-  text-align: center;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  display: none;
-  cursor: pointer;
-  z-index: 20; }
-  .back-to-top i.fa {
-    font-size: 1.5rem; }
-
-/*==========================  END BACK TO TOP BUTTON ==========================*/
-/*==========================   START lOADING SCREEN DIV  ==========================*/
-.loading-screen {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99999; }
-  .loading-screen .spinner {
-    margin: 50vh auto 0;
-    text-align: center; }
-  .loading-screen .spinner > div {
-    width: 18px;
-    height: 18px;
-    border-radius: 100%;
-    display: inline-block;
-    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-    animation: sk-bouncedelay 1.4s infinite ease-in-out both; }
-  .loading-screen .spinner .bounce1 {
-    -webkit-animation-delay: -0.32s;
-    animation-delay: -0.32s; }
-  .loading-screen .spinner .bounce2 {
-    -webkit-animation-delay: -0.16s;
-    animation-delay: -0.16s; }
-@-webkit-keyframes sk-bouncedelay {
-  0%,
-        100%,
-        80% {
-    -webkit-transform: scale(0); }
-  40% {
-    -webkit-transform: scale(1); } }
-@keyframes sk-bouncedelay {
-  0%,
-        100%,
-        80% {
-    -webkit-transform: scale(0);
-    transform: scale(0); }
-  40% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-/*==========================  END lOADING SCREEN DIV  ==========================*/
 /* Start our-team Social Icons */
 .our-team .tm-member-card {
   margin: 0;
@@ -826,4 +849,4 @@ header {
 
 /* End our-team Social Icons */
 
-/*# sourceMappingURL=layout.css.map */
+/*# sourceMappingURL=index-layout.css.map */

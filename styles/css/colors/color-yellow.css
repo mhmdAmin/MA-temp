@@ -48,10 +48,12 @@ h6 {
 .testmonials .swiper-container .swiper-button-prev i,
 .testmonials .testmonial-content .customer-details .customer-role,
 .useful-links ul li a:before,
-header .desc span,
-header .desc span {
+.home-page-header .desc span,
+.home-page-header .desc span {
   color: #ff9700; }
 
+.blog-header .blog-home-page-heading h1,
+.blog-header .blog-home-page-heading p,
 .about-us .tab-head.active,
 .about-us .tab-head:hover,
 .butn,
@@ -67,7 +69,7 @@ header .desc span {
 .page-footer .adress-info,
 .page-footer .adress-info ul li a,
 .page-footer .useful-links ul li a,
-.page-header .desc a.butn,
+.home-page-header .desc a.butn,
 .pricing .plan .plan-cost,
 .pricing .plan-cost h4,
 .pricing .plan-details ul,
@@ -83,7 +85,7 @@ footer .copyrights {
 
 .option-box .color-options .color-options-title,
 .text-extra-light-color,
-header .header-wraper p.paragraph {
+.home-page-header .header-wraper p.paragraph {
   color: #f5f5f5; }
 
 .our-team .tm-social-icons a i.fa,
@@ -218,7 +220,7 @@ section,
 .img-frame,
 .pricing .plan,
 .testmonials .testmonial-content,
-header {
+.home-page-header {
   box-shadow: 0 0 10px 1px #a1a1a1; }
 
 .butn,

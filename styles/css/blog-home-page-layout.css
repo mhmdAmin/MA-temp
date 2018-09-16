@@ -258,6 +258,43 @@ a {
             display: none !important; } }
 
 /*==========================  END NAVBAR   ==========================*/
+.blog-header {
+  position: relative;
+  height: 50vh;
+  background: url("../../../../assets/Images/blog-header/blog-header.jpg");
+  background-size: cover;
+  background-position: 50% 30%;
+  z-index: 0; }
+  .blog-header .blog-home-page-heading {
+    position: relative;
+    z-index: 3; }
+
+.all-articles-cards .artical-card .artical-card-info .span-by,
+.all-articles-cards .artical-card .artical-card-info .time-on {
+  font-size: .9rem;
+  font-weight: 700;
+  font-style: italic; }
+.all-articles-cards .artical-card .artical-card-info .auther-name,
+.all-articles-cards .artical-card .artical-card-info .publish-date {
+  font-size: .75rem;
+  font-weight: 700;
+  color: #f50; }
+.all-articles-cards .artical-card .artical-card-info .auther-img {
+  position: relative;
+  min-height: 50px; }
+  .all-articles-cards .artical-card .artical-card-info .auther-img img {
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%); }
+.all-articles-cards .artical-card .artical-card-tags .tag-lable {
+  display: inline-block;
+  margin: 5px 0;
+  padding: 0 15px;
+  background: #ddd;
+  border-radius: 13px; }
+
 /*==========================  START page-footer   ==========================*/
 .page-footer {
   /*Start Google Map*/

@@ -1,6 +1,31 @@
-.all-articles-cards {
-    .artical-card {
-        .artical-card-info {
+.all-posts-cards {
+    .post-card {
+        box-shadow: 1px 3px 20px $lightColor;
+        .post-img {
+            img {
+                height: 240px;
+                width: 100%;
+            }
+        }
+        i.fa-tags {
+            color: #f51;
+            font-size: 1.5rem;
+            margin-right: .25rem;
+        }
+        .post-title {
+            // padding: 1rem 0;
+        }
+        .post-title-link {
+            font-family: $bodyFontFamily;
+            font-size: 1rem;
+            font-weight: 700;
+            color: $darkColor;
+            transition: color .3s ease-in-out;
+            &:hover {
+                color: $mainThemeColor;
+            }
+        }
+        .post-card-info {
             .span-by,
             .time-on {
                 font-size: .9rem;
@@ -25,13 +50,41 @@
                 }
             }
         }
-        .artical-card-tags {
+        .post-card-tags {
+            ul {
+                display: inline-block;
+                li {
+                    display: inline-block;
+                }
+            }
             .tag-lable {
                 display: inline-block;
                 margin: 5px 0;
-                padding: 0 15px;
-                background: #ddd;
-                border-radius: 13px;
+                padding: .125rem .75rem;
+                font-family: $bodyFontFamily;
+                font-size: .75rem;
+                letter-spacing: .25px;
+                background: $darkColor;
+                border: 1px solid $darkColor;
+                border-radius: .75rem;
+                transition: color .3s ease-in-out;
+                &:hover {
+                    color: $mainThemeColor; // background-color: #fff;
+                    // border-color: $darkColor;
+                }
+            }
+        }
+        .post-engagement {
+            padding: .5rem 0;
+            background-color: $darkColor;
+            .views,
+            .likes,
+            .comments {
+                color: #fff;
+            }
+            .engagement:nth-child(2) {
+                border-left: 1px solid $mainThemeColor;
+                border-right: 1px solid $mainThemeColor;
             }
         }
     }

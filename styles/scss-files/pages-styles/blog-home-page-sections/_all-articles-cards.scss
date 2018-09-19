@@ -1,29 +1,59 @@
 .all-posts-cards {
     .post-card {
-        box-shadow: 1px 3px 20px $lightColor;
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+        margin-bottom: 30px;
         .post-img {
+            position: relative;
+            overflow: hidden;
+            transition: all .5s ease-in-out;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transition: all .5s ease-in-out;
+            }
             img {
                 height: 240px;
                 width: 100%;
             }
+            .read-more {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                line-height: 44px;
+                position: absolute;
+                bottom: -60px;
+                right: 15px;
+                text-align: center;
+                cursor: pointer;
+                transition: all .5s ease-in-out;
+                a {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                }
+                i.fa {
+                    font-size: 1.5rem
+                }
+                &:hover {
+                    transform: translateY(-3px);
+                }
+            }
         }
         i.fa-tags {
-            color: #f51;
             font-size: 1.5rem;
             margin-right: .25rem;
-        }
-        .post-title {
-            // padding: 1rem 0;
         }
         .post-title-link {
             font-family: $bodyFontFamily;
             font-size: 1rem;
             font-weight: 700;
-            color: $darkColor;
             transition: color .3s ease-in-out;
-            &:hover {
-                color: $mainThemeColor;
-            }
         }
         .post-card-info {
             .span-by,
@@ -36,7 +66,6 @@
             .publish-date {
                 font-size: .75rem;
                 font-weight: 700;
-                color: #f50;
             }
             .auther-img {
                 position: relative;
@@ -64,28 +93,20 @@
                 font-family: $bodyFontFamily;
                 font-size: .75rem;
                 letter-spacing: .25px;
-                background: $darkColor;
-                border: 1px solid $darkColor;
+                border: 1px solid;
                 border-radius: .75rem;
                 transition: color .3s ease-in-out;
-                &:hover {
-                    color: $mainThemeColor; // background-color: #fff;
-                    // border-color: $darkColor;
-                }
             }
         }
         .post-engagement {
-            padding: .5rem 0;
-            background-color: $darkColor;
-            .views,
-            .likes,
-            .comments {
-                color: #fff;
-            }
+            padding: .75rem 0;
             .engagement:nth-child(2) {
-                border-left: 1px solid $mainThemeColor;
-                border-right: 1px solid $mainThemeColor;
+                border-left: 2px solid;
+                border-right: 2px solid;
             }
+        }
+        &:hover .read-more {
+            bottom: 20px;
         }
     }
 }

@@ -16,6 +16,7 @@
 /* End Global Varibals*/
 /*======================== 2- color group ========================*/
 .pricing .plan-details li,
+.post-card .post-title-link,
 .text-dark-color,
 h1,
 h2,
@@ -48,7 +49,11 @@ h6 {
 .testmonials .testmonial-content .customer-details .customer-role,
 .useful-links ul li a:before,
 .home-page-header .desc span,
-.home-page-header .desc span {
+.post-card i.fa-tags,
+.home-page-header .desc span,
+.post-card .post-title-link:hover,
+.post-card .post-card-info .publish-date,
+.post-card .post-card-tags .tag-lable:hover {
   color: #7a19a7; }
 
 .blog-header .blog-home-page-heading h1,
@@ -74,12 +79,16 @@ h6 {
 .pricing .plan-details ul,
 .pricing .plan-highlight,
 .title-center-border .active,
+.post-card .post-img .read-more,
 .back-to-top,
 a,
 a:focus,
 a:hover,
 a:visited,
-footer .copyrights {
+footer .copyrights,
+.post-card .post-engagement .views,
+.post-card .post-engagement .likes,
+.post-card .post-engagement .comments {
   color: #FFF; }
 
 .option-box .color-options .color-options-title,
@@ -93,6 +102,8 @@ footer .footer-social-icons a:hover i.fa {
 
 /*==================== 2- Background color group=================*/
 .pricing .plan .plan-cost,
+.post-card .post-engagement,
+.post-card .post-card-tags .tag-lable,
 nav {
   background-color: #343a40; }
 
@@ -100,7 +111,8 @@ nav {
   .navbar-mobile-menu-wrapper .navbar-mobile-menu {
     background-color: #343a40; } }
 .gallery .filter-group .gallery-item:hover a.pic-link:after,
-.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
+.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show,
+.post-card:hover .post-img::before {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .about-us .tab-head.active,
@@ -110,6 +122,7 @@ nav {
 .features .feature-content:hover span.icon,
 .option-box .color-options li span,
 .pricing .plan-highlight,
+.post-card .post-img .read-more,
 .back-to-top {
   background-color: #7a19a7; }
 
@@ -154,6 +167,7 @@ section,
 .option-box .options-wraper .color-options ul li .pink-theme {
   background-color: #da00ff; }
 
+.post-card .post-img::before,
 .about-us .tab-content .faq-accordion .card-header,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
 .about-us .tab-content .user-message-form input[type=email],
@@ -173,6 +187,7 @@ section,
 .gallery .filter-btn-list .filter-btn {
   border-color: transparent; }
 
+.all-posts-cards .post-card .post-card-tags .tag-lable,
 .about-us .tab-head.active,
 .about-us .tab-head:hover {
   border-color: #343a40; }
@@ -196,7 +211,7 @@ section,
 .testmonials .customer-info .customer-details,
 .title-center-border:after,
 .title-left-border:after,
-.back-to-top {
+.all-posts-cards .post-card .post-engagement .engagement:nth-child(2) {
   border-color: #7a19a7; }
 
 .about-us .tab-content .user-message-form input[type=email],
@@ -218,15 +233,18 @@ section,
 .about-us .tab-content .faq-accordion .card,
 .img-frame,
 .pricing .plan,
+.post-card,
 .testmonials .testmonial-content,
 .home-page-header {
   box-shadow: 0 0 10px 1px #a1a1a1; }
 
 .butn,
-.back-to-top {
+.back-to-top,
+.post-card .read-more {
   box-shadow: 0 5px 15px -5px #343a40; }
 
-.butn:hover {
+.butn:hover,
+.post-card .read-more:hover {
   box-shadow: 0 8px 25px -5px #343a40; }
 
 a::selection,

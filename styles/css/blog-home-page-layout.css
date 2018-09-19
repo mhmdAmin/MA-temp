@@ -178,6 +178,7 @@ a {
 /* End Global Varibals*/
 /*======================== 2- color group ========================*/
 .pricing .plan-details li,
+.post-card .post-title-link,
 .text-dark-color,
 h1,
 h2,
@@ -210,7 +211,11 @@ h6 {
 .testmonials .testmonial-content .customer-details .customer-role,
 .useful-links ul li a:before,
 .home-page-header .desc span,
-.home-page-header .desc span {
+.post-card i.fa-tags,
+.home-page-header .desc span,
+.post-card .post-title-link:hover,
+.post-card .post-card-info .publish-date,
+.post-card .post-card-tags .tag-lable:hover {
   color: #ff5100; }
 
 .blog-header .blog-home-page-heading h1,
@@ -236,12 +241,16 @@ h6 {
 .pricing .plan-details ul,
 .pricing .plan-highlight,
 .title-center-border .active,
+.post-card .post-img .read-more,
 .back-to-top,
 a,
 a:focus,
 a:hover,
 a:visited,
-footer .copyrights {
+footer .copyrights,
+.post-card .post-engagement .views,
+.post-card .post-engagement .likes,
+.post-card .post-engagement .comments {
   color: #FFF; }
 
 .option-box .color-options .color-options-title,
@@ -255,6 +264,8 @@ footer .footer-social-icons a:hover i.fa {
 
 /*==================== 2- Background color group=================*/
 .pricing .plan .plan-cost,
+.post-card .post-engagement,
+.post-card .post-card-tags .tag-lable,
 nav {
   background-color: #343a40; }
 
@@ -262,7 +273,8 @@ nav {
   .navbar-mobile-menu-wrapper .navbar-mobile-menu {
     background-color: #343a40; } }
 .gallery .filter-group .gallery-item:hover a.pic-link:after,
-.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
+.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show,
+.post-card:hover .post-img::before {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .about-us .tab-head.active,
@@ -272,6 +284,7 @@ nav {
 .features .feature-content:hover span.icon,
 .option-box .color-options li span,
 .pricing .plan-highlight,
+.post-card .post-img .read-more,
 .back-to-top {
   background-color: #ff5100; }
 
@@ -316,6 +329,7 @@ section,
 .option-box .options-wraper .color-options ul li .pink-theme {
   background-color: #da00ff; }
 
+.post-card .post-img::before,
 .about-us .tab-content .faq-accordion .card-header,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
 .about-us .tab-content .user-message-form input[type=email],
@@ -335,6 +349,7 @@ section,
 .gallery .filter-btn-list .filter-btn {
   border-color: transparent; }
 
+.all-posts-cards .post-card .post-card-tags .tag-lable,
 .about-us .tab-head.active,
 .about-us .tab-head:hover {
   border-color: #343a40; }
@@ -358,7 +373,7 @@ section,
 .testmonials .customer-info .customer-details,
 .title-center-border:after,
 .title-left-border:after,
-.back-to-top {
+.all-posts-cards .post-card .post-engagement .engagement:nth-child(2) {
   border-color: #ff5100; }
 
 .about-us .tab-content .user-message-form input[type=email],
@@ -380,15 +395,18 @@ section,
 .about-us .tab-content .faq-accordion .card,
 .img-frame,
 .pricing .plan,
+.post-card,
 .testmonials .testmonial-content,
 .home-page-header {
   box-shadow: 0 0 10px 1px #a1a1a1; }
 
 .butn,
-.back-to-top {
+.back-to-top,
+.post-card .read-more {
   box-shadow: 0 5px 15px -5px #343a40; }
 
-.butn:hover {
+.butn:hover,
+.post-card .read-more:hover {
   box-shadow: 0 8px 25px -5px #343a40; }
 
 a::selection,
@@ -444,6 +462,7 @@ span::-moz-selection {
 /* End Global Varibals*/
 /*======================== 2- color group ========================*/
 .pricing .plan-details li,
+.post-card .post-title-link,
 .text-dark-color,
 h1,
 h2,
@@ -476,7 +495,11 @@ h6 {
 .testmonials .testmonial-content .customer-details .customer-role,
 .useful-links ul li a:before,
 .home-page-header .desc span,
-.home-page-header .desc span {
+.post-card i.fa-tags,
+.home-page-header .desc span,
+.post-card .post-title-link:hover,
+.post-card .post-card-info .publish-date,
+.post-card .post-card-tags .tag-lable:hover {
   color: #ff5100; }
 
 .blog-header .blog-home-page-heading h1,
@@ -502,12 +525,16 @@ h6 {
 .pricing .plan-details ul,
 .pricing .plan-highlight,
 .title-center-border .active,
+.post-card .post-img .read-more,
 .back-to-top,
 a,
 a:focus,
 a:hover,
 a:visited,
-footer .copyrights {
+footer .copyrights,
+.post-card .post-engagement .views,
+.post-card .post-engagement .likes,
+.post-card .post-engagement .comments {
   color: #FFF; }
 
 .option-box .color-options .color-options-title,
@@ -521,6 +548,8 @@ footer .footer-social-icons a:hover i.fa {
 
 /*==================== 2- Background color group=================*/
 .pricing .plan .plan-cost,
+.post-card .post-engagement,
+.post-card .post-card-tags .tag-lable,
 nav {
   background-color: #343a40; }
 
@@ -528,7 +557,8 @@ nav {
   .navbar-mobile-menu-wrapper .navbar-mobile-menu {
     background-color: #343a40; } }
 .gallery .filter-group .gallery-item:hover a.pic-link:after,
-.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
+.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show,
+.post-card:hover .post-img::before {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .about-us .tab-head.active,
@@ -538,6 +568,7 @@ nav {
 .features .feature-content:hover span.icon,
 .option-box .color-options li span,
 .pricing .plan-highlight,
+.post-card .post-img .read-more,
 .back-to-top {
   background-color: #ff5100; }
 
@@ -582,6 +613,7 @@ section,
 .option-box .options-wraper .color-options ul li .pink-theme {
   background-color: #da00ff; }
 
+.post-card .post-img::before,
 .about-us .tab-content .faq-accordion .card-header,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
 .about-us .tab-content .user-message-form input[type=email],
@@ -601,6 +633,7 @@ section,
 .gallery .filter-btn-list .filter-btn {
   border-color: transparent; }
 
+.all-posts-cards .post-card .post-card-tags .tag-lable,
 .about-us .tab-head.active,
 .about-us .tab-head:hover {
   border-color: #343a40; }
@@ -624,7 +657,7 @@ section,
 .testmonials .customer-info .customer-details,
 .title-center-border:after,
 .title-left-border:after,
-.back-to-top {
+.all-posts-cards .post-card .post-engagement .engagement:nth-child(2) {
   border-color: #ff5100; }
 
 .about-us .tab-content .user-message-form input[type=email],
@@ -646,15 +679,18 @@ section,
 .about-us .tab-content .faq-accordion .card,
 .img-frame,
 .pricing .plan,
+.post-card,
 .testmonials .testmonial-content,
 .home-page-header {
   box-shadow: 0 0 10px 1px #a1a1a1; }
 
 .butn,
-.back-to-top {
+.back-to-top,
+.post-card .read-more {
   box-shadow: 0 5px 15px -5px #343a40; }
 
-.butn:hover {
+.butn:hover,
+.post-card .read-more:hover {
   box-shadow: 0 8px 25px -5px #343a40; }
 
 a::selection,
@@ -803,22 +839,52 @@ span::-moz-selection {
     z-index: 3; }
 
 .all-posts-cards .post-card {
-  box-shadow: 1px 3px 20px #a1a1a1; }
-  .all-posts-cards .post-card .post-img img {
-    height: 240px;
-    width: 100%; }
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .all-posts-cards .post-card .post-img {
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease-in-out; }
+    .all-posts-cards .post-card .post-img::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: all .5s ease-in-out; }
+    .all-posts-cards .post-card .post-img img {
+      height: 240px;
+      width: 100%; }
+    .all-posts-cards .post-card .post-img .read-more {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      line-height: 44px;
+      position: absolute;
+      bottom: -60px;
+      right: 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: all .5s ease-in-out; }
+      .all-posts-cards .post-card .post-img .read-more a {
+        display: block;
+        width: 40px;
+        height: 40px; }
+      .all-posts-cards .post-card .post-img .read-more i.fa {
+        font-size: 1.5rem; }
+      .all-posts-cards .post-card .post-img .read-more:hover {
+        transform: translateY(-3px); }
   .all-posts-cards .post-card i.fa-tags {
-    color: #f51;
     font-size: 1.5rem;
     margin-right: .25rem; }
   .all-posts-cards .post-card .post-title-link {
     font-family: "Montserrat", "sans-serif";
     font-size: 1rem;
     font-weight: 700;
-    color: #343a40;
     transition: color .3s ease-in-out; }
-    .all-posts-cards .post-card .post-title-link:hover {
-      color: #ff5100; }
   .all-posts-cards .post-card .post-card-info .span-by,
   .all-posts-cards .post-card .post-card-info .time-on {
     font-size: .9rem;
@@ -827,8 +893,7 @@ span::-moz-selection {
   .all-posts-cards .post-card .post-card-info .auther-name,
   .all-posts-cards .post-card .post-card-info .publish-date {
     font-size: .75rem;
-    font-weight: 700;
-    color: #f50; }
+    font-weight: 700; }
   .all-posts-cards .post-card .post-card-info .auther-img {
     position: relative;
     min-height: 50px; }
@@ -849,22 +914,16 @@ span::-moz-selection {
     font-family: "Montserrat", "sans-serif";
     font-size: .75rem;
     letter-spacing: .25px;
-    background: #343a40;
-    border: 1px solid #343a40;
+    border: 1px solid;
     border-radius: .75rem;
     transition: color .3s ease-in-out; }
-    .all-posts-cards .post-card .post-card-tags .tag-lable:hover {
-      color: #ff5100; }
   .all-posts-cards .post-card .post-engagement {
-    padding: .5rem 0;
-    background-color: #343a40; }
-    .all-posts-cards .post-card .post-engagement .views,
-    .all-posts-cards .post-card .post-engagement .likes,
-    .all-posts-cards .post-card .post-engagement .comments {
-      color: #fff; }
+    padding: .75rem 0; }
     .all-posts-cards .post-card .post-engagement .engagement:nth-child(2) {
-      border-left: 1px solid #ff5100;
-      border-right: 1px solid #ff5100; }
+      border-left: 2px solid;
+      border-right: 2px solid; }
+  .all-posts-cards .post-card:hover .read-more {
+    bottom: 20px; }
 
 /*==========================  START page-footer   ==========================*/
 .page-footer {
@@ -980,9 +1039,7 @@ span::-moz-selection {
 .back-to-top {
   width: 40px;
   height: 40px;
-  line-height: 38px;
-  font-size: 1 rem;
-  border: 1px solid;
+  line-height: 40px;
   border-radius: 50%;
   text-align: center;
   position: fixed;

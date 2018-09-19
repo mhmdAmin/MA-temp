@@ -406,7 +406,8 @@ section,
   box-shadow: 0 5px 15px -5px #343a40; }
 
 .butn:hover,
-.post-card .read-more:hover {
+.post-card .read-more:hover,
+.post-card:hover {
   box-shadow: 0 8px 25px -5px #343a40; }
 
 a::selection,
@@ -690,7 +691,8 @@ section,
   box-shadow: 0 5px 15px -5px #343a40; }
 
 .butn:hover,
-.post-card .read-more:hover {
+.post-card .read-more:hover,
+.post-card:hover {
   box-shadow: 0 8px 25px -5px #343a40; }
 
 a::selection,

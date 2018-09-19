@@ -314,7 +314,8 @@ section,
 }
 
 .butn:hover,
-.post-card .read-more:hover {
+.post-card .read-more:hover,
+.post-card:hover {
     box-shadow: 0 8px 25px -5px $darkColor;
 }
 

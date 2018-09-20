@@ -54,7 +54,8 @@ h6 {
 .home-page-header .desc span,
 .post-card .post-title-link:hover,
 .post-card .post-card-info .publish-date,
-.post-card .post-card-tags .tag-lable:hover {
+.post-card .post-card-tags .tag-lable:hover,
+.pages-nav .the-page-item:hover {
   color: #ff9700; }
 
 .blog-header .blog-home-page-heading h1,
@@ -124,6 +125,8 @@ nav {
 .option-box .color-options li span,
 .pricing .plan-highlight,
 .post-card .post-img .read-more,
+.pages-nav .the-page-item:hover,
+.pages-nav .the-page-item.active,
 .back-to-top {
   background-color: #ff9700; }
 
@@ -144,6 +147,7 @@ section,
 .option-box,
 .option-box .box-handel,
 .option-box .options-wraper,
+.pages-nav .the-page-item,
 .page-footer {
   background-color: #343a40; }
 
@@ -188,7 +192,7 @@ section,
 .gallery .filter-btn-list .filter-btn {
   border-color: transparent; }
 
-.all-posts-cards .post-card .post-card-tags .tag-lable,
+.all-posts .post-card .post-card-tags .tag-lable,
 .about-us .tab-head.active,
 .about-us .tab-head:hover {
   border-color: #343a40; }
@@ -212,7 +216,7 @@ section,
 .testmonials .customer-info .customer-details,
 .title-center-border:after,
 .title-left-border:after,
-.all-posts-cards .post-card .post-engagement .engagement:nth-child(2) {
+.all-posts .post-card .post-engagement .engagement:nth-child(2) {
   border-color: #ff9700; }
 
 .about-us .tab-content .user-message-form input[type=email],
@@ -223,7 +227,8 @@ section,
 .page-footer .newsletter-form .newsletter-email input[type=email] {
   border-color: rgba(255, 151, 0, 0.5); }
 
-.pricing .plan .plan-cost h3 {
+.pricing .plan .plan-cost h3,
+.all-posts .post-card .post-card-info .auther-img {
   border-color: #FFF; }
 
 .pricing .plan .plan-details ul li,
@@ -241,10 +246,12 @@ section,
 
 .butn,
 .back-to-top,
+.pages-nav .the-page-item,
 .post-card .read-more {
   box-shadow: 0 5px 15px -5px #343a40; }
 
 .butn:hover,
+.pages-nav .the-page-item:hover,
 .post-card .read-more:hover,
 .post-card:hover {
   box-shadow: 0 8px 25px -5px #343a40; }

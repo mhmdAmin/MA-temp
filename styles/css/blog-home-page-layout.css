@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,400i,600,600i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Exo:400,400i,600,600i,800,800i");
 @media (max-width: 991px) {
   h1.responsive-heading {
     font-size: 2rem; } }
@@ -105,8 +109,8 @@ body {
   border-bottom: 4px solid;
   border-radius: 5px;
   width: 65px;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
   display: block; }
 
 .title-left-border:after {
@@ -150,9 +154,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Slab", "sans-serif";
+  font-family: "Exo", "sans-serif";
   letter-spacing: .4px;
-  font-weight: 700; }
+  font-weight: 600; }
 
 a {
   text-decoration: none !important;
@@ -180,6 +184,9 @@ a {
 .pricing .plan-details li,
 .post-card .post-title-link,
 .text-dark-color,
+.side-bar .category .cat-link,
+.side-bar .recent-post .post-heading-link,
+.side-bar .archive .arch-link,
 h1,
 h2,
 h3,
@@ -215,307 +222,27 @@ h6 {
 .home-page-header .desc span,
 .post-card .post-title-link:hover,
 .post-card .post-card-info .publish-date,
-.post-card .post-card-tags .tag-lable:hover,
-.pages-nav .the-page-item:hover {
+.all-posts .post-card .post-card-tags .tag-lable,
+.side-bar .tags-box .tag-lable:hover,
+.pages-nav .the-page-item:hover,
+.side-bar .category .cat-link:hover,
+.side-bar .recent-post .post-heading-link:hover,
+.side-bar .archive .arch-link:hover {
   color: #ff5100; }
+
+.our-team .tm-social-icons a i.fa,
+footer .footer-social-icons a:hover i.fa,
+.side-bar .search-box i.fa {
+  color: rgba(255, 81, 0, 0.7); }
 
 .blog-header .blog-home-page-heading h1,
 .blog-header .blog-home-page-heading p,
 .about-us .tab-head.active,
 .about-us .tab-head:hover,
 .butn,
-.custom-link,
-.custom-link:hover,
-.features .feature-content:hover span.icon,
-.gallery .filter-group .hidden-info,
-.gallery .filter-group .hidden-info:hover,
-.img-desc,
-.img-heading,
-.navbar .navbar-brand,
-.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link,
-.page-footer .adress-info,
-.page-footer .adress-info ul li a,
-.page-footer .useful-links ul li a,
-.home-page-header .desc a.butn,
-.pricing .plan .plan-cost,
-.pricing .plan-cost h4,
-.pricing .plan-details ul,
-.pricing .plan-highlight,
-.title-center-border .active,
-.post-card .post-img .read-more,
-.back-to-top,
-a,
-a:focus,
-a:hover,
-a:visited,
-footer .copyrights,
-.post-card .post-engagement .views,
-.post-card .post-engagement .likes,
-.post-card .post-engagement .comments {
-  color: #FFF; }
-
-.option-box .color-options .color-options-title,
-.text-extra-light-color,
-.home-page-header .header-wraper p.paragraph {
-  color: #f5f5f5; }
-
-.our-team .tm-social-icons a i.fa,
-footer .footer-social-icons a:hover i.fa {
-  color: rgba(255, 81, 0, 0.7); }
-
-/*==================== 2- Background color group=================*/
-.pricing .plan .plan-cost,
-.post-card .post-engagement,
-.post-card .post-card-tags .tag-lable,
-nav {
-  background-color: #343a40; }
-
-@media (max-width: 991px) {
-  .navbar-mobile-menu-wrapper .navbar-mobile-menu {
-    background-color: #343a40; } }
-.gallery .filter-group .gallery-item:hover a.pic-link:after,
-.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show,
-.post-card:hover .post-img::before {
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.about-us .tab-head.active,
-.about-us .tab-head:hover,
-.butn,
-.loading-screen .spinner > div,
-.features .feature-content:hover span.icon,
-.option-box .color-options li span,
-.pricing .plan-highlight,
-.post-card .post-img .read-more,
-.pages-nav .the-page-item:hover,
-.pages-nav .the-page-item.active,
-.back-to-top {
-  background-color: #ff5100; }
-
-.about-us .tab-content .faq-accordion .card-header .btn-link.active,
-.goals .goal-img:before,
-.goals .goal-img:after {
-  background-color: rgba(255, 81, 0, 0.5); }
-
-.loading-screen,
-.features .feature-content,
-.pricing .plan,
-section,
-.butn:before,
-.butn:after {
-  background-color: #FFF; }
-
-.footer-social-icons,
-.option-box,
-.option-box .box-handel,
-.option-box .options-wraper,
-.pages-nav .the-page-item,
-.page-footer {
-  background-color: #343a40; }
-
-@media (max-width: 991px) {
-  .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
-    color: #FFF !important; }
-
-  .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
-    background-color: rgba(255, 81, 0, 0.8); }
-
-  .navbar-mobile-menu-wrapper .navbar-mobile-menu .nav-link:hover {
-    background-color: rgba(255, 81, 0, 0.5) !important;
-    color: #FFF !important; } }
-.option-box .options-wraper .color-options ul li .orange-theme {
-  background-color: #ff5100; }
-.option-box .options-wraper .color-options ul li .blue-theme {
-  background-color: #01ceff; }
-.option-box .options-wraper .color-options ul li .yellow-theme {
-  background-color: #ff9700; }
-.option-box .options-wraper .color-options ul li .green-theme {
-  background-color: #00af58; }
-.option-box .options-wraper .color-options ul li .pink-theme {
-  background-color: #da00ff; }
-
-.post-card .post-img::before,
-.about-us .tab-content .faq-accordion .card-header,
-.about-us .tab-content .faq-accordion .card-header .btn-link,
-.about-us .tab-content .user-message-form input[type=email],
-.about-us .tab-content .user-message-form input[type=text],
-.about-us .tab-content .user-message-form textarea,
-.gallery .filter-btn-list .filter-btn,
-.img-frame,
-.info-tab .tab-head,
-.newsletter-form .newsletter-email .submit-btun,
-.page-footer input[type=email] {
-  background-color: transparent; }
-
-/*=================== 3- borders group ==================*/
-.pricing .plan .plan-cost .plan-highlight:after {
-  border-color: transparent transparent transparent #ff5100; }
-
-.gallery .filter-btn-list .filter-btn {
-  border-color: transparent; }
-
-.all-posts .post-card .post-card-tags .tag-lable,
-.about-us .tab-head.active,
-.about-us .tab-head:hover {
-  border-color: #343a40; }
-
-.about-us .tab-content .faq-accordion .card-body,
-.about-us .tab-content .faq-accordion .card-header,
-.about-us .tab-content .user-message-form input[type=email]:focus,
-.about-us .tab-content .user-message-form input[type=text]:focus,
-.about-us .tab-content .user-message-form textarea:focus,
-.about-us .tab-head,
-.active:after,
-.box-handel,
-.butn,
-.gallery .filter-btn-list,
-.gallery .filter-btn-list .filter-btn.active,
-.gallery .filter-btn-list .filter-btn:hover,
-.goals .goal-icon i,
-.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link:after,
-.option-box .options-wraper,
-.pricing .plan .plan-cost,
-.testmonials .customer-info .customer-details,
-.title-center-border:after,
-.title-left-border:after,
-.all-posts .post-card .post-engagement .engagement:nth-child(2) {
-  border-color: #ff5100; }
-
-.about-us .tab-content .user-message-form input[type=email],
-.about-us .tab-content .user-message-form input[type=text],
-.about-us .tab-content .user-message-form textarea,
-.news-letter input[type=email],
-.page-footer .copyrights,
-.page-footer .newsletter-form .newsletter-email input[type=email] {
-  border-color: rgba(255, 81, 0, 0.5); }
-
-.pricing .plan .plan-cost h3,
-.all-posts .post-card .post-card-info .auther-img {
-  border-color: #FFF; }
-
-.pricing .plan .plan-details ul li,
-.testmonials .customer-info {
-  border-color: #d6d6d6; }
-
-/*=================== 4- box-shadow group====================*/
-.about-us .tab-content .faq-accordion .card,
-.img-frame,
-.pricing .plan,
-.post-card,
-.testmonials .testmonial-content,
-.home-page-header {
-  box-shadow: 0 0 10px 1px #a1a1a1; }
-
-.butn,
-.back-to-top,
-.pages-nav .the-page-item,
-.post-card .read-more {
-  box-shadow: 0 5px 15px -5px #343a40; }
-
+.butn:focus,
 .butn:hover,
-.pages-nav .the-page-item:hover,
-.post-card .read-more:hover,
-.post-card:hover {
-  box-shadow: 0 8px 25px -5px #343a40; }
-
-a::selection,
-div::selection,
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-h5::selection,
-h6::selection,
-i::selection,
-li::selection,
-p::selection,
-span::selection {
-  color: #FFF;
-  background: rgba(255, 81, 0, 0.7); }
-a::-moz-selection,
-div::-moz-selection,
-h1::-moz-selection,
-h2::-moz-selection,
-h3::-moz-selection,
-h4::-moz-selection,
-h5::-moz-selection,
-h6::-moz-selection,
-i::-moz-selection,
-li::-moz-selection,
-p::-moz-selection,
-span::-moz-selection {
-  color: #FFF;
-  background: rgba(255, 81, 0, 0.7); }
-
-.navbar .navbar-toggler {
-  outline-color: #ff5100; }
-
-.overlay {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); }
-
-/*****************************************************************
-*
-* Project Name:Robo Theme.
-* description: a Multi-purpose one-page theme for createve, corporates and business uses;
-* version: 1.0  
-*               
-<=======>  CSS RULES MAP <=======>
-
-1- Start Global Varibals
-2- color group
-2- Background color group
-3- borders group
-4- box-shadow group
-*****************************************************************/
-/* 1- Start Global Varibals*/
-/* End Global Varibals*/
-/*======================== 2- color group ========================*/
-.pricing .plan-details li,
-.post-card .post-title-link,
-.text-dark-color,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #343a40; }
-
-.our-team .tm-social-icons a:hover i.fa,
-.our-team .tm-role,
-.super-paragraph,
-.about-us .tab-content .faq-accordion .card-header .btn-link,
-.about-us .tab-head,
-.features .feature-content .fa,
-.gallery .filter-btn-list .filter-btn,
-.gallery .filter-group .hidden-info a.info-link:hover,
-.goals .goal-icon i,
-.navbar .navbar-brand span,
-.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.active,
-.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link:hover,
-.navbar .navbar-toggler,
-.newsletter-form .newsletter-email .submit-btun,
-.option-box .box-handel,
-.page-footer .adress-info ul li a:hover,
-.page-footer .useful-links ul li a:hover,
-.testmonials .customer-testmonial i.fa-quote-left,
-.testmonials .swiper-container .swiper-button-next i,
-.testmonials .swiper-container .swiper-button-prev i,
-.testmonials .testmonial-content .customer-details .customer-role,
-.useful-links ul li a:before,
-.home-page-header .desc span,
-.post-card i.fa-tags,
-.home-page-header .desc span,
-.post-card .post-title-link:hover,
-.post-card .post-card-info .publish-date,
-.post-card .post-card-tags .tag-lable:hover,
-.pages-nav .the-page-item:hover {
-  color: #ff5100; }
-
-.blog-header .blog-home-page-heading h1,
-.blog-header .blog-home-page-heading p,
-.about-us .tab-head.active,
-.about-us .tab-head:hover,
-.butn,
+.butn:visited,
 .custom-link,
 .custom-link:hover,
 .features .feature-content:hover span.icon,
@@ -534,16 +261,16 @@ h6 {
 .pricing .plan-details ul,
 .pricing .plan-highlight,
 .title-center-border .active,
-.post-card .post-img .read-more,
 .back-to-top,
-a,
-a:focus,
-a:hover,
-a:visited,
 footer .copyrights,
+.page-footer .footer-social-icons i.fa,
+.all-posts .pages-nav .the-page-link,
+.all-posts .post-card .post-content .read-more i.fa,
+.side-bar .tags-box .tag-lable,
 .post-card .post-engagement .views,
 .post-card .post-engagement .likes,
-.post-card .post-engagement .comments {
+.post-card .post-engagement .comments,
+.side-bar .search-box i.fa {
   color: #FFF; }
 
 .option-box .color-options .color-options-title,
@@ -551,14 +278,10 @@ footer .copyrights,
 .home-page-header .header-wraper p.paragraph {
   color: #f5f5f5; }
 
-.our-team .tm-social-icons a i.fa,
-footer .footer-social-icons a:hover i.fa {
-  color: rgba(255, 81, 0, 0.7); }
-
 /*==================== 2- Background color group=================*/
 .pricing .plan .plan-cost,
 .post-card .post-engagement,
-.post-card .post-card-tags .tag-lable,
+.side-bar .tags-box .tag-lable,
 nav {
   background-color: #343a40; }
 
@@ -566,8 +289,7 @@ nav {
   .navbar-mobile-menu-wrapper .navbar-mobile-menu {
     background-color: #343a40; } }
 .gallery .filter-group .gallery-item:hover a.pic-link:after,
-.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show,
-.post-card:hover .post-img::before {
+.navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .about-us .tab-head.active,
@@ -577,10 +299,11 @@ nav {
 .features .feature-content:hover span.icon,
 .option-box .color-options li span,
 .pricing .plan-highlight,
-.post-card .post-img .read-more,
+.post-card .post-content .read-more,
 .pages-nav .the-page-item:hover,
 .pages-nav .the-page-item.active,
-.back-to-top {
+.back-to-top,
+.side-bar .search-box .search-submit {
   background-color: #ff5100; }
 
 .about-us .tab-content .faq-accordion .card-header .btn-link.active,
@@ -588,6 +311,7 @@ nav {
 .goals .goal-img:after {
   background-color: rgba(255, 81, 0, 0.5); }
 
+.navbar .menu-opend-btn i,
 .loading-screen,
 .features .feature-content,
 .pricing .plan,
@@ -625,7 +349,6 @@ section,
 .option-box .options-wraper .color-options ul li .pink-theme {
   background-color: #da00ff; }
 
-.post-card .post-img::before,
 .about-us .tab-content .faq-accordion .card-header,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
 .about-us .tab-content .user-message-form input[type=email],
@@ -645,7 +368,7 @@ section,
 .gallery .filter-btn-list .filter-btn {
   border-color: transparent; }
 
-.all-posts .post-card .post-card-tags .tag-lable,
+.side-bar .tags-box .tag-lable,
 .about-us .tab-head.active,
 .about-us .tab-head:hover {
   border-color: #343a40; }
@@ -669,7 +392,10 @@ section,
 .testmonials .customer-info .customer-details,
 .title-center-border:after,
 .title-left-border:after,
-.all-posts .post-card .post-engagement .engagement:nth-child(2) {
+.all-posts .post-card .post-engagement .engagement:nth-child(2),
+.side-bar .search-box .search-input,
+.side-bar .search-box .search-submit,
+.side-bar .box {
   border-color: #ff5100; }
 
 .about-us .tab-content .user-message-form input[type=email],
@@ -680,19 +406,32 @@ section,
 .page-footer .newsletter-form .newsletter-email input[type=email] {
   border-color: rgba(255, 81, 0, 0.5); }
 
-.pricing .plan .plan-cost h3,
-.all-posts .post-card .post-card-info .auther-img {
+.about-us .tab-content .user-message-form input[type=email],
+.about-us .tab-content .user-message-form input[type=text],
+.about-us .tab-content .user-message-form textarea,
+.news-letter input[type=email],
+.page-footer .copyrights,
+.page-footer .newsletter-form .newsletter-email input[type=email] {
+  border-color: rgba(255, 81, 0, 0.5); }
+
+.pricing .plan .plan-cost h3 {
   border-color: #FFF; }
 
 .pricing .plan .plan-details ul li,
-.testmonials .customer-info {
+.testmonials .customer-info,
+.side-bar .category,
+.side-bar .archive {
   border-color: #d6d6d6; }
 
 /*=================== 4- box-shadow group====================*/
+.post-card,
+.post-body,
+.side-bar .box {
+  box-shadow: 0 3px 15px rgba(52, 58, 64, 0.2); }
+
 .about-us .tab-content .faq-accordion .card,
 .img-frame,
 .pricing .plan,
-.post-card,
 .testmonials .testmonial-content,
 .home-page-header {
   box-shadow: 0 0 10px 1px #a1a1a1; }
@@ -750,7 +489,7 @@ span::-moz-selection {
   max-height: 90px; }
   .navbar .navbar-brand {
     font-weight: 700;
-    font-family: "Roboto Slab", "sans-serif";
+    font-family: "Exo", "sans-serif";
     font-size: 1.5rem;
     transition: all .3s ease-in-out; }
     .navbar .navbar-brand span {
@@ -767,7 +506,6 @@ span::-moz-selection {
       display: block;
       width: 30px;
       height: 1px;
-      background-color: #fff;
       border-radius: 1px;
       transition: all .3s ease-in-out; }
       .navbar .menu-opend-btn i:nth-child(2) {
@@ -870,92 +608,105 @@ span::-moz-selection {
       left: 0;
       right: 0;
       bottom: 0;
-      transition: all .5s ease-in-out; }
+      transition: all .5s ease-out; }
     .all-posts .post-card .post-img img {
-      height: 240px;
+      transition: transform .5s ease-out;
+      max-height: 360px;
       width: 100%; }
-    .all-posts .post-card .post-img .read-more {
+  .all-posts .post-card .post-card-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: .75rem; }
+    .all-posts .post-card .post-card-info .auther-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 5px; }
+      .all-posts .post-card .post-card-info .auther-img img {
+        width: 40px;
+        height: 40px; }
+    .all-posts .post-card .post-card-info .auther-name {
+      margin-right: 5px; }
+  .all-posts .post-card .post-content {
+    position: relative; }
+    .all-posts .post-card .post-content .read-more {
       width: 40px;
       height: 40px;
       border-radius: 50%;
       line-height: 44px;
       position: absolute;
-      bottom: -60px;
-      right: 15px;
+      bottom: 20px;
+      right: 50px;
       text-align: center;
+      visibility: hidden;
+      opacity: 0;
       cursor: pointer;
-      transition: all .5s ease-in-out; }
-      .all-posts .post-card .post-img .read-more a {
+      transition: all .3s ease-out; }
+      .all-posts .post-card .post-content .read-more a {
         display: block;
         width: 40px;
         height: 40px; }
-      .all-posts .post-card .post-img .read-more i.fa {
+      .all-posts .post-card .post-content .read-more i.fa {
         font-size: 1.5rem; }
-      .all-posts .post-card .post-img .read-more:hover {
+      .all-posts .post-card .post-content .read-more:hover {
         transform: translateY(-3px); }
-  .all-posts .post-card .post-card-info {
-    position: relative; }
-    .all-posts .post-card .post-card-info .auther-img {
-      position: absolute;
-      top: -50px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 70px;
-      height: 70px;
-      border: 2px solid;
-      border-radius: 50%;
-      overflow: hidden; }
   .all-posts .post-card i.fa-tags {
     font-size: 1.5rem;
     margin-right: .25rem; }
   .all-posts .post-card .post-title {
-    margin-top: 30px; }
-  .all-posts .post-card .post-title-link {
-    font-family: "Montserrat", "sans-serif";
     font-size: 1.25rem;
-    font-weight: 500;
+    line-height: 1.5;
+    font-family: "Exo", "sans-serif";
+    font-weight: 600; }
+  .all-posts .post-card .post-title-link {
     transition: color .3s ease-in-out; }
-  .all-posts .post-card .post-card-tags ul li {
+  .all-posts .post-card .post-card-tags .tags-list li {
     display: inline-block; }
   .all-posts .post-card .post-card-tags .tag-lable {
     display: inline-block;
-    margin: 5px 0;
-    padding: .125rem .75rem;
+    padding: .125rem .125rem;
     font-family: "Montserrat", "sans-serif";
     font-size: .75rem;
+    font-weight: 600;
     letter-spacing: .25px;
-    border: 1px solid;
-    border-radius: .75rem;
     transition: color .3s ease-in-out; }
     .all-posts .post-card .post-card-tags .tag-lable::before {
       content: '#';
       display: block;
       float: left;
-      margin-right: 3px; }
+      margin-right: 1px; }
   .all-posts .post-card .post-engagement {
     padding: .75rem 0; }
     .all-posts .post-card .post-engagement .engagement:nth-child(2) {
       border-left: 2px solid;
       border-right: 2px solid; }
   .all-posts .post-card:hover .read-more {
-    bottom: 20px; }
-.all-posts .pages-nav .the-page-item {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 50%;
-  font-size: .85rem;
-  overflow: hidden;
-  transition: all .3s ease-in-out; }
-.all-posts .pages-nav .prev,
-.all-posts .pages-nav .next {
-  min-width: 100px;
-  border-radius: 30px;
-  margin: 0 10px; }
-.all-posts .pages-nav .the-page-link {
-  display: inline-block;
-  width: 100%; }
+    right: 20px;
+    visibility: visible;
+    opacity: 1; }
+  .all-posts .post-card:hover img {
+    transform: scale(1.05); }
+.all-posts .pages-nav {
+  margin-bottom: 2rem; }
+  .all-posts .pages-nav .the-page-item {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: .85rem;
+    overflow: hidden;
+    transition: all .3s ease-in-out; }
+  .all-posts .pages-nav .prev,
+  .all-posts .pages-nav .next {
+    min-width: 100px;
+    border-radius: 30px;
+    margin: 0 10px; }
+  .all-posts .pages-nav .the-page-link {
+    display: inline-block;
+    width: 100%; }
 @media (max-width: 991px) {
   .all-posts .pages-nav {
     position: relative;
@@ -976,6 +727,107 @@ span::-moz-selection {
   .all-posts .pages-nav .prev,
   .all-posts .pages-nav .next {
     display: none; } }
+
+.side-bar .box {
+  margin-bottom: 2rem;
+  border-radius: .25rem;
+  border-bottom: 3px solid; }
+.side-bar .search-box {
+  border: none; }
+  .side-bar .search-box .search-form {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    position: relative; }
+  .side-bar .search-box .search-input {
+    width: 100%;
+    outline: none;
+    border: 2px solid;
+    padding: 5px 40px 5px 10px;
+    border-radius: .25rem;
+    transition: border-color .3s ease-in-out; }
+  .side-bar .search-box .search-submit {
+    border: 2px solid;
+    border-radius: 0 .25rem .25rem 0;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80px;
+    cursor: pointer;
+    z-index: 1; }
+  .side-bar .search-box i.fa {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 1.25rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2; }
+.side-bar .category {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px 0;
+  border-bottom: 1px solid; }
+  .side-bar .category:last-of-type {
+    border: none; }
+  .side-bar .category .cat-link {
+    transition: color .3s ease-in-out;
+    font-size: .85rem;
+    font-weight: 600; }
+.side-bar .recent-post {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 10px 0; }
+  .side-bar .recent-post .post-info {
+    padding-left: 10px; }
+    .side-bar .recent-post .post-info .recent-post-heading {
+      font-family: "Montserrat", "sans-serif";
+      font-size: .8rem;
+      font-weight: 600;
+      margin: 0; }
+    .side-bar .recent-post .post-info .post-heading-link {
+      transition: color .3s ease-in-out; }
+    .side-bar .recent-post .post-info i.fa,
+    .side-bar .recent-post .post-info .publish-date {
+      font-size: .7rem; }
+.side-bar .archive {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px 0;
+  border-bottom: 1px solid; }
+  .side-bar .archive:last-of-type {
+    border: none; }
+  .side-bar .archive .arch-link {
+    transition: color .3s ease-in-out;
+    font-size: .85rem;
+    font-weight: 600; }
+.side-bar .tags-box .tags-list li {
+  display: inline-block; }
+.side-bar .tags-box .tag-lable {
+  display: inline-block;
+  margin: 5px 0;
+  padding: .125rem .75rem;
+  font-family: "Montserrat", "sans-serif";
+  font-size: .75rem;
+  letter-spacing: .25px;
+  border: 1px solid;
+  border-radius: .75rem;
+  transition: color .3s ease-in-out; }
+  .side-bar .tags-box .tag-lable::before {
+    content: '#';
+    display: block;
+    float: left;
+    margin-right: 3px; }
 
 /*==========================  START page-footer   ==========================*/
 .page-footer {

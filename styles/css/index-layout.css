@@ -23,9 +23,7 @@
  START lOADING SCREEN DIV
 
 *****************************************************************/
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i");
-@import url("https://fonts.googleapis.com/css?family=Exo+2:400,400i,600,600i,800,800i");
 @import url("https://fonts.googleapis.com/css?family=Exo:400,400i,600,600i,800,800i");
 @media (max-width: 991px) {
   h1.responsive-heading {
@@ -218,9 +216,9 @@ a {
     position: relative;
     padding: 1rem 0;
     cursor: pointer;
-    font-family: "Montserrat", "sans-serif";
-    font-size: .75rem;
-    font-weight: 700;
+    font-family: "Exo", "sans-serif";
+    font-size: 1rem;
+    font-weight: 600;
     letter-spacing: 1px;
     transition: all .3s ease-in-out;
     width: 100%; }

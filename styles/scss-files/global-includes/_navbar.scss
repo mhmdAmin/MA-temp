@@ -54,9 +54,9 @@
                     position: relative;
                     padding: 1rem 0; //removing y-padding to make the adjust bottom border with the link text
                     cursor: pointer;
-                    font-family: $bodyFontFamily;
-                    font-size: .75rem;
-                    font-weight:700;
+                    font-family: $headingFontFamily;
+                    font-size: 1rem;
+                    font-weight:600;
                     letter-spacing: 1px;
                     transition: all .3s ease-in-out;
                     width: 100%;

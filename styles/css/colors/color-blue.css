@@ -81,8 +81,8 @@ footer .footer-social-icons a:hover i.fa,
 .custom-link,
 .custom-link:hover,
 .features .feature-content:hover span.icon,
-.gallery .filter-group .hidden-info,
-.gallery .filter-group .hidden-info:hover,
+.gallery .filter-group .hidden-info > span,
+.gallery .filter-group .hidden-info > a,
 .img-desc,
 .img-heading,
 .navbar .navbar-brand,
@@ -124,6 +124,7 @@ nav {
   .navbar-mobile-menu-wrapper .navbar-mobile-menu {
     background-color: #343a40; } }
 .gallery .filter-group .gallery-item:hover a.pic-link:after,
+.post-card:hover .post-img::after,
 .navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
   background-color: rgba(0, 0, 0, 0.5); }
 
@@ -279,8 +280,7 @@ section,
 
 .butn:hover,
 .pages-nav .the-page-item:hover,
-.post-card .read-more:hover,
-.post-card:hover {
+.post-card .read-more:hover {
   box-shadow: 0 8px 25px -5px #343a40; }
 
 a::selection,

@@ -14,6 +14,9 @@
 }
 
 .all-posts {
+    .post-main-area {
+        padding-bottom: 2.5rem;
+    }
     .post-card {
         transition: all .3s ease-in-out;
         overflow: hidden;
@@ -22,7 +25,7 @@
             position: relative;
             overflow: hidden;
             transition: all .5s ease-in-out;
-            &::before {
+            &::after {
                 content: '';
                 display: block;
                 position: absolute;
@@ -30,7 +33,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                transition: all .5s ease-out;
+                transition: background-color .5s ease-in-out;
             }
             img {
                 transition: transform .5s ease-out;
@@ -41,30 +44,43 @@
         .post-card-info {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             position: relative;
             font-size: .75rem;
-            .auther-img {
-                // position: absolute;
-                // top: -50px;
-                // left: 50%;
-                // transform: translateX(-50%);
-                // width: 70px;
-                // height: 70px;
-                // border: 2px solid;
-                // border-radius: 50%;
-                // overflow: hidden;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                overflow: hidden;
-                margin-right: 5px;
-                img {
+            .auther-info {
+                display: flex;
+                align-items: center;
+                .auther-img {
                     width: 40px;
                     height: 40px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: 5px;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
                 }
-            }
-            .auther-name {
-                margin-right: 5px
+                .auther-name {
+                    margin-right: 5px;
+                    color: $mainThemeColor;
+                }
+                .auther-contact-info {
+                    margin: 0;
+                    padding: 0;
+                    margin-right: 15px;
+                    &>li {
+                        display: inline-block;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        &>a {
+                            color: $darkColor;
+                            &:hover {
+                                color: $mainThemeColor;
+                            }
+                        }
+                    }
+                }
             }
         }
         .post-content {
@@ -106,6 +122,8 @@
             font-weight: 600;
         }
         .post-title-link {
+            font-family: $headingFontFamily;
+            font-size: 1.25rem;
             transition: color .3s ease-in-out;
         }
         .post-card-tags {
@@ -149,7 +167,6 @@
         }
     }
     .pages-nav {
-        margin-bottom: 2rem;
         .the-page-item {
             display: inline-block;
             width: 30px;
@@ -159,6 +176,8 @@
             font-size: .85rem;
             overflow: hidden;
             transition: all .3s ease-in-out;
+            margin-right: 2px;
+            margin-left: 2px;
         }
         .prev,
         .next {
@@ -172,24 +191,10 @@
         }
     }
     @media (max-width:991px) {
-        .pages-nav {
-            position: relative;
-            margin-bottom: 30px;
-            .prev,
-            .next {
-                position: absolute;
-                top: 50px;
-                min-width: 80px;
-                margin: 0;
-            }
-            .prev {
-                left: 0;
-                transform: translateX(100%);
-            }
-            .next {
-                right: 0;
-                transform: translateX(-100%);
-            }
+        .pages-nav>ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
     }
     @media (max-width:360px) {

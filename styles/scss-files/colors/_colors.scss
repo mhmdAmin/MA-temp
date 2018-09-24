@@ -100,8 +100,8 @@ footer .footer-social-icons a:hover i.fa,
 .custom-link,
 .custom-link:hover,
 .features .feature-content:hover span.icon,
-.gallery .filter-group .hidden-info,
-.gallery .filter-group .hidden-info:hover,
+.gallery .filter-group .hidden-info>span,
+.gallery .filter-group .hidden-info>a,
 .img-desc,
 .img-heading,
 .navbar .navbar-brand,
@@ -149,7 +149,7 @@ nav {
     }
 } // .overlay,
 .gallery .filter-group .gallery-item:hover a.pic-link:after,
-// .post-card .post-img::before,
+.post-card:hover .post-img::after,
 .navbar .navbar-mobile-menu-wrapper.mobile-navbar-show,
     {
     background-color: rgba($BlackColor, .5);
@@ -234,7 +234,6 @@ section,
     }
 }
 
-// .post-card:hover .post-img::before,
 .about-us .tab-content .faq-accordion .card-header,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
 .about-us .tab-content .user-message-form input[type=email],
@@ -348,8 +347,7 @@ section,
 
 .butn:hover,
 .pages-nav .the-page-item:hover,
-.post-card .read-more:hover,
-.post-card:hover {
+.post-card .read-more:hover {
     box-shadow: 0 8px 25px -5px $darkColor;
 } //selection-group
 a,

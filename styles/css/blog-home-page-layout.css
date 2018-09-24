@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i");
-@import url("https://fonts.googleapis.com/css?family=Exo+2:400,400i,600,600i,800,800i");
 @import url("https://fonts.googleapis.com/css?family=Exo:400,400i,600,600i,800,800i");
 @media (max-width: 991px) {
   h1.responsive-heading {
@@ -246,8 +244,8 @@ footer .footer-social-icons a:hover i.fa,
 .custom-link,
 .custom-link:hover,
 .features .feature-content:hover span.icon,
-.gallery .filter-group .hidden-info,
-.gallery .filter-group .hidden-info:hover,
+.gallery .filter-group .hidden-info > span,
+.gallery .filter-group .hidden-info > a,
 .img-desc,
 .img-heading,
 .navbar .navbar-brand,
@@ -289,6 +287,7 @@ nav {
   .navbar-mobile-menu-wrapper .navbar-mobile-menu {
     background-color: #343a40; } }
 .gallery .filter-group .gallery-item:hover a.pic-link:after,
+.post-card:hover .post-img::after,
 .navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
   background-color: rgba(0, 0, 0, 0.5); }
 
@@ -444,8 +443,7 @@ section,
 
 .butn:hover,
 .pages-nav .the-page-item:hover,
-.post-card .read-more:hover,
-.post-card:hover {
+.post-card .read-more:hover {
   box-shadow: 0 8px 25px -5px #343a40; }
 
 a::selection,
@@ -520,9 +518,9 @@ span::-moz-selection {
     position: relative;
     padding: 1rem 0;
     cursor: pointer;
-    font-family: "Montserrat", "sans-serif";
-    font-size: .75rem;
-    font-weight: 700;
+    font-family: "Exo", "sans-serif";
+    font-size: 1rem;
+    font-weight: 600;
     letter-spacing: 1px;
     transition: all .3s ease-in-out;
     width: 100%; }
@@ -592,6 +590,8 @@ span::-moz-selection {
     position: relative;
     z-index: 3; }
 
+.all-posts .post-main-area {
+  padding-bottom: 2.5rem; }
 .all-posts .post-card {
   transition: all .3s ease-in-out;
   overflow: hidden;
@@ -600,7 +600,7 @@ span::-moz-selection {
     position: relative;
     overflow: hidden;
     transition: all .5s ease-in-out; }
-    .all-posts .post-card .post-img::before {
+    .all-posts .post-card .post-img::after {
       content: '';
       display: block;
       position: absolute;
@@ -608,7 +608,7 @@ span::-moz-selection {
       left: 0;
       right: 0;
       bottom: 0;
-      transition: all .5s ease-out; }
+      transition: background-color .5s ease-in-out; }
     .all-posts .post-card .post-img img {
       transition: transform .5s ease-out;
       max-height: 360px;
@@ -616,19 +616,36 @@ span::-moz-selection {
   .all-posts .post-card .post-card-info {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
     font-size: .75rem; }
-    .all-posts .post-card .post-card-info .auther-img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin-right: 5px; }
-      .all-posts .post-card .post-card-info .auther-img img {
+    .all-posts .post-card .post-card-info .auther-info {
+      display: flex;
+      align-items: center; }
+      .all-posts .post-card .post-card-info .auther-info .auther-img {
         width: 40px;
-        height: 40px; }
-    .all-posts .post-card .post-card-info .auther-name {
-      margin-right: 5px; }
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 5px; }
+        .all-posts .post-card .post-card-info .auther-info .auther-img img {
+          width: 40px;
+          height: 40px; }
+      .all-posts .post-card .post-card-info .auther-info .auther-name {
+        margin-right: 5px;
+        color: #ff5100; }
+      .all-posts .post-card .post-card-info .auther-info .auther-contact-info {
+        margin: 0;
+        padding: 0;
+        margin-right: 15px; }
+        .all-posts .post-card .post-card-info .auther-info .auther-contact-info > li {
+          display: inline-block;
+          margin-right: 5px;
+          cursor: pointer; }
+          .all-posts .post-card .post-card-info .auther-info .auther-contact-info > li > a {
+            color: #343a40; }
+            .all-posts .post-card .post-card-info .auther-info .auther-contact-info > li > a:hover {
+              color: #ff5100; }
   .all-posts .post-card .post-content {
     position: relative; }
     .all-posts .post-card .post-content .read-more {
@@ -661,6 +678,8 @@ span::-moz-selection {
     font-family: "Exo", "sans-serif";
     font-weight: 600; }
   .all-posts .post-card .post-title-link {
+    font-family: "Exo", "sans-serif";
+    font-size: 1.25rem;
     transition: color .3s ease-in-out; }
   .all-posts .post-card .post-card-tags .tags-list li {
     display: inline-block; }
@@ -688,41 +707,30 @@ span::-moz-selection {
     opacity: 1; }
   .all-posts .post-card:hover img {
     transform: scale(1.05); }
-.all-posts .pages-nav {
-  margin-bottom: 2rem; }
-  .all-posts .pages-nav .the-page-item {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 50%;
-    font-size: .85rem;
-    overflow: hidden;
-    transition: all .3s ease-in-out; }
-  .all-posts .pages-nav .prev,
-  .all-posts .pages-nav .next {
-    min-width: 100px;
-    border-radius: 30px;
-    margin: 0 10px; }
-  .all-posts .pages-nav .the-page-link {
-    display: inline-block;
-    width: 100%; }
+.all-posts .pages-nav .the-page-item {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: .85rem;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+  margin-right: 2px;
+  margin-left: 2px; }
+.all-posts .pages-nav .prev,
+.all-posts .pages-nav .next {
+  min-width: 100px;
+  border-radius: 30px;
+  margin: 0 10px; }
+.all-posts .pages-nav .the-page-link {
+  display: inline-block;
+  width: 100%; }
 @media (max-width: 991px) {
-  .all-posts .pages-nav {
-    position: relative;
-    margin-bottom: 30px; }
-    .all-posts .pages-nav .prev,
-    .all-posts .pages-nav .next {
-      position: absolute;
-      top: 50px;
-      min-width: 80px;
-      margin: 0; }
-    .all-posts .pages-nav .prev {
-      left: 0;
-      transform: translateX(100%); }
-    .all-posts .pages-nav .next {
-      right: 0;
-      transform: translateX(-100%); } }
+  .all-posts .pages-nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; } }
 @media (max-width: 360px) {
   .all-posts .pages-nav .prev,
   .all-posts .pages-nav .next {

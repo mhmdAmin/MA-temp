@@ -225,7 +225,12 @@ h6 {
 .pages-nav .the-page-item:hover,
 .side-bar .category .cat-link:hover,
 .side-bar .recent-post .post-heading-link:hover,
-.side-bar .archive .arch-link:hover {
+.side-bar .archive .arch-link:hover,
+.all-posts .post-card .post-card-info .auther-info .auther-name,
+.all-posts .post-card .post-card-info .auther-info .auther-contact-info > li > a:hover,
+.all-posts .comments .engagment-bar i.fa,
+.all-posts .comments .commenter-name > a,
+.all-posts .comments .engagment-bar .reply-action:hover {
   color: #ff5100; }
 
 .our-team .tm-social-icons a i.fa,
@@ -275,6 +280,13 @@ footer .copyrights,
 .text-extra-light-color,
 .home-page-header .header-wraper p.paragraph {
   color: #f5f5f5; }
+
+.all-posts .post-card .post-card-info .auther-info .auther-contact-info > li > a,
+.all-posts .comments .comment-time,
+.all-posts .comments .engagment-bar .reply-action,
+.all-posts .comments .is-comment .likes-count,
+.all-posts .comments .is-reply .likes-count {
+  color: #a1a1a1; }
 
 /*==================== 2- Background color group=================*/
 .pricing .plan .plan-cost,
@@ -372,6 +384,7 @@ section,
 .about-us .tab-head:hover {
   border-color: #343a40; }
 
+.all-posts .comments .comment-body,
 .about-us .tab-content .faq-accordion .card-body,
 .about-us .tab-content .faq-accordion .card-header,
 .about-us .tab-content .user-message-form input[type=email]:focus,
@@ -423,6 +436,7 @@ section,
   border-color: #d6d6d6; }
 
 /*=================== 4- box-shadow group====================*/
+.all-posts .comments .comment-body,
 .post-card,
 .post-body,
 .side-bar .box {
@@ -633,7 +647,7 @@ span::-moz-selection {
           height: 40px; }
       .all-posts .post-card .post-card-info .auther-info .auther-name {
         margin-right: 5px;
-        color: #ff5100; }
+        font-weight: 600; }
       .all-posts .post-card .post-card-info .auther-info .auther-contact-info {
         margin: 0;
         padding: 0;
@@ -642,10 +656,6 @@ span::-moz-selection {
           display: inline-block;
           margin-right: 5px;
           cursor: pointer; }
-          .all-posts .post-card .post-card-info .auther-info .auther-contact-info > li > a {
-            color: #343a40; }
-            .all-posts .post-card .post-card-info .auther-info .auther-contact-info > li > a:hover {
-              color: #ff5100; }
   .all-posts .post-card .post-content {
     position: relative; }
     .all-posts .post-card .post-content .read-more {
@@ -735,6 +745,38 @@ span::-moz-selection {
   .all-posts .pages-nav .prev,
   .all-posts .pages-nav .next {
     display: none; } }
+.all-posts .comments .is-comment,
+.all-posts .comments .is-reply {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.25rem; }
+.all-posts .comments .is-reply {
+  margin-left: 4rem; }
+.all-posts .comments .commenter-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1rem; }
+.all-posts .comments .comment-body {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid;
+  border-radius: .25rem; }
+.all-posts .comments .commenter-name {
+  margin: 0; }
+  .all-posts .comments .commenter-name > a {
+    font-size: .85rem; }
+.all-posts .comments .comment-time {
+  font-size: .75rem; }
+.all-posts .comments .comment-text {
+  font-size: .85rem; }
+.all-posts .comments .engagment-bar i.fa {
+  font-size: 1rem;
+  cursor: pointer; }
+.all-posts .comments .engagment-bar .reply-action {
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color .3s ease-in-out; }
 
 .side-bar .box {
   margin-bottom: 2rem;

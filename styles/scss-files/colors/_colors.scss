@@ -79,7 +79,13 @@ h6 {
 .pages-nav .the-page-item:hover,
 .side-bar .category .cat-link:hover,
 .side-bar .recent-post .post-heading-link:hover,
-.side-bar .archive .arch-link:hover {
+.side-bar .archive .arch-link:hover,
+.all-posts .post-card .post-card-info .auther-info .auther-name,
+.all-posts .post-card .post-card-info .auther-info .auther-contact-info>li>a:hover,
+ 
+.all-posts .comments .engagment-bar i.fa,
+.all-posts .comments .commenter-name>a,
+.all-posts .comments .engagment-bar .reply-action:hover {
     color: $mainThemeColor;
 }
 
@@ -132,6 +138,14 @@ footer .copyrights,
 .text-extra-light-color,
 .home-page-header .header-wraper p.paragraph {
     color: $extraLightColor;
+}
+
+.all-posts .post-card .post-card-info .auther-info .auther-contact-info>li>a,
+.all-posts .comments .comment-time,
+.all-posts .comments .engagment-bar .reply-action,
+.all-posts .comments .is-comment .likes-count,
+.all-posts .comments .is-reply .likes-count {
+    color: $lightColor;
 }
 
 /*==================== 2- Background color group=================*/
@@ -267,6 +281,7 @@ section,
     border-color: $darkColor;
 }
 
+.all-posts .comments .comment-body,
 .about-us .tab-content .faq-accordion .card-body,
 .about-us .tab-content .faq-accordion .card-header,
 .about-us .tab-content .user-message-form input[type=email]:focus,
@@ -324,6 +339,7 @@ section,
 
 /*=================== 4- box-shadow group====================*/
 
+.all-posts .comments .comment-body,
 .post-card,
 .post-body,
 .side-bar .box {

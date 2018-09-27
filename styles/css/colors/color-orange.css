@@ -30,6 +30,7 @@ h5,
 h6 {
   color: #343a40; }
 
+.article-section .breadcrumb-nav .breadcrumb .breadcrumb-item > a,
 .our-team .tm-social-icons a:hover i.fa,
 .our-team .tm-role,
 .super-paragraph,
@@ -56,18 +57,18 @@ h6 {
 .post-card i.fa-tags,
 .home-page-header .desc span,
 .post-card .post-title-link:hover,
-.post-card .post-card-info .publish-date,
-.all-posts .post-card .post-card-tags .tag-lable,
-.side-bar .tags-box .tag-lable:hover,
+.article-info-bar .publish-date,
 .pages-nav .the-page-item:hover,
 .side-bar .category .cat-link:hover,
 .side-bar .recent-post .post-heading-link:hover,
 .side-bar .archive .arch-link:hover,
-.all-posts .post-card .post-card-info .auther-info .auther-name,
-.all-posts .post-card .post-card-info .auther-info .auther-contact-info > li > a:hover,
-.all-posts .comments .engagment-bar i.fa,
-.all-posts .comments .commenter-name > a,
-.all-posts .comments .engagment-bar .reply-action:hover {
+.count-badge,
+.article-info-bar .auther-info .auther-name,
+.article-info-bar .auther-info .auther-contact-info > li > a:hover,
+.comments-area .engagment-bar i.fa,
+.comments-area .commenter-name > a,
+.comments-area .engagment-bar .reply-action:hover,
+.box-heading i.fa {
   color: #ff5100; }
 
 .our-team .tm-social-icons a i.fa,
@@ -75,8 +76,8 @@ footer .footer-social-icons a:hover i.fa,
 .side-bar .search-box i.fa {
   color: rgba(255, 81, 0, 0.7); }
 
-.blog-header .blog-home-page-heading h1,
-.blog-header .blog-home-page-heading p,
+.share-to-list .share-to-link:hover,
+.blog-header .blog-heading-content .blog-heading,
 .about-us .tab-head.active,
 .about-us .tab-head:hover,
 .butn,
@@ -106,7 +107,7 @@ footer .copyrights,
 .page-footer .footer-social-icons i.fa,
 .all-posts .pages-nav .the-page-link,
 .all-posts .post-card .post-content .read-more i.fa,
-.side-bar .tags-box .tag-lable,
+.tags-list .tag-lable,
 .post-card .post-engagement .views,
 .post-card .post-engagement .likes,
 .post-card .post-engagement .comments,
@@ -118,17 +119,19 @@ footer .copyrights,
 .home-page-header .header-wraper p.paragraph {
   color: #f5f5f5; }
 
-.all-posts .post-card .post-card-info .auther-info .auther-contact-info > li > a,
-.all-posts .comments .comment-time,
-.all-posts .comments .engagment-bar .reply-action,
-.all-posts .comments .is-comment .likes-count,
-.all-posts .comments .is-reply .likes-count {
+.share-to-list .share-to-link,
+.article-section .breadcrumb-nav .breadcrumb .breadcrumb-item > .active,
+.article-info-bar .auther-info .auther-contact-info > li > a,
+.comments-area .comment-time,
+.comments-area .engagment-bar .reply-action,
+.comments-area .is-comment .likes-count,
+.comments-area .is-reply .likes-count {
   color: #a1a1a1; }
 
 /*==================== 2- Background color group=================*/
 .pricing .plan .plan-cost,
 .post-card .post-engagement,
-.side-bar .tags-box .tag-lable,
+.tags-list .tag-lable,
 nav {
   background-color: #343a40; }
 
@@ -140,6 +143,8 @@ nav {
 .navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
   background-color: rgba(0, 0, 0, 0.5); }
 
+.share-to-list .share-to-link:hover,
+.tags-list .tag-lable:hover,
 .about-us .tab-head.active,
 .about-us .tab-head:hover,
 .butn,
@@ -197,6 +202,9 @@ section,
 .option-box .options-wraper .color-options ul li .pink-theme {
   background-color: #da00ff; }
 
+.article-section .breadcrumb-nav,
+.article-section .breadcrumb-nav .breadcrumb,
+.comments-area .leave-comment .user-comment,
 .about-us .tab-content .faq-accordion .card-header,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
 .about-us .tab-content .user-message-form input[type=email],
@@ -216,12 +224,13 @@ section,
 .gallery .filter-btn-list .filter-btn {
   border-color: transparent; }
 
-.side-bar .tags-box .tag-lable,
+.tags-list .tag-lable,
 .about-us .tab-head.active,
 .about-us .tab-head:hover {
   border-color: #343a40; }
 
-.all-posts .comments .comment-body,
+.comments-area .leave-comment .user-comment:focus,
+.comments-area .comment-body,
 .about-us .tab-content .faq-accordion .card-body,
 .about-us .tab-content .faq-accordion .card-header,
 .about-us .tab-content .user-message-form input[type=email]:focus,
@@ -244,17 +253,13 @@ section,
 .all-posts .post-card .post-engagement .engagement:nth-child(2),
 .side-bar .search-box .search-input,
 .side-bar .search-box .search-submit,
-.side-bar .box {
+.side-bar .box,
+.share-box,
+.article .article-body,
+.comments-area .comment-text {
   border-color: #ff5100; }
 
-.about-us .tab-content .user-message-form input[type=email],
-.about-us .tab-content .user-message-form input[type=text],
-.about-us .tab-content .user-message-form textarea,
-.news-letter input[type=email],
-.page-footer .copyrights,
-.page-footer .newsletter-form .newsletter-email input[type=email] {
-  border-color: rgba(255, 81, 0, 0.5); }
-
+.comments-area .leave-comment .user-comment,
 .about-us .tab-content .user-message-form input[type=email],
 .about-us .tab-content .user-message-form input[type=text],
 .about-us .tab-content .user-message-form textarea,
@@ -273,10 +278,14 @@ section,
   border-color: #d6d6d6; }
 
 /*=================== 4- box-shadow group====================*/
-.all-posts .comments .comment-body,
+.comments-area .comment-body,
 .post-card,
 .post-body,
-.side-bar .box {
+.side-bar .box,
+.article-section .article,
+.article-section .article-hero,
+.share-box .share-to-link,
+.comments-area .comment-input {
   box-shadow: 0 3px 15px rgba(52, 58, 64, 0.2); }
 
 .about-us .tab-content .faq-accordion .card,

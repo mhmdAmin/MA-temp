@@ -18,14 +18,14 @@
 // Start Blog Pages Global Rules
 .article-info-bar {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
     font-size: .75rem;
     .auther-info {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         .auther-img {
             width: 40px;
             height: 40px;
@@ -38,7 +38,7 @@
             }
         }
         .auther-name {
-            margin-right: 5px;
+            margin-right: 10px;
             font-weight: 600;
         }
         .auther-contact-info {
@@ -106,7 +106,7 @@ ul.tags-list {
             }
             img {
                 transition: transform .5s ease-out;
-                max-height: 360px;
+                height: 360px;
                 width: 100%;
             }
         }
@@ -118,7 +118,7 @@ ul.tags-list {
                 border-radius: 50%;
                 line-height: 44px;
                 position: absolute;
-                bottom: 20px;
+                top: -60px;
                 right: 50px;
                 text-align: center;
                 visibility: hidden;
@@ -247,58 +247,19 @@ ul.tags-list {
             font-size: .9rem;
         }
     }
-}
-
-// START SHARE-BOX 
-.share-box {
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-radius: .25rem; // border-bottom: 1px solid;
-    .share-to-bar {
-        padding: 1rem 0;
+    .end-of-post-content {
+        width: 50%;
+        margin: 30px auto;
+        height: 3px;
     }
-    .share-to-list {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 60%;
-        margin: 0 auto;
-        .share-to-title {
-            i.fa {
-                margin-right: 5px;
-            }
-            font-size: 1rem;
-            font-family: $headingFontFamily;
-        }
-        .share-to-link {
-            font-size: 1rem;
-            width: 35px;
-            height: 35px;
-            line-height: 35px;
-            text-align: center;
-            display: inline-block;
-            border-radius: 50%;
-            transition: all .3s ease-in-out;
-        }
-    }
-    @media screen and (max-width:991px) {
-        .share-to-list {
-            width: 100%;
-            .share-to-title {
-                font-size: .85rem;
-                font-family: $headingFontFamily;
-            }
-            .share-to-link {
-                // font-size: 1rem;
-                // width: 35px;
-                // height: 35px;
-                // line-height: 35px;
-            }
+    .share-us-title {
+        margin-bottom: 20px;
+        i.fa {
+            margin-right: 5px;
         }
     }
 }
 
-// END SHARE-BOX 
 // Start Comments Area
 .comments-area {
     .leave-comment {
@@ -352,6 +313,7 @@ ul.tags-list {
         font-size: .75rem;
     }
     .comment-text {
+        font-family: $bodyFontFamily;
         font-size: .85rem;
         margin-top: 1rem;
         padding-left: .5rem;

@@ -26,19 +26,6 @@
                 margin-bottom: .5rem;
             }
         }
-        .tm-social-icons {
-            a {
-                text-decoration: none;
-                margin-right: 10px;
-                &:last-of-type {
-                    margin-right: 0;
-                }
-                i.fa {
-                    font-size: 1.25rem;
-                    transition: color .3s ease-in-out;
-                }
-            }
-        }
     }
     @media screen and (max-width:991px) {
         .tm-member-card {

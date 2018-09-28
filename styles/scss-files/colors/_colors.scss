@@ -48,7 +48,6 @@ h6 {
 }
 
 .article-section .breadcrumb-nav .breadcrumb .breadcrumb-item>a,
-.our-team .tm-social-icons a:hover i.fa,
 .our-team .tm-role,
 .super-paragraph,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
@@ -89,13 +88,11 @@ h6 {
     color: $mainThemeColor;
 }
 
-.our-team .tm-social-icons a i.fa,
-footer .footer-social-icons a:hover i.fa,
 .side-bar .search-box i.fa {
     color: rgba( $mainThemeColor, .7);
 }
 
-.share-to-list .share-to-link:hover,
+.sc-holder .sc-icon:hover,
 .blog-header .blog-heading-content .blog-heading,
 .about-us .tab-head.active,
 .about-us .tab-head:hover,
@@ -123,7 +120,6 @@ footer .footer-social-icons a:hover i.fa,
 .title-center-border .active,
 .back-to-top,
 footer .copyrights,
-.page-footer .footer-social-icons i.fa,
 .all-posts .pages-nav .the-page-link,
 .all-posts .post-card .post-content .read-more i.fa,
 .tags-list .tag-lable,
@@ -140,7 +136,7 @@ footer .copyrights,
     color: $extraLightColor;
 }
 
-.share-to-list .share-to-link,
+.sc-holder .sc-icon,
 .article-section .breadcrumb-nav .breadcrumb .breadcrumb-item>.active,
 .article-info-bar .auther-info .auther-contact-info>li>a,
 .comments-area .comment-time,
@@ -171,7 +167,7 @@ nav {
     background-color: rgba($BlackColor, .5);
 }
 
-.share-to-list .share-to-link:hover,
+.sc-holder .sc-icon:hover,
 .tags-list .tag-lable:hover,
 .about-us .tab-head.active,
 .about-us .tab-head:hover,
@@ -188,6 +184,7 @@ nav {
     background-color: $mainThemeColor;
 }
 
+.end-of-post-content,
 .about-us .tab-content .faq-accordion .card-header .btn-link.active,
 .goals .goal-img:before,
 .goals .goal-img:after {
@@ -313,7 +310,6 @@ section,
 .side-bar .search-box .search-input,
 .side-bar .search-box .search-submit,
 .side-bar .box,
-.share-box,
 .article .article-body,
 .comments-area .comment-text {
     border-color: $mainThemeColor;
@@ -348,8 +344,7 @@ section,
 .side-bar .box,
 .article-section .article,
 .article-section .article-hero,
-// .share-box,
-.share-box .share-to-link,
+.sc-holder .sc-icon,
 .comments-area .comment-input {
     box-shadow: 0 3px 15px rgba($darkColor, .2);
 }
@@ -369,6 +364,7 @@ section,
     box-shadow: 0 5px 15px -5px $darkColor;
 }
 
+.sc-holder .sc-icon:hover,
 .butn:hover,
 .pages-nav .the-page-item:hover,
 .post-card .read-more:hover {

@@ -32,6 +32,35 @@ body {
   height: 1000px; }
 
 /*==========================    START GLOBAL RULES  ==========================*/
+.sc-holder .sc-list {
+  padding: 0;
+  margin: 0; }
+  .sc-holder .sc-list .sc-item {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px; }
+    .sc-holder .sc-list .sc-item:last-of-type {
+      margin-right: 0; }
+  .sc-holder .sc-list .sc-icon {
+    text-align: center;
+    border-radius: 50%;
+    transition: all .3s ease-in-out; }
+.sc-holder .sc-size-40 .sc-icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px; }
+.sc-holder .sc-size-32 .sc-icon {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px; }
+.sc-holder .sc-size-24 .sc-icon {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px; }
+
 .butn {
   position: relative;
   display: inline-block;
@@ -194,7 +223,6 @@ h6 {
   color: #343a40; }
 
 .article-section .breadcrumb-nav .breadcrumb .breadcrumb-item > a,
-.our-team .tm-social-icons a:hover i.fa,
 .our-team .tm-role,
 .super-paragraph,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
@@ -234,12 +262,10 @@ h6 {
 .box-heading i.fa {
   color: #ff5100; }
 
-.our-team .tm-social-icons a i.fa,
-footer .footer-social-icons a:hover i.fa,
 .side-bar .search-box i.fa {
   color: rgba(255, 81, 0, 0.7); }
 
-.share-to-list .share-to-link:hover,
+.sc-holder .sc-icon:hover,
 .blog-header .blog-heading-content .blog-heading,
 .about-us .tab-head.active,
 .about-us .tab-head:hover,
@@ -267,7 +293,6 @@ footer .footer-social-icons a:hover i.fa,
 .title-center-border .active,
 .back-to-top,
 footer .copyrights,
-.page-footer .footer-social-icons i.fa,
 .all-posts .pages-nav .the-page-link,
 .all-posts .post-card .post-content .read-more i.fa,
 .tags-list .tag-lable,
@@ -282,7 +307,7 @@ footer .copyrights,
 .home-page-header .header-wraper p.paragraph {
   color: #f5f5f5; }
 
-.share-to-list .share-to-link,
+.sc-holder .sc-icon,
 .article-section .breadcrumb-nav .breadcrumb .breadcrumb-item > .active,
 .article-info-bar .auther-info .auther-contact-info > li > a,
 .comments-area .comment-time,
@@ -306,7 +331,7 @@ nav {
 .navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
   background-color: rgba(0, 0, 0, 0.5); }
 
-.share-to-list .share-to-link:hover,
+.sc-holder .sc-icon:hover,
 .tags-list .tag-lable:hover,
 .about-us .tab-head.active,
 .about-us .tab-head:hover,
@@ -322,6 +347,7 @@ nav {
 .side-bar .search-box .search-submit {
   background-color: #ff5100; }
 
+.end-of-post-content,
 .about-us .tab-content .faq-accordion .card-header .btn-link.active,
 .goals .goal-img:before,
 .goals .goal-img:after {
@@ -417,7 +443,6 @@ section,
 .side-bar .search-box .search-input,
 .side-bar .search-box .search-submit,
 .side-bar .box,
-.share-box,
 .article .article-body,
 .comments-area .comment-text {
   border-color: #ff5100; }
@@ -447,7 +472,7 @@ section,
 .side-bar .box,
 .article-section .article,
 .article-section .article-hero,
-.share-box .share-to-link,
+.sc-holder .sc-icon,
 .comments-area .comment-input {
   box-shadow: 0 3px 15px rgba(52, 58, 64, 0.2); }
 
@@ -464,6 +489,7 @@ section,
 .post-card .read-more {
   box-shadow: 0 5px 15px -5px #343a40; }
 
+.sc-holder .sc-icon:hover,
 .butn:hover,
 .pages-nav .the-page-item:hover,
 .post-card .read-more:hover {
@@ -618,14 +644,14 @@ span::-moz-selection {
 
 .article-info-bar {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
   font-size: .75rem; }
   .article-info-bar .auther-info {
     display: flex;
-    align-items: center; }
+    align-items: baseline; }
     .article-info-bar .auther-info .auther-img {
       width: 40px;
       height: 40px;
@@ -636,7 +662,7 @@ span::-moz-selection {
         width: 40px;
         height: 40px; }
     .article-info-bar .auther-info .auther-name {
-      margin-right: 5px;
+      margin-right: 10px;
       font-weight: 600; }
     .article-info-bar .auther-info .auther-contact-info {
       margin: 0;
@@ -689,7 +715,7 @@ ul.tags-list .tag-lable {
       transition: background-color .5s ease-in-out; }
     .all-posts .post-card .post-img img {
       transition: transform .5s ease-out;
-      max-height: 360px;
+      height: 360px;
       width: 100%; }
   .all-posts .post-card .post-content {
     position: relative; }
@@ -699,7 +725,7 @@ ul.tags-list .tag-lable {
       border-radius: 50%;
       line-height: 44px;
       position: absolute;
-      bottom: 20px;
+      top: -60px;
       right: 50px;
       text-align: center;
       visibility: hidden;
@@ -786,39 +812,14 @@ ul.tags-list .tag-lable {
   .article-section .article-body {
     padding: 0 1rem 1rem 1rem;
     font-size: .9rem; } }
-
-.share-box {
-  padding: 1rem;
-  margin-bottom: 2rem;
-  border-radius: .25rem; }
-  .share-box .share-to-bar {
-    padding: 1rem 0; }
-  .share-box .share-to-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 60%;
-    margin: 0 auto; }
-    .share-box .share-to-list .share-to-title {
-      font-size: 1rem;
-      font-family: "Exo", "sans-serif"; }
-      .share-box .share-to-list .share-to-title i.fa {
-        margin-right: 5px; }
-    .share-box .share-to-list .share-to-link {
-      font-size: 1rem;
-      width: 35px;
-      height: 35px;
-      line-height: 35px;
-      text-align: center;
-      display: inline-block;
-      border-radius: 50%;
-      transition: all .3s ease-in-out; }
-  @media screen and (max-width: 991px) {
-    .share-box .share-to-list {
-      width: 100%; }
-      .share-box .share-to-list .share-to-title {
-        font-size: .85rem;
-        font-family: "Exo", "sans-serif"; } }
+.article-section .end-of-post-content {
+  width: 50%;
+  margin: 30px auto;
+  height: 3px; }
+.article-section .share-us-title {
+  margin-bottom: 20px; }
+  .article-section .share-us-title i.fa {
+    margin-right: 5px; }
 
 .comments-area .leave-comment {
   margin-bottom: 2rem; }
@@ -859,6 +860,7 @@ ul.tags-list .tag-lable {
 .comments-area .comment-time {
   font-size: .75rem; }
 .comments-area .comment-text {
+  font-family: "Montserrat", "sans-serif";
   font-size: .85rem;
   margin-top: 1rem;
   padding-left: .5rem;
@@ -1138,4 +1140,4 @@ ul.tags-list .tag-lable {
     transform: scale(1); } }
 /*==========================  END lOADING SCREEN DIV  ==========================*/
 
-/*# sourceMappingURL=blog-home-page-layout.css.map */
+/*# sourceMappingURL=blog-layout.css.map */

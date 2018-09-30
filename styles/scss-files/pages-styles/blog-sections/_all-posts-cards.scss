@@ -105,9 +105,10 @@ ul.tags-list {
                 transition: background-color .5s ease-in-out;
             }
             img {
-                transition: transform .5s ease-out;
-                height: 360px;
+                transition: transform .5s ease-out; // height: 360px;
                 width: 100%;
+                max-width: 100%;
+                height: auto;
             }
         }
         .post-content {

@@ -715,8 +715,9 @@ ul.tags-list .tag-lable {
       transition: background-color .5s ease-in-out; }
     .all-posts .post-card .post-img img {
       transition: transform .5s ease-out;
-      height: 360px;
-      width: 100%; }
+      width: 100%;
+      max-width: 100%;
+      height: auto; }
   .all-posts .post-card .post-content {
     position: relative; }
     .all-posts .post-card .post-content .read-more {

@@ -8,13 +8,9 @@
 
 */
 
-body {
-    height: 1000px;
-}
 
 // Start global Includes
 @import 'global-includes/_globals.scss';
-@import 'colors/color-orange.scss';
 @import 'global-includes/_navbar.scss';
 @import 'pages-styles/blog-sections/_all-posts-cards.scss';
 @import 'global-includes/_page-footer.scss';

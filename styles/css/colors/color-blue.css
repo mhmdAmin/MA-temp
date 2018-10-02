@@ -108,7 +108,7 @@ footer .copyrights,
 .post-card .post-engagement .likes,
 .post-card .post-engagement .comments,
 .side-bar .search-box i.fa {
-  color: #FFF; }
+  color: #fff; }
 
 .option-box .color-options .color-options-title,
 .text-extra-light-color,
@@ -125,6 +125,12 @@ footer .copyrights,
   color: #a1a1a1; }
 
 /*==================== 2- Background color group=================*/
+.footer-social-icons,
+.option-box,
+.option-box .box-handel,
+.option-box .options-wraper,
+.pages-nav .the-page-item,
+.page-footer,
 .pricing .plan .plan-cost,
 .post-card .post-engagement,
 .tags-list .tag-lable,
@@ -135,9 +141,12 @@ nav {
   .navbar-mobile-menu-wrapper .navbar-mobile-menu {
     background-color: #343a40; } }
 .gallery .filter-group .gallery-item:hover a.pic-link:after,
-.post-card:hover .post-img::after,
 .navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
   background-color: rgba(0, 0, 0, 0.5); }
+
+.article-section .article-body .end-of-article,
+.post-card .post-img::after {
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .sc-holder .sc-icon:hover,
 .tags-list .tag-lable:hover,
@@ -155,7 +164,6 @@ nav {
 .side-bar .search-box .search-submit {
   background-color: #01ceff; }
 
-.end-of-post-content,
 .about-us .tab-content .faq-accordion .card-header .btn-link.active,
 .goals .goal-img:before,
 .goals .goal-img:after {
@@ -168,26 +176,18 @@ nav {
 section,
 .butn:before,
 .butn:after {
-  background-color: #FFF; }
-
-.footer-social-icons,
-.option-box,
-.option-box .box-handel,
-.option-box .options-wraper,
-.pages-nav .the-page-item,
-.page-footer {
-  background-color: #343a40; }
+  background-color: #fff; }
 
 @media (max-width: 991px) {
   .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
-    color: #FFF !important; }
+    color: #fff !important; }
 
   .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
     background-color: rgba(1, 206, 255, 0.8); }
 
   .navbar-mobile-menu-wrapper .navbar-mobile-menu .nav-link:hover {
     background-color: rgba(1, 206, 255, 0.5) !important;
-    color: #FFF !important; } }
+    color: #fff !important; } }
 .option-box .options-wraper .color-options ul li .orange-theme {
   background-color: #ff5100; }
 .option-box .options-wraper .color-options ul li .blue-theme {
@@ -204,14 +204,15 @@ section,
 .comments-area .leave-comment .user-comment,
 .about-us .tab-content .faq-accordion .card-header,
 .about-us .tab-content .faq-accordion .card-header .btn-link,
-.about-us .tab-content .user-message-form input[type=email],
-.about-us .tab-content .user-message-form input[type=text],
+.about-us .tab-content .user-message-form input[type="email"],
+.about-us .tab-content .user-message-form input[type="text"],
 .about-us .tab-content .user-message-form textarea,
 .gallery .filter-btn-list .filter-btn,
 .img-frame,
 .info-tab .tab-head,
 .newsletter-form .newsletter-email .submit-btun,
-.page-footer input[type=email] {
+.page-footer input[type="email"],
+.post-card:hover .post-img::after {
   background-color: transparent; }
 
 /*=================== 3- borders group ==================*/
@@ -230,8 +231,8 @@ section,
 .comments-area .comment-body,
 .about-us .tab-content .faq-accordion .card-body,
 .about-us .tab-content .faq-accordion .card-header,
-.about-us .tab-content .user-message-form input[type=email]:focus,
-.about-us .tab-content .user-message-form input[type=text]:focus,
+.about-us .tab-content .user-message-form input[type="email"]:focus,
+.about-us .tab-content .user-message-form input[type="text"]:focus,
 .about-us .tab-content .user-message-form textarea:focus,
 .about-us .tab-head,
 .active:after,
@@ -256,16 +257,16 @@ section,
   border-color: #01ceff; }
 
 .comments-area .leave-comment .user-comment,
-.about-us .tab-content .user-message-form input[type=email],
-.about-us .tab-content .user-message-form input[type=text],
+.about-us .tab-content .user-message-form input[type="email"],
+.about-us .tab-content .user-message-form input[type="text"],
 .about-us .tab-content .user-message-form textarea,
-.news-letter input[type=email],
+.news-letter input[type="email"],
 .page-footer .copyrights,
-.page-footer .newsletter-form .newsletter-email input[type=email] {
+.page-footer .newsletter-form .newsletter-email input[type="email"] {
   border-color: rgba(1, 206, 255, 0.5); }
 
 .pricing .plan .plan-cost h3 {
-  border-color: #FFF; }
+  border-color: #fff; }
 
 .pricing .plan .plan-details ul li,
 .testmonials .customer-info,
@@ -315,7 +316,7 @@ i::selection,
 li::selection,
 p::selection,
 span::selection {
-  color: #FFF;
+  color: #fff;
   background: rgba(1, 206, 255, 0.7); }
 a::-moz-selection,
 div::-moz-selection,
@@ -329,7 +330,7 @@ i::-moz-selection,
 li::-moz-selection,
 p::-moz-selection,
 span::-moz-selection {
-  color: #FFF;
+  color: #fff;
   background: rgba(1, 206, 255, 0.7); }
 
 .navbar .navbar-toggler {

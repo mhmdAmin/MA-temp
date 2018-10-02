@@ -50,34 +50,43 @@
     font-size: .9rem; } }
 
 /*==========================    START GLOBAL RULES  ==========================*/
-.sc-holder .sc-list {
-  padding: 0;
-  margin: 0; }
-  .sc-holder .sc-list .sc-item {
+.sc-holder {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  .sc-holder .sc-title {
     display: inline-block;
-    margin-right: 5px;
-    margin-bottom: 5px; }
-    .sc-holder .sc-list .sc-item:last-of-type {
-      margin-right: 0; }
-  .sc-holder .sc-list .sc-icon {
-    text-align: center;
-    border-radius: 50%;
-    transition: all .3s ease-in-out; }
-.sc-holder .sc-size-40 .sc-icon {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 20px; }
-.sc-holder .sc-size-32 .sc-icon {
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
-  font-size: 16px; }
-.sc-holder .sc-size-24 .sc-icon {
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  font-size: 12px; }
+    margin-right: 20px; }
+    .sc-holder .sc-title i.fa {
+      margin-right: 5px; }
+  .sc-holder .sc-list {
+    padding: 0;
+    margin: 0;
+    display: inline-block; }
+    .sc-holder .sc-list .sc-item {
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 5px; }
+      .sc-holder .sc-list .sc-item:last-of-type {
+        margin-right: 0; }
+    .sc-holder .sc-list .sc-icon {
+      text-align: center;
+      border-radius: 50%;
+      transition: all .3s ease-in-out; }
+  .sc-holder .sc-size-40 .sc-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px; }
+  .sc-holder .sc-size-32 .sc-icon {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px; }
+  .sc-holder .sc-size-24 .sc-icon {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px; }
 
 .butn {
   position: relative;

@@ -9,9 +9,19 @@ $bodyFontFamily: 'Montserrat',
 'sans-serif';
 // Start Social Icons Styles
 .sc-holder {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .sc-title {
+        display: inline-block;
+        margin-right: 20px;
+        i.fa {
+            margin-right: 5px;
+        }
+    }
     .sc-list {
         padding: 0;
         margin: 0;
+        display: inline-block;
         .sc-item {
             display: inline-block;
             margin-right: 5px;

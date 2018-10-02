@@ -1,7 +1,7 @@
 .blog-header {
     position: relative;
     height: 50vh;
-    background: url('../../../../assets/Images/blog-header/blog-header.jpg');
+    background: url('../../assets/Images/blog-images/blog-header.jpg');
     background-size: cover;
     background-position: 50% 30%;
     z-index: 0;
@@ -93,6 +93,7 @@ ul.tags-list {
         .post-img {
             position: relative;
             overflow: hidden;
+            margin-bottom: 1rem;
             transition: all .5s ease-in-out;
             &::after {
                 content: '';
@@ -102,7 +103,7 @@ ul.tags-list {
                 left: 0;
                 right: 0;
                 bottom: 0;
-                transition: background-color .5s ease-in-out;
+                transition: all .5s ease-in-out;
             }
             img {
                 transition: transform .5s ease-out; // height: 360px;
@@ -165,11 +166,6 @@ ul.tags-list {
             right: 20px;
             visibility: visible;
             opacity: 1;
-        }
-        &:hover {
-            img {
-                // transform: scale(1.05);
-            }
         }
     }
     .pages-nav {
@@ -238,6 +234,13 @@ ul.tags-list {
         padding: 0 2rem 2rem 2rem;
         font-size: 1.15rem;
         border-bottom: 1px solid;
+        .article-fig {
+            margin: 2rem 0;
+        }
+        .end-of-article {
+            margin: 1rem auto;
+            height: 2px;
+        }
     }
     @media screen and (max-width:991px) {
         .article-title {
@@ -246,17 +249,6 @@ ul.tags-list {
         .article-body {
             padding: 0 1rem 1rem 1rem;
             font-size: .9rem;
-        }
-    }
-    .end-of-post-content {
-        width: 50%;
-        margin: 30px auto;
-        height: 3px;
-    }
-    .share-us-title {
-        margin-bottom: 20px;
-        i.fa {
-            margin-right: 5px;
         }
     }
 }

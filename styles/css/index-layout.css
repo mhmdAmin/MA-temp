@@ -850,32 +850,5 @@ header {
       display: none; } }
 
 /*==========================  END PARTNERS SECTION  ==========================*/
-/* Start our-team Social Icons */
-.our-team .tm-member-card {
-  margin: 0;
-  text-align: center; }
-  .our-team .tm-member-card .tm-img {
-    margin-bottom: 1rem; }
-    .our-team .tm-member-card .tm-img img {
-      transition: transform .3s ease-in-out; }
-      .our-team .tm-member-card .tm-img img:hover {
-        transform: scale(1.05); }
-  .our-team .tm-member-card .tm-details .tm-name {
-    margin-bottom: .25rem;
-    letter-spacing: 1px; }
-  .our-team .tm-member-card .tm-details .tm-role {
-    display: block;
-    font-family: "Montserrat", "sans-serif";
-    font-size: .8rem;
-    font-weight: 700;
-    margin-bottom: .5rem; }
-@media screen and (max-width: 991px) {
-  .our-team .tm-member-card {
-    margin: 0 1rem 2rem;
-    text-align: center; }
-    .our-team .tm-member-card .tm-img {
-      margin-bottom: 1rem; } }
-
-/* End our-team Social Icons */
 
 /*# sourceMappingURL=index-layout.css.map */

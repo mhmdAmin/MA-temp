@@ -137,7 +137,7 @@
   font-size: .85rem;
   line-height: 1.8;
   letter-spacing: .6px;
-  font-weight: 400; }
+  font-weight: 500; }
 
 .super-paragraph {
   font-size: 1.2rem;
@@ -552,14 +552,12 @@ header {
         display: inline-block; }
       .features .feature-box .feature-content .feat-title {
         margin-bottom: 1rem;
-        margin-top: .5rem; }
+        margin-top: .5rem;
+        font-size: 1.25rem; }
         @media screen and (max-width: 576px) {
           .features .feature-box .feature-content .feat-title {
-            font-size: .85rem;
             margin-bottom: .5rem;
             margin-top: .5rem; } }
-      .features .feature-box .feature-content .feat-text {
-        font-size: .8rem; }
 
 /*==========================  End FEATURES SECTION  ==========================*/
 /*==========================    START gallery SECTION  ==========================*/
@@ -739,9 +737,9 @@ header {
 
 /*==========================  END PRICING SECTION  ==========================*/
 /*  ==========================   START About Us SECTION ==========================*/
-.about-us .tab-list {
+.our-info-tabs .tab-list {
   margin-bottom: 40px; }
-.about-us .tab-head {
+.our-info-tabs .tab-head {
   position: relative;
   padding: 5px;
   min-width: 10%;
@@ -758,20 +756,20 @@ header {
   cursor: pointer;
   transition: all .3s ease-in-out; }
   @media (max-width: 991px) {
-    .about-us .tab-head {
+    .our-info-tabs .tab-head {
       font-size: .9rem; } }
-.about-us .tab-content {
+.our-info-tabs .tab-content {
   display: none; }
-  .about-us .tab-content .content-heading {
+  .our-info-tabs .tab-content .content-heading {
     margin-bottom: 1rem; }
-  .about-us .tab-content .faq-accordion .card {
+  .our-info-tabs .tab-content .faq-accordion .card {
     border: none;
     border-radius: 0; }
-  .about-us .tab-content .faq-accordion .card-header {
+  .our-info-tabs .tab-content .faq-accordion .card-header {
     padding: 0;
     position: relative;
     border: 1px solid; }
-    .about-us .tab-content .faq-accordion .card-header .btn-link {
+    .our-info-tabs .tab-content .faq-accordion .card-header .btn-link {
       width: 100%;
       padding-left: 10px;
       padding-right: 20px;
@@ -780,7 +778,7 @@ header {
       border-radius: 0;
       font-weight: bold;
       white-space: normal; }
-      .about-us .tab-content .faq-accordion .card-header .btn-link::after {
+      .our-info-tabs .tab-content .faq-accordion .card-header .btn-link::after {
         content: "\f106";
         font-family: fontawesome;
         font-size: inherit;
@@ -794,21 +792,21 @@ header {
         top: 10px;
         right: 10px;
         left: auto; }
-      .about-us .tab-content .faq-accordion .card-header .btn-link.collapsed::after {
+      .our-info-tabs .tab-content .faq-accordion .card-header .btn-link.collapsed::after {
         content: '\f107'; }
-  .about-us .tab-content .faq-accordion .card-body {
+  .our-info-tabs .tab-content .faq-accordion .card-body {
     border: 1px solid; }
-  .about-us .tab-content .user-message-form label {
+  .our-info-tabs .tab-content .user-message-form label {
     text-transform: capitalize;
     margin-bottom: 0;
     font-family: "Montserrat", "sans-serif";
     font-weight: normal; }
     @media (max-width: 991px) {
-      .about-us .tab-content .user-message-form label {
+      .our-info-tabs .tab-content .user-message-form label {
         font-size: .75rem; } }
-  .about-us .tab-content .user-message-form input[type=email],
-  .about-us .tab-content .user-message-form input[type=text],
-  .about-us .tab-content .user-message-form textarea {
+  .our-info-tabs .tab-content .user-message-form input[type=email],
+  .our-info-tabs .tab-content .user-message-form input[type=text],
+  .our-info-tabs .tab-content .user-message-form textarea {
     display: block;
     width: 100%;
     padding: 5px;
@@ -819,18 +817,18 @@ header {
     transition: border-color .3s ease-in-out;
     font-size: 1rem; }
     @media (max-width: 991px) {
-      .about-us .tab-content .user-message-form input[type=email],
-      .about-us .tab-content .user-message-form input[type=text],
-      .about-us .tab-content .user-message-form textarea {
+      .our-info-tabs .tab-content .user-message-form input[type=email],
+      .our-info-tabs .tab-content .user-message-form input[type=text],
+      .our-info-tabs .tab-content .user-message-form textarea {
         font-size: .75rem; } }
-  .about-us .tab-content .user-message-form textarea {
+  .our-info-tabs .tab-content .user-message-form textarea {
     min-height: 8rem; }
-  .about-us .tab-content .user-message-form input[type=submit] {
+  .our-info-tabs .tab-content .user-message-form input[type=submit] {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px; }
-.about-us .tab-content-1 {
+.our-info-tabs .tab-content-1 {
   display: block; }
 
 /* ========================== END About Us SECTION  ========================== */

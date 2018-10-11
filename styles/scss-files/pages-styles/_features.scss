@@ -15,15 +15,15 @@
             .feat-title {
                 margin-bottom: 1rem;
                 margin-top: .5rem;
+                font-size: 1.25rem;
                 @media screen and(max-width: 576px) {
-                    font-size: .85rem;
                     margin-bottom: .5rem;
                     margin-top: .5rem;
                 }
             }
-            .feat-text {
-                font-size: .8rem;
-            }
+            // .feat-text {
+            //     // font-size: .8rem;
+            // }
         }
     }
 }

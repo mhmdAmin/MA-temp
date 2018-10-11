@@ -116,7 +116,7 @@
   font-size: .85rem;
   line-height: 1.8;
   letter-spacing: .6px;
-  font-weight: 400; }
+  font-weight: 500; }
 
 .super-paragraph {
   font-size: 1.2rem;
@@ -313,7 +313,28 @@ header {
       font-size: 2rem;
       font-weight: 700; }
 
-/* Start our-team Social Icons */
+/*========================== START FEATURES SECTION  ==========================*/
+.features {
+  overflow: hidden; }
+  .features .feature-box {
+    transition: all .3s ease-in-out; }
+    .features .feature-box .feature-content {
+      transition: all .3s ease-in-out;
+      max-width: 400px;
+      margin: 0 auto; }
+      .features .feature-box .feature-content .fa {
+        font-size: 4rem;
+        display: inline-block; }
+      .features .feature-box .feature-content .feat-title {
+        margin-bottom: 1rem;
+        margin-top: .5rem;
+        font-size: 1.25rem; }
+        @media screen and (max-width: 576px) {
+          .features .feature-box .feature-content .feat-title {
+            margin-bottom: .5rem;
+            margin-top: .5rem; } }
+
+/*==========================  End FEATURES SECTION  ==========================*/
 .our-team .tm-member-card {
   position: relative;
   margin: 0 0 2rem;
@@ -339,7 +360,6 @@ header {
     .our-team .tm-member-card .tm-img {
       margin-bottom: 1rem; } }
 
-/* End our-team Social Icons */
 /*==========================  START page-footer   ==========================*/
 .page-footer {
   /*Start Google Map*/

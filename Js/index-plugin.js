@@ -234,14 +234,18 @@ $(function () {
   }
   );
   /*              End Window scroll functions               */
+
+
+
   /*             Start Images Filter              */
   $('.gallery .filter-btn').on('click', function () {
     //add .activ class on the clicked .filter-btn and remove it from other .filter-btns
     $(this).addClass('active').siblings().removeClass('active');
-    if ($(this).data('target') === 'all') {
+    if ($(this).data('target') == '.all') {
       //showing all thumbials pictures in the gallery
       $('.filter-group a.pic-link, .filter-group .info-link').removeClass('disabled-element').addClass('enabled-element');
       $('.filter-group a.pic-link').attr('data-fancybox', '.filter');
+      console.log('ok');
     }
     else {
       //showing specific thumbials pictures in the gallery acording to the btn clicked
@@ -250,12 +254,17 @@ $(function () {
       $('.filter-group  .hidden-info').removeClass('enabled-element').addClass('disabled-element'); //3- enable only the choosen pic-links
       $($(this).data('target')).removeClass('disabled-element').addClass('enabled-element').attr('data-fancybox', '.filter'); //4- enable only the .hidden-info div of the choosen pic-links
       $($(this).data('target')).siblings('.hidden-info').removeClass('disabled-element').addClass('enabled-element');
+      console.log('not ok');
     }
   }
   );
   /*               End Images Filter              */
+
+
+
+
   /*              Start show/hide tab-content              */
-  $(".about-us .tab-list .tab-head").on("click", function () {
+  $(".our-info-tabs .tab-list .tab-head").on("click", function () {
     // Show the wanted .tab-content and hide its sibilings
     var target = $(this).attr("data-target");
     $(target).fadeIn(600).siblings(".tab-content").hide(); // add .active   class on the clicked tab-head only

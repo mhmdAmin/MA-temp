@@ -33,8 +33,8 @@ h6 {
 .breadcrumb-nav .breadcrumb .breadcrumb-item > a,
 .our-team .tm-role,
 .super-paragraph,
-.about-us .tab-content .faq-accordion .card-header .btn-link,
-.about-us .tab-head,
+.our-info-tabs .tab-content .faq-accordion .card-header .btn-link,
+.our-info-tabs .tab-head,
 .features .feature-content .fa,
 .gallery .filter-btn-list .filter-btn,
 .gallery .filter-group .hidden-info a.info-link:hover,
@@ -75,8 +75,8 @@ h6 {
 
 .sc-holder .sc-icon:hover,
 .blog-header .blog-heading-content .blog-heading,
-.about-us .tab-head.active,
-.about-us .tab-head:hover,
+.our-info-tabs .tab-head.active,
+.our-info-tabs .tab-head:hover,
 .butn,
 .butn:focus,
 .butn:hover,
@@ -152,8 +152,8 @@ nav {
 
 .sc-holder .sc-icon:hover,
 .tags-list .tag-lable:hover,
-.about-us .tab-head.active,
-.about-us .tab-head:hover,
+.our-info-tabs .tab-head.active,
+.our-info-tabs .tab-head:hover,
 .butn,
 .loading-screen .spinner > div,
 .features .feature-content:hover span.icon,
@@ -166,7 +166,7 @@ nav {
 .side-bar .search-box .search-submit {
   background-color: #ff9700; }
 
-.about-us .tab-content .faq-accordion .card-header .btn-link.active,
+.our-info-tabs .tab-content .faq-accordion .card-header .btn-link.active,
 .goals .goal-img:before,
 .goals .goal-img:after {
   background-color: rgba(255, 151, 0, 0.5); }
@@ -204,11 +204,11 @@ section,
 .breadcrumb-nav,
 .breadcrumb-nav .breadcrumb,
 .comments-area .leave-comment .user-comment,
-.about-us .tab-content .faq-accordion .card-header,
-.about-us .tab-content .faq-accordion .card-header .btn-link,
-.about-us .tab-content .user-message-form input[type="email"],
-.about-us .tab-content .user-message-form input[type="text"],
-.about-us .tab-content .user-message-form textarea,
+.our-info-tabs .tab-content .faq-accordion .card-header,
+.our-info-tabs .tab-content .faq-accordion .card-header .btn-link,
+.our-info-tabs .tab-content .user-message-form input[type="email"],
+.our-info-tabs .tab-content .user-message-form input[type="text"],
+.our-info-tabs .tab-content .user-message-form textarea,
 .gallery .filter-btn-list .filter-btn,
 .img-frame,
 .info-tab .tab-head,
@@ -225,18 +225,18 @@ section,
   border-color: transparent; }
 
 .tags-list .tag-lable,
-.about-us .tab-head.active,
-.about-us .tab-head:hover {
+.our-info-tabs .tab-head.active,
+.our-info-tabs .tab-head:hover {
   border-color: #343a40; }
 
 .comments-area .leave-comment .user-comment:focus,
 .comments-area .comment-body,
-.about-us .tab-content .faq-accordion .card-body,
-.about-us .tab-content .faq-accordion .card-header,
-.about-us .tab-content .user-message-form input[type="email"]:focus,
-.about-us .tab-content .user-message-form input[type="text"]:focus,
-.about-us .tab-content .user-message-form textarea:focus,
-.about-us .tab-head,
+.our-info-tabs .tab-content .faq-accordion .card-body,
+.our-info-tabs .tab-content .faq-accordion .card-header,
+.our-info-tabs .tab-content .user-message-form input[type="email"]:focus,
+.our-info-tabs .tab-content .user-message-form input[type="text"]:focus,
+.our-info-tabs .tab-content .user-message-form textarea:focus,
+.our-info-tabs .tab-head,
 .active:after,
 .box-handel,
 .butn,
@@ -259,9 +259,9 @@ section,
   border-color: #ff9700; }
 
 .comments-area .leave-comment .user-comment,
-.about-us .tab-content .user-message-form input[type="email"],
-.about-us .tab-content .user-message-form input[type="text"],
-.about-us .tab-content .user-message-form textarea,
+.our-info-tabs .tab-content .user-message-form input[type="email"],
+.our-info-tabs .tab-content .user-message-form input[type="text"],
+.our-info-tabs .tab-content .user-message-form textarea,
 .news-letter input[type="email"],
 .page-footer .copyrights,
 .page-footer .newsletter-form .newsletter-email input[type="email"] {
@@ -287,7 +287,7 @@ section,
 .comments-area .comment-input {
   box-shadow: 0 3px 15px rgba(52, 58, 64, 0.2); }
 
-.about-us .tab-content .faq-accordion .card,
+.our-info-tabs .tab-content .faq-accordion .card,
 .img-frame,
 .pricing .plan,
 .testmonials .testmonial-content,

@@ -1,72 +1,70 @@
 /*==========================   START HEADER  ========================== */
 
-header {
-    background: url('../../assets/Images/header/main-header.jpg') no-repeat;
+.home-page-header {
+    background: url('../../assets/Images/header/main-header.jpg');
     background-size: cover;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
     position: relative;
     z-index: 1;
     overflow: hidden;
-    .header-wraper {
+    .header-content {
         position: relative;
         z-index: 3;
-        max-height: 100vh;
-        height: 100vh;
-        .desc {
+        .disc-heading-1 {
+            font-size: 6rem;
+            font-weight: 800;
+            display: inline-block;
+        }
+        span {
+            font-size: 3.333333334rem;
+            font-weight: 400;
+            font-family: $headingFontFamily;
+        }
+        .disc-heading-2 {
+            font-size: 2rem;
+            font-weight: 400;
+            font-style: italic;
+        }
+        .paragraph {
+            margin-bottom: 0;
+        }
+        @media(max-width:767px) {
             .disc-heading-1 {
-                font-size: 6rem;
-                font-weight: 800;
-                display: inline-block;
+                font-size: 3rem;
             }
             span {
-                font-size: 3.333333334rem;
-                font-weight: 400;
-                font-family: $headingFontFamily;
+                font-size: 2rem;
             }
             .disc-heading-2 {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 font-weight: 400;
-                font-style: italic;
             }
             .paragraph {
                 margin-bottom: 0;
+                font-size: .85rem;
+                line-height: 1.6;
             }
-            @media(max-width:767px) {
-                .disc-heading-1 {
-                    font-size: 3rem;
-                }
-                span {
-                    font-size: 2rem;
-                }
-                .disc-heading-2 {
-                    font-size: 1.5rem;
-                    font-weight: 400;
-                }
-                .paragraph {
-                    margin-bottom: 0;
-                    font-size: .85rem;
-                    line-height: 1.6;
-                }
+        }
+        @media(max-height:450px) {
+            .disc-heading-1 {
+                font-size: 3rem;
             }
-            @media(max-height:450px) {
-                .disc-heading-1 {
-                    font-size: 3rem;
-                }
-                span {
-                    font-size: 1rem;
-                }
-                .disc-heading-2 {
-                    font-size: 1rem;
-                    font-weight: 400;
-                }
-                .paragraph {
-                    margin-bottom: 0;
-                    font-size: .85rem;
-                    line-height: 1.6;
-                }
-                .cta {
-                    min-width: 150px;
-                }
+            span {
+                font-size: 1rem;
+            }
+            .disc-heading-2 {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+            .paragraph {
+                margin-bottom: 0;
+                font-size: .85rem;
+                line-height: 1.6;
+            }
+            .cta {
+                min-width: 150px;
             }
         }
     }

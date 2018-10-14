@@ -30,10 +30,12 @@ h5,
 h6 {
   color: #343a40; }
 
+.contact-info .contact-info-card i.fa,
+.contact-info .contact-info-card a.info:hover,
 .breadcrumb-nav .breadcrumb .breadcrumb-item > a,
 .our-team .tm-role,
 .super-paragraph,
-.our-info-tabs .tab-content .faq-accordion .card-header .btn-link,
+.faq-accordion .card-header .btn-link,
 .our-info-tabs .tab-head,
 .features .feature-content .fa,
 .gallery .filter-btn-list .filter-btn,
@@ -52,9 +54,9 @@ h6 {
 .testmonials .swiper-container .swiper-button-prev i,
 .testmonials .testmonial-content .customer-details .customer-role,
 .useful-links ul li a:before,
-.home-page-header .desc span,
+.home-page-header .header-content span,
 .post-card i.fa-tags,
-.home-page-header .desc span,
+.home-page-header .header-content span,
 .post-card .post-title-link:hover,
 .article-info-bar .publish-date,
 .pages-nav .the-page-item:hover,
@@ -74,7 +76,7 @@ h6 {
   color: rgba(255, 151, 0, 0.7); }
 
 .sc-holder .sc-icon:hover,
-.blog-header .blog-heading-content .blog-heading,
+.blog-header .header-content .blog-heading,
 .our-info-tabs .tab-head.active,
 .our-info-tabs .tab-head:hover,
 .butn,
@@ -93,7 +95,7 @@ h6 {
 .page-footer .adress-info,
 .page-footer .adress-info ul li a,
 .page-footer .useful-links ul li a,
-.home-page-header .desc a.butn,
+.home-page-header .header-content a.butn,
 .pricing .plan .plan-cost,
 .pricing .plan-cost h4,
 .pricing .plan-details ul,
@@ -109,14 +111,20 @@ footer .copyrights,
 .post-card .post-engagement .comments,
 .side-bar .search-box i.fa,
 .about-us-header .about-us-heading,
-.about-us-header .about-us-brief {
+.about-us-header .about-us-brief,
+.contact-us-header .contact-us-heading,
+.our-video .video-section-title,
+.our-video .video-heading,
+.our-video .video-desc,
+.our-video .play-butn {
   color: #fff; }
 
 .option-box .color-options .color-options-title,
 .text-extra-light-color,
-.home-page-header .header-wraper p.paragraph {
+.home-page-header .header-content p.paragraph {
   color: #f5f5f5; }
 
+.contact-info .contact-info-card .info,
 .sc-holder .sc-icon,
 .breadcrumb-nav .breadcrumb .breadcrumb-item > .active,
 .article-info-bar .auther-info .auther-contact-info > li > a,
@@ -166,7 +174,7 @@ nav {
 .side-bar .search-box .search-submit {
   background-color: #ff9700; }
 
-.our-info-tabs .tab-content .faq-accordion .card-header .btn-link.active,
+.faq-accordion .card-header .btn-link.active,
 .goals .goal-img:before,
 .goals .goal-img:after {
   background-color: rgba(255, 151, 0, 0.5); }
@@ -204,11 +212,11 @@ section,
 .breadcrumb-nav,
 .breadcrumb-nav .breadcrumb,
 .comments-area .leave-comment .user-comment,
-.our-info-tabs .tab-content .faq-accordion .card-header,
-.our-info-tabs .tab-content .faq-accordion .card-header .btn-link,
-.our-info-tabs .tab-content .user-message-form input[type="email"],
-.our-info-tabs .tab-content .user-message-form input[type="text"],
-.our-info-tabs .tab-content .user-message-form textarea,
+.faq-accordion .card-header,
+.faq-accordion .card-header .btn-link,
+.user-message-form input[type="email"],
+.user-message-form input[type="text"],
+.user-message-form textarea,
 .gallery .filter-btn-list .filter-btn,
 .img-frame,
 .info-tab .tab-head,
@@ -229,13 +237,14 @@ section,
 .our-info-tabs .tab-head:hover {
   border-color: #343a40; }
 
+.our-video .play-butn:hover,
 .comments-area .leave-comment .user-comment:focus,
 .comments-area .comment-body,
-.our-info-tabs .tab-content .faq-accordion .card-body,
-.our-info-tabs .tab-content .faq-accordion .card-header,
-.our-info-tabs .tab-content .user-message-form input[type="email"]:focus,
-.our-info-tabs .tab-content .user-message-form input[type="text"]:focus,
-.our-info-tabs .tab-content .user-message-form textarea:focus,
+.faq-accordion .card-body,
+.faq-accordion .card-header,
+.user-message-form input[type="email"]:focus,
+.user-message-form input[type="text"]:focus,
+.user-message-form textarea:focus,
 .our-info-tabs .tab-head,
 .active:after,
 .box-handel,
@@ -259,17 +268,19 @@ section,
   border-color: #ff9700; }
 
 .comments-area .leave-comment .user-comment,
-.our-info-tabs .tab-content .user-message-form input[type="email"],
-.our-info-tabs .tab-content .user-message-form input[type="text"],
-.our-info-tabs .tab-content .user-message-form textarea,
+.user-message-form input[type="email"],
+.user-message-form input[type="text"],
+.user-message-form textarea,
 .news-letter input[type="email"],
 .page-footer .copyrights,
 .page-footer .newsletter-form .newsletter-email input[type="email"] {
   border-color: rgba(255, 151, 0, 0.5); }
 
-.pricing .plan .plan-cost h3 {
+.pricing .plan .plan-cost h3,
+.our-video .play-butn {
   border-color: #fff; }
 
+.our-clients .client-logo,
 .pricing .plan .plan-details ul li,
 .testmonials .customer-info,
 .side-bar .category,
@@ -277,6 +288,7 @@ section,
   border-color: #d6d6d6; }
 
 /*=================== 4- box-shadow group====================*/
+.contact-info-card,
 .comments-area .comment-body,
 .post-card,
 .post-body,
@@ -287,7 +299,7 @@ section,
 .comments-area .comment-input {
   box-shadow: 0 3px 15px rgba(52, 58, 64, 0.2); }
 
-.our-info-tabs .tab-content .faq-accordion .card,
+.faq-accordion .card,
 .img-frame,
 .pricing .plan,
 .testmonials .testmonial-content,

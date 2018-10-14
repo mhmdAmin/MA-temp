@@ -1,0 +1,19 @@
+.our-clients {
+    .clients-logo-wraper {
+        margin-bottom: 2rem;
+    }
+    .client-logo {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: 3px solid;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        @media screen AND (max-width: 991px) {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            margin-bottom: .5rem;
+            margin-top: .5rem;
+        }
+    }
+}

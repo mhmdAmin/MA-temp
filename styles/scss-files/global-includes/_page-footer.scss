@@ -1,17 +1,13 @@
 /*==========================  START page-footer   ==========================*/
 
 .page-footer {
+    .map {
+        min-height: 360px;
+    }
     a,
     address {
         font-family: $bodyFontFamily;
     }
-    /*Start Google Map*/
-    .map {
-        width: 100%;
-        min-height: 230px;
-        height: 100%;
-    }
-    /*End Google Map*/
     .adress-info ul li {
         margin-bottom: 1rem;
         font-size: .85rem;

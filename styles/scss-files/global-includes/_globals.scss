@@ -7,10 +7,14 @@ $headingFontFamily: 'Exo',
 'sans-serif';
 $bodyFontFamily: 'Montserrat',
 'sans-serif';
+/*Start Google Map*/
+
+/*End Google Map*/
+
 // Start Social Icons Styles
 .sc-holder {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    // padding-top: 1rem;
+    // padding-bottom: 1rem;
     .sc-title {
         display: inline-block;
         margin-right: 20px;
@@ -107,9 +111,15 @@ $bodyFontFamily: 'Montserrat',
     }
     @media (max-width: 991px) {
         font-size: .8rem;
-        min-width: auto;
+        min-width: 120px;
         padding: .75rem;
     }
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
 }
 
 //used as a selector to manipulate the <p> element as needed
@@ -156,7 +166,7 @@ $bodyFontFamily: 'Montserrat',
     border-bottom: 4px solid;
     border-radius: 5px;
     width: 65px;
-    margin-top: .5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     display: block;
 }

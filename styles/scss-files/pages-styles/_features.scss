@@ -2,28 +2,28 @@
 
 .features {
     overflow: hidden;
-    .feature-box {
+    .features-section-title {
+        margin-bottom: 3rem;
+    }
+    .feature-card {
         transition: all .3s ease-in-out;
+        margin-bottom: 2rem;
         .feature-content {
             transition: all .3s ease-in-out;
             max-width: 400px;
             margin: 0 auto;
             .fa {
-                font-size: 4rem;
-                display: inline-block;
+                font-size: 3rem;
             }
             .feat-title {
-                margin-bottom: 1rem;
-                margin-top: .5rem;
+                margin-bottom: 1.5rem;
+                margin-top: .75rem;
                 font-size: 1.25rem;
                 @media screen and(max-width: 576px) {
                     margin-bottom: .5rem;
                     margin-top: .5rem;
                 }
             }
-            // .feat-text {
-            //     // font-size: .8rem;
-            // }
         }
     }
 }

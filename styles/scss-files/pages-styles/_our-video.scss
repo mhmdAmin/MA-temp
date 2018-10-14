@@ -1,0 +1,34 @@
+ .our-video {
+     position: relative;
+     z-index: 0;
+     height: 50vh;
+     background: url('../../assets/Images/video/video-bg.jpeg');
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     .our-video-content {
+         position: relative;
+         z-index: 3;
+     }
+     .video-section-title {
+         margin-bottom: 3rem;
+     }
+     .play-butn {
+         display: inline-block;
+         width: 5rem;
+         height: 5rem; //  line-height: calc(5rem + 4px);
+         //  text-align: center;
+         border-radius: 50%;
+         border: 4px solid;
+         transition: all .3s ease-in-out;
+         position: relative;
+         i.fa {
+             font-size: 2rem;
+             position: absolute;
+             left: 50%;
+             top: 50%;
+             transform: translate(-50%, -50%)
+         }
+     }
+ }

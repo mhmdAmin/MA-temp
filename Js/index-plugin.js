@@ -96,8 +96,8 @@ $(function () {
   }
   );
 
-  //initialize swiper [partners Section] when document ready
-  var partenersSlider = new Swiper('.partners .swiper-container', {
+  //initialize swiper [clients Section] when document ready
+  var partenersSlider = new Swiper('.our-clients .swiper-container', {
     // Optional parameters
     speed: 600,
     loop: true,

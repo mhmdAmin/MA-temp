@@ -71,45 +71,46 @@
                 border: 1px solid;
             }
         }
-        .user-message-form {
-            label {
-                text-transform: capitalize;
-                margin-bottom: 0;
-                font-family: $bodyFontFamily;
-                font-weight: normal;
-                @media(max-width: 991px) {
-                    font-size: .75rem;
-                }
-            }
-            input[type=email],
-            input[type=text],
-            textarea {
-                display: block;
-                width: 100%;
-                padding: 5px;
-                outline: none;
-                border: 1px solid;
-                border-radius: .25rem;
-                margin-bottom: .5rem;
-                transition: border-color .3s ease-in-out;
-                font-size: 1rem;
-                @media(max-width: 991px) {
-                    font-size: .75rem;
-                }
-            }
-            textarea {
-                min-height: 8rem;
-            }
-            input[type=submit] {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 10px;
-            }
-        }
     }
     .tab-content-1 {
         display: block;
+    }
+}
+
+.user-message-form {
+    label {
+        text-transform: capitalize;
+        margin-bottom: 0;
+        font-family: $bodyFontFamily;
+        font-weight: normal;
+        @media(max-width: 991px) {
+            font-size: .75rem;
+        }
+    }
+    input[type=email],
+    input[type=text],
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        outline: none;
+        border: 1px solid;
+        border-radius: .25rem;
+        margin-bottom: .5rem;
+        transition: border-color .3s ease-in-out;
+        font-size: 1rem;
+        @media(max-width: 991px) {
+            font-size: .75rem;
+        }
+    }
+    textarea {
+        min-height: 8rem;
+    }
+    input[type=submit] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
     }
 }
 

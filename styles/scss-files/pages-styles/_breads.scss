@@ -1,0 +1,23 @@
+.bread-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 3;
+}
+
+.bread-left {
+    position: absolute;
+    left: 0;
+    transform: none;
+    bottom: 20px;
+    z-index: 3;
+}
+
+.bread-right {
+    position: absolute;
+    right: 0;
+    transform: none;
+    bottom: 20px;
+    z-index: 3;
+}

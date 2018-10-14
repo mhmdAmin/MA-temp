@@ -5,7 +5,10 @@
     background-size: cover;
     background-position: 50% 30%;
     z-index: 0;
-    .blog-heading-content {
+    @media screen and(max-width: 991px) {
+        height: 100vh;
+    }
+    .header-content {
         position: relative;
         z-index: 3;
         .blog-heading {

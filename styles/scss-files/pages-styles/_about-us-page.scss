@@ -1,25 +1,27 @@
-body {
-    height: 1000px;
-}
+ .about-us-header {
+     position: relative;
+     min-height: 60vh;
+     background: url('../../assets/Images/about-us/about-us-header.jpeg');
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     z-index: 0;
+     .header-content {
+         position: relative; // padding: 2rem 0;
+         z-index: 3;
+     } 
+      .bread {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 20px;
+          z-index: 3;
+      }
+ }
 
-header {
-    position: relative;
-    min-height: 50vh;
-    background: url('../../assets/Images/about-us/about-us-header.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    z-index: 0;
-    .about-us-heading-content {
-        position: relative;
-        padding: 2rem 0;
-        z-index: 3;
-        .about-us-heading {
-            font-size: 2rem;
-            font-weight: 700;
-        }
-    }
-}
-
-@import '_features.scss';
-@import '_our-team.scss';
+ @import '_breads.scss';
+ @import '_features.scss';
+ @import '_our-video.scss';
+ @import '_our-team.scss';
+ @import '_our-clients.scss';
+ @import '_faq.scss';

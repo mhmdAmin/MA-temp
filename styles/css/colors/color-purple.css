@@ -75,7 +75,7 @@ h6 {
   color: rgba(122, 25, 167, 0.7); }
 
 .sc-holder .sc-icon:hover,
-.blog-header .header-content .blog-heading,
+.blog-home-header .header-content .blog-heading,
 .multi-tabs .tab-head.active,
 .multi-tabs .tab-head:hover,
 .butn,
@@ -287,7 +287,7 @@ section,
   border-color: #d6d6d6; }
 
 /*=================== 4- box-shadow group====================*/
-.contact-info-card,
+.contact-info .contact-info-card,
 .comments-area .comment-body,
 .post-card,
 .post-body,

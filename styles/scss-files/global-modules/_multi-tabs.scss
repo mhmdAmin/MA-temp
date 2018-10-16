@@ -1,0 +1,38 @@
+/* Start multi-tabs Styles */
+
+.multi-tabs {
+    .tabs-head-list {
+        margin-bottom: 40px;
+    }
+    .tab-head {
+        position: relative;
+        padding: 5px;
+        min-width: 10%;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        border-radius: .25rem .25rem 0 0;
+        border-bottom: 2px solid;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        @media (max-width: 991px) {
+            font-size: .9rem;
+        }
+    }
+    .tab-content {
+        display: none;
+        .content-heading {
+            margin-bottom: 1rem;
+        }
+    }
+    .tab-content-1 {
+        display: block;
+    }
+}
+
+/*End multi-tabs Styles*/

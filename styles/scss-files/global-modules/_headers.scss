@@ -1,17 +1,29 @@
-/*==========================   START HEADER  ========================== */
+/*==========================   START MAIN HEADER  ========================== */
 
-.home-page-header {
-    background: url('../../assets/Images/header/main-header.jpg');
+.main-header {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    height: 100vh;
     position: relative;
     z-index: 1;
     overflow: hidden;
     .header-content {
         position: relative;
         z-index: 3;
+    }
+    .bread {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        z-index: 3;
+    }
+}
+
+.home-page-header {
+    background: url('../../assets/Images/header/main-header.jpg');
+    height: 100vh;
+    .header-content {
         .disc-heading-1 {
             font-size: 6rem;
             font-weight: 800;
@@ -70,4 +82,35 @@
     }
 }
 
-/*==========================  END HEADER  ==========================*/
+/*==========================  END MAIN HEADER  ==========================*/
+
+/* Start About-us page Header  */
+
+.about-us-header {
+    min-height: 60vh;
+    background: url('../../assets/Images/about-us/about-us-header.jpeg');
+}
+
+/* End About-us page Header  */
+
+/* Start blog-home-page Header  */
+
+.blog-home-header {
+    height: 60vh;
+    background: url('../../assets/Images/blog-images/blog-header.jpg');
+    .blog-heading {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+/* End blog-home-page Header  */
+
+/* Start contact-us-header Header  */
+
+.contact-us-header {
+    min-height: 60vh;
+    background: url('../../assets/Images/contact-us/contact-us.jpeg');
+}
+
+/* End contact-us-header Header  */

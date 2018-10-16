@@ -1,24 +1,5 @@
-.blog-header {
-    position: relative;
-    height: 50vh;
-    background: url('../../assets/Images/blog-images/blog-header.jpg');
-    background-size: cover;
-    background-position: 50% 30%;
-    z-index: 0;
-    @media screen and(max-width: 991px) {
-        height: 100vh;
-    }
-    .header-content {
-        position: relative;
-        z-index: 3;
-        .blog-heading {
-            font-size: 2rem;
-            font-weight: 700;
-        }
-    }
-}
+/* Start Blog Pages Global Rules */
 
-/* Start Blog Pages Global Rules   */ 
 .article-info-bar {
     display: flex;
     align-items: baseline;
@@ -61,6 +42,7 @@
 }
 
 ul.tags-list {
+    list-style: none;
     li {
         display: inline-block;
         margin-right: .25rem;
@@ -84,7 +66,8 @@ ul.tags-list {
     }
 }
 
-/*  End Blog Pages Global Rules  */ 
+/*  End Blog Pages Global Rules  */
+
 .all-posts {
     .posts-main-area {
         padding-bottom: 2.5rem;
@@ -109,7 +92,7 @@ ul.tags-list {
                 transition: all .5s ease-in-out;
             }
             img {
-                transition: transform .5s ease-out;  
+                transition: transform .5s ease-out;
                 width: 100%;
                 max-width: 100%;
                 height: auto;
@@ -213,6 +196,7 @@ ul.tags-list {
 }
 
 /*  start .artical-section  */
+
 .article-section {
     .article {
         margin-bottom: 2rem;
@@ -256,7 +240,8 @@ ul.tags-list {
     }
 }
 
-/*  Start Comments Area  */ 
+/*  Start Comments Area  */
+
 .comments-area {
     .leave-comment {
         margin-bottom: 2rem;
@@ -296,7 +281,7 @@ ul.tags-list {
         margin-right: .5rem;
     }
     .comment-body {
-        padding: 1rem; 
+        padding: 1rem;
         border-radius: .25rem;
     }
     .commenter-name {

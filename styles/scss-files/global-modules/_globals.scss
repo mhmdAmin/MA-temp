@@ -1,0 +1,148 @@
+/*==========================    START GLOBAL RULES  ==========================*/
+
+/*  Importing Fonts  */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i");
+@import url('https://fonts.googleapis.com/css?family=Exo:400,400i,500,500i,600,600i,800,800i');
+$headingFontFamily: 'Exo',
+'sans-serif';
+$bodyFontFamily: 'Montserrat',
+'sans-serif';
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/*  used as a selector to manipulate the <p> element as needed  */
+
+.paragraph {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 1.25rem;
+    font-family: $bodyFontFamily;
+    font-size: .85rem;
+    line-height: 1.8;
+    letter-spacing: .6px;
+    font-weight: 500;
+}
+
+.super-paragraph {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*  to make a nice frame on the imgs that has this class  */
+
+.img-frame {
+    border-radius: .75rem;
+    padding: .5rem;
+}
+
+/*  to enable any element that previously had the .disabled-element class.  */
+
+.enabeld-element {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*  to disable any element and prevent the mouse action on it  */
+
+.disabled-element {
+    opacity: .2;
+    pointer-events: none;
+}
+
+/*  add a short border after an element such as headings  */
+
+.title-center-border:after,
+.title-left-border:after,
+.title-right-border:after {
+    content: '';
+    border-bottom: 4px solid;
+    border-radius: 5px;
+    width: 65px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/*  to add a left aligned border after the element use this class  */
+
+.title-left-border {
+    &:after {
+        margin-right: auto;
+    }
+}
+
+/*  to add a right aligned border after the element use this class  */
+
+.title-right-border {
+    &:after {
+        margin-left: auto;
+    }
+}
+
+/*  to add a center aligned border after the element use this class  */
+
+.title-center-border {
+    &:after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*   an overlay to use in multibale places  */
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* set the parent of this class z-index=1 and the content div after this class with z-index=3 to be always on the top of overlay */
+    z-index: 2;
+}
+
+/* used to stop scrolling the page while the navbar menu opend on screen less than 992px  */
+
+.no-scroll {
+    @media screen AND (max-width: 991px) {
+        overflow: hidden;
+    }
+}
+
+body {
+    /* ncessary for the bootstrap scroll-spy */
+    position: relative;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media (max-width: 991px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headingFontFamily;
+    letter-spacing: .4px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none !important;
+    font-family: $bodyFontFamily;
+}
+
+/*==========================  END GLOBAL RULES  ==========================*/

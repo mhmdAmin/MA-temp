@@ -1,20 +1,157 @@
 /*==========================    START GLOBAL RULES  ==========================*/
 
-//Importing Fonts
+/*  Importing Fonts  */
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i");
 @import url('https://fonts.googleapis.com/css?family=Exo:400,400i,500,500i,600,600i,800,800i');
 $headingFontFamily: 'Exo',
 'sans-serif';
 $bodyFontFamily: 'Montserrat',
 'sans-serif';
-/*Start Google Map*/
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
 
-/*End Google Map*/
+/*  used as a selector to manipulate the <p> element as needed  */
 
-// Start Social Icons Styles
+.paragraph {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 1.25rem;
+    font-family: $bodyFontFamily;
+    font-size: .85rem;
+    line-height: 1.8;
+    letter-spacing: .6px;
+    font-weight: 500;
+}
+
+.super-paragraph {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*  to make a nice frame on the imgs that has this class  */
+
+.img-frame {
+    border-radius: .75rem;
+    padding: 1.5rem;
+}
+
+/*  to enable any element that previously had the .disabled-element class.  */
+
+.enabeld-element {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*  to disable any element and prevent the mouse action on it  */
+
+.disabled-element {
+    opacity: .2;
+    pointer-events: none;
+}
+
+/*  add a short border after an element such as headings  */
+
+.title-center-border:after,
+.title-left-border:after,
+.title-right-border:after {
+    content: '';
+    border-bottom: 4px solid;
+    border-radius: 5px;
+    width: 65px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/*  to add a left aligned border after the element use this class  */
+
+.title-left-border {
+    &:after {
+        margin-right: auto;
+    }
+}
+
+/*  to add a right aligned border after the element use this class  */
+
+.title-right-border {
+    &:after {
+        margin-left: auto;
+    }
+}
+
+/*  to add a center aligned border after the element use this class  */
+
+.title-center-border {
+    &:after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*   an overlay to use in multibale places  */
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* set the parent of this class z-index=1 and the content div after this class with z-index=3 to be always on the top of overlay */
+    z-index: 2;
+}
+
+/* used to stop scrolling the page while the navbar menu opend on screen less than 992px  */
+
+.no-scroll {
+    @media screen AND (max-width: 991px) {
+        overflow: hidden;
+    }
+}
+
+body {
+    /* ncessary for the bootstrap scroll-spy */
+    position: relative;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media (max-width: 991px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headingFontFamily;
+    letter-spacing: .4px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none !important;
+    font-family: $bodyFontFamily;
+}
+
+/*==========================  END GLOBAL RULES  ==========================*/
+
+/*==========================  Start Global Components  ==========================*/
+
+/* Start Social Icons Styles */
+
 .sc-holder {
-    // padding-top: 1rem;
-    // padding-bottom: 1rem;
     .sc-title {
         display: inline-block;
         margin-right: 20px;
@@ -66,7 +203,10 @@ $bodyFontFamily: 'Montserrat',
     }
 }
 
-// End Social Icons Styles
+/*  End Social Icons Styles  */
+
+/* Start .butn styles */
+
 .butn {
     position: relative;
     display: inline-block;
@@ -99,7 +239,7 @@ $bodyFontFamily: 'Montserrat',
         top: 0;
         bottom: 0;
         width: 20%;
-        transition: all .8s ease-in-out; // transition-delay: .1s;
+        transition: all .8s ease-in-out;
         opacity: .5;
         z-index: -1;
     }
@@ -114,131 +254,240 @@ $bodyFontFamily: 'Montserrat',
         min-width: 120px;
         padding: .75rem;
     }
-}
-
-.section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-}
-
-//used as a selector to manipulate the <p> element as needed
-.paragraph {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-bottom: 1.25rem;
-    font-family: $bodyFontFamily;
-    font-size: .85rem;
-    line-height: 1.8;
-    letter-spacing: .6px;
-    font-weight: 500;
-}
-
-.super-paragraph {
-    font-size: 1.2rem;
-    font-weight: 500;
-    font-style: italic;
-}
-
-// to make a nice frame on the imgs that has this class
-.img-frame {
-    border-radius: 10px;
-    padding: 5px;
-}
-
-// to enable any element that previously had the .disabled-element class.
-.enabeld-element {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-// to disable any element and prevent the mouse action on it
-.disabled-element {
-    opacity: .2;
-    pointer-events: none;
-}
-
-// add a short border after an element such as headings
-.title-center-border:after,
-.title-left-border:after,
-.title-right-border:after {
-    content: '';
-    border-bottom: 4px solid;
-    border-radius: 5px;
-    width: 65px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: block;
-}
-
-// to add a left aligned border after the element use this class
-.title-left-border {
-    &:after {
-        margin-right: auto;
+    i.fa {
+        margin-left: .25rem;
+        margin-right: .25rem;
     }
 }
 
-// to add a right aligned border after the element use this class
-.title-right-border {
-    &:after {
-        margin-left: auto;
+/* End .butn styles */
+
+/* Start multi-tabs Styles */
+
+.multi-tabs {
+    .tabs-head-list {
+        margin-bottom: 40px;
+    }
+    .tab-head {
+        position: relative;
+        padding: 5px;
+        min-width: 10%;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        border-radius: .25rem .25rem 0 0;
+        border-bottom: 2px solid;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        @media (max-width: 991px) {
+            font-size: .9rem;
+        }
+    }
+    .tab-content {
+        display: none;
+        .content-heading {
+            margin-bottom: 1rem;
+        }
+    }
+    .tab-content-1 {
+        display: block;
     }
 }
 
-// to add a center aligned border after the element use this class
-.title-center-border {
-    &:after {
-        margin-left: auto;
-        margin-right: auto;
+/*End multi-tabs Styles*/
+
+/*Start .faq*/
+
+.faq-accordion {
+    .card {
+        border: none;
+        border-radius: 0;
+    }
+    .card-header {
+        padding: 0;
+        position: relative;
+        border: 1px solid;
+        .btn-link {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 20px;
+            text-align: left;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: bold;
+            /*  to break the text to another line if the text is so long */
+            white-space: normal;
+            &::after {
+                content: "\f106";
+                font-family: fontawesome;
+                font-size: inherit;
+                font-weight: bold;
+                line-height: 1.1;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                left: auto;
+            }
+            &.collapsed::after {
+                content: '\f107';
+            }
+        }
+    }
+    .card-body {
+        border: 1px solid;
     }
 }
 
-// an overlay to use in multibale places
-.overlay {
-    position: absolute;
+/*End .faq*/
+
+/*START BACK TO TOP BUTTON */
+
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    cursor: pointer;
+    z-index: 20;
+    i.fa {
+        font-size: 1.5rem;
+    }
+}
+
+/*END BACK TO TOP BUTTON  */
+
+/*  START lOADING SCREEN  */
+
+.loading-screen {
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 2; //set the parent of this class z-index=1 and the content div after this class with z-index=3 to be always on the top of overlay
-}
-
-// used to stop scrolling the page while the navbar menu opend on screen less than 992px 
-.no-scroll {
-    @media screen AND (max-width: 991px) {
-        overflow: hidden;
+    z-index: 99999;
+    .spinner {
+        margin: 50vh auto 0;
+        text-align: center;
+    }
+    .spinner>div {
+        width: 18px;
+        height: 18px;
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    }
+    .spinner .bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+    }
+    .spinner .bounce2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+    }
+    @-webkit-keyframes sk-bouncedelay {
+        0%,
+        100%,
+        80% {
+            -webkit-transform: scale(0);
+        }
+        40% {
+            -webkit-transform: scale(1.0);
+        }
+    }
+    @keyframes sk-bouncedelay {
+        0%,
+        100%,
+        80% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+        40% {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+        }
     }
 }
 
-body {
-    position: relative; // ncessary for the bootstrap scroll-spy 
-}
+/*  END lOADING SCREEN   */
 
-section {
-    position: relative;
-    overflow: hidden;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    @media (max-width: 991px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
+/*  START OPTION BOX ASIDE  */
+
+.option-box {
+    .options-wraper {
+        position: fixed;
+        left: -300px;
+        width: 300px;
+        top: 25vh;
+        transform: translateY(-25%);
+        border: 1px solid;
+        border-left: none;
+        z-index: 999;
+        transition: left .3s ease-in-out;
+        @media(max-width: 991px) {
+            left: -200px;
+            width: 200px;
+            top: 81px;
+        }
+        .box-handel {
+            font-size: 1rem;
+            font-weight: lighter;
+            position: absolute;
+            top: 90px;
+            left: calc(300px - 1px);
+            width: 30px;
+            height: 30px;
+            line-height: 26px;
+            border: 1px solid;
+            border-left: none;
+            text-align: center;
+            cursor: pointer;
+            @media(max-width: 991px) {
+                left: calc( 200px - 1px);
+            }
+        }
+        .color-options {
+            padding: 50px 20px;
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                li {
+                    width: 40px;
+                    height: 40px;
+                    span {
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $headingFontFamily;
-    letter-spacing: .4px;
-    font-weight: 600;
+/*   this class is to add by jquery to show the .option-box .  */
+
+.show-options-box {
+    left: 0 !important;
 }
 
-a {
-    text-decoration: none !important;
-    font-family: $bodyFontFamily;
-}
+/*  END OPTION BOX ASIDE  */
 
-/*==========================  END GLOBAL RULES  ==========================*/
+/*==========================  End Global Components  ==========================*/

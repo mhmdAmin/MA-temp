@@ -18,7 +18,7 @@
     }
 }
 
-// Start Blog Pages Global Rules
+/* Start Blog Pages Global Rules   */ 
 .article-info-bar {
     display: flex;
     align-items: baseline;
@@ -84,7 +84,7 @@ ul.tags-list {
     }
 }
 
-// End Blog Pages Global Rules
+/*  End Blog Pages Global Rules  */ 
 .all-posts {
     .posts-main-area {
         padding-bottom: 2.5rem;
@@ -109,7 +109,7 @@ ul.tags-list {
                 transition: all .5s ease-in-out;
             }
             img {
-                transition: transform .5s ease-out; // height: 360px;
+                transition: transform .5s ease-out;  
                 width: 100%;
                 max-width: 100%;
                 height: auto;
@@ -212,7 +212,7 @@ ul.tags-list {
     }
 }
 
-//start .artical-section
+/*  start .artical-section  */
 .article-section {
     .article {
         margin-bottom: 2rem;
@@ -256,7 +256,7 @@ ul.tags-list {
     }
 }
 
-// Start Comments Area
+/*  Start Comments Area  */ 
 .comments-area {
     .leave-comment {
         margin-bottom: 2rem;
@@ -296,7 +296,7 @@ ul.tags-list {
         margin-right: .5rem;
     }
     .comment-body {
-        padding: 1rem; // border-bottom: 1px solid;
+        padding: 1rem; 
         border-radius: .25rem;
     }
     .commenter-name {

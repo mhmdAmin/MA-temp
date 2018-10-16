@@ -33,7 +33,7 @@
 
 
     <!-- Custom Css Files -->
-    <link rel="stylesheet" href="styles/css/index-layout.css">
+    <link rel="stylesheet" href="styles/css/main-layout.css">
     <link rel="stylesheet" href="styles/css/colors/color-orange.css" id="page-style">
 
     <!-- fav-icons -->
@@ -130,12 +130,6 @@
                         </a>
                     </li>
 
-                    <li class="nav-item  mr-3 ">
-                        <a href="#our-info-tabs" class="nav-link">
-                            <i class="fa fa-exclamation fa-fw d-lg-none"></i>
-                            about
-                        </a>
-                    </li>
 
                     <li class="nav-item  ">
                         <a href="#page-footer" class="nav-link ">
@@ -261,7 +255,9 @@
 
             </div>
 
-            <a href="#" class="butn text-capitalize">show all Features</a>
+            <a href="#" class="butn text-capitalize wow  fadeInUp " data-wow-delay="1.5s" data-wow-duration=".5s"><i
+                    class="fa fa-hand-o-right"></i> show
+                all Features</a>
 
         </div>
     </section>
@@ -279,7 +275,7 @@
                 <div class="col-12 col-lg-6 d-flex align-items-center mx-auto wow  fadeInLeft" data-wow-delay=".5s"
                     data-wow-duration=".5s">
                     <div class="goal-img mb-4 mb-lg-0  mx-auto  ">
-                        <img src="assets/Images/goals/5.png" class="img-fluid  " alt="our goals Photo">
+                        <img src="assets/Images/goals/1.png" class="img-fluid img-frame " alt="our goals Photo">
                     </div>
                 </div>
                 <!-- the goals content -->
@@ -322,7 +318,7 @@
                         "
                     data-wow-delay=".5s " data-wow-duration=".5s ">
                     <div class="vision-img  mb-4 mb-lg-0  mx-auto">
-                        <img src="assets/Images/vision/1.png " class="img-fluid  " alt="Right goals Photo ">
+                        <img src="assets/Images/vision/1.png " class="img-fluid img-frame " alt="Right goals Photo ">
                     </div>
                 </div>
 
@@ -693,213 +689,7 @@
     </section>
     <!-- End pricing-options Section -->
 
-    <!-- Start  our-info-tabs   Section-->
-    <section id="our-info-tabs" class="our-info-tabs d-flex align-items-center">
-        <div class="container ">
-            <div class="section-title text-center wow  fadeInDown" data-wow-delay=".3s" data-wow-duration=".5s">
-                <h2 class="title-center-border text-capitalize responsive-heading ">Our info tabs</h2>
-            </div>
 
-            <div class="our-info-tabs-wraper  wow  fadeInUp " data-wow-delay=".5s" data-wow-duration=".5s">
-                <div class="row no-gutters pt-0 pt-lg-3 ">
-                    <div class="col-12 ">
-                        <!-- a list of the tabs heads  -->
-                        <ul class="list-unstyled tab-list text-capitalize d-flex flex-row justify-content-start flex-wrap ">
-                            <li class="tab-head mr-3 active " data-target=".tab-content-1 ">about us</li>
-                            <li class="tab-head mr-3 " data-target=".tab-content-2 ">FAQ</li>
-                            <li class="tab-head " data-target=".tab-content-3 ">feed back</li>
-                        </ul>
-                    </div>
-
-                    <!-- tabs content panels -->
-                    <div class="col-12">
-                        <div class="row ">
-                            <div class="col-12 tab-content tab-content-1  ">
-                                <div class="row ">
-                                    <div class=" col-12 col-lg-4 order-lg-2 d-flex align-items-start mb-4 mb-lg-0 ">
-                                        <div class="tab-img mx-auto ">
-                                            <img src="assets/Images/about-us/1.jpg " class="img-fluid img-frame " alt="Vertical Tabs Section Photo-1 ">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-lg-8 ">
-                                        <div>
-                                            <h4 class=" content-heading text-capitalize responsive-heading "> A breif
-                                                info
-                                                about our company.</h4>
-                                            <p class="paragraph text-dark-color ">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor
-                                                sit
-                                                amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
-                                                tempor.
-                                            </p>
-                                            <p class="paragraph text-dark-color ">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor
-                                                sit
-                                                amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
-                                                tempor.
-                                            </p>
-                                            <a href="# " class="butn text-capitalize ">
-                                                <i class="fa fa-eye "></i> Show more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 tab-content tab-content-2 ">
-                                <div class="row ">
-                                    <div class="col-12 col-lg-4 order-lg-2 d-flex align-items-start mb-4 mb-lg-0 ">
-                                        <div class="tab-img mx-auto ">
-                                            <img src="assets/Images/about-us/2.jpg " class="img-fluid img-frame " alt="Vertical Tabs Section Photo-2 ">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-8 ">
-
-                                        <!-- Accordion List For FAQ  -->
-                                        <div id="accordion" class="faq-accordion ">
-                                            <!-- first FAQ -->
-                                            <div class="card mb-2 ">
-                                                <div class="card-header " id="headingOne">
-                                                    <h5 class="mb-0 ">
-                                                        <button class="btn btn-link text-capitalize " data-toggle="collapse"
-                                                            data-target="#collapseOne" aria-expanded="true"
-                                                            aria-controls="collapseOne">
-                                                            are your service easy to use?
-                                                        </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapseOne" class="collapse show " aria-labelledby="headingOne"
-                                                    data-parent="#accordion">
-                                                    <div class="card-body ">
-                                                        <p class="paragraph text-dark-color ">
-                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                                            accusamus terry richardson ad squid. 3 wolf moon officia
-                                                            aute,
-                                                            eiusmod. Brunch 3 wolf moon tempor, iunt you probably
-                                                            haven't
-                                                            heard of them accusamus labore sustainable VHS.
-                                                        </p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <!-- Second FAQ -->
-                                            <div class="card mb-2 ">
-                                                <div class="card-header " id="headingTwo">
-                                                    <h5 class="mb-0 ">
-                                                        <button class="btn btn-link collapsed text-capitalize"
-                                                            data-toggle="collapse" data-target="#collapseTwo"
-                                                            aria-expanded="false" aria-controls="collapseTwo">
-                                                            can i use this services work in my country?
-                                                        </button>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                                    data-parent="#accordion">
-                                                    <div class="card-body ">
-                                                        <p class="paragraph text-dark-color ">
-                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                                            accusamus terry richardson ad squid. 3 wolf moon officia
-                                                            aute,
-                                                            non cupidatat skateboard dolor brunch. Food truck quinoa
-                                                            nesciunt
-                                                            laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                                            a
-                                                            bird on it squid single-origin coffee nulla assumenda
-                                                            shoreditch
-                                                            et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                                            anderson
-                                                            cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                                            butcher
-                                                            vice lomo. Leggings occaecat craft beer farm-to-table.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Third FAQ -->
-                                            <div class="card mb-2 ">
-                                                <div class="card-header " id="headingThree">
-                                                    <h5 class="mb-0 ">
-                                                        <button class="btn btn-link collapsed text-capitalize
-            "
-                                                            data-toggle="collapse" data-target="#collapseThree"
-                                                            aria-expanded="false" aria-controls="collapseThree">
-                                                            will i receive future updates?
-                                                        </button>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseThree" class="collapse " aria-labelledby="headingThree
-            "
-                                                    data-parent="#accordion">
-                                                    <div class="card-body ">
-                                                        <p class="paragraph text-dark-color ">
-                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                                            accusamus terry richardson ad squid. 3 wolf moon officia
-                                                            aute,
-                                                            non cupidatat skateboard dolor brunch. Food truck quinoa
-                                                            nesciunt
-                                                            laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                                            a
-                                                            bird on it squid single-origin coffee nulla assumenda
-                                                            shoreditch
-                                                            et.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-12 tab-content tab-content-3 ">
-
-                                <div class="row ">
-                                    <div class="col-12 col-lg-4 order-lg-2 d-flex align-items-start mb-4 mb-lg-0 ">
-                                        <div class="tab-img mx-auto ">
-                                            <img src="assets/Images/about-us/3.jpg " class="img-fluid img-frame " alt="Vertical
-            Tabs Section Photo-2 ">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-lg-8 ">
-                                        <!-- Form To have user messages -->
-                                        <form class="user-message-form ">
-                                            <div class="row ">
-                                                <div class="col-12 col-lg-6 ">
-                                                    <label for="user-name"> Name</label>
-                                                    <input id="user-name" name="user_name" type="text" placeholder=" ">
-                                                </div>
-
-                                                <div class="col-12 col-lg-6 ">
-                                                    <label for="user-email">E-mail</label>
-                                                    <input id="user-email" name="user_email" type="email" placeholder=" ">
-                                                </div>
-                                                <div class="col-12 ">
-                                                    <label for="msg-subject">Subject</label>
-                                                    <input id="msg-subject" name="msg_subject" type="text" placeholder=" ">
-                                                </div>
-                                                <div class="col-12 ">
-                                                    <label for="msg">Message</label>
-                                                    <textarea id="msg" name="user_msg" placeholder=" "></textarea>
-                                                </div>
-                                            </div>
-                                            <input type="submit" value="Send" class="butn">
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End our-info-tabs Tabs Section-->
 
 
 

@@ -264,14 +264,22 @@ $(function () {
 
 
   /*              Start show/hide tab-content              */
-  $(".our-info-tabs .tab-list .tab-head").on("click", function () {
+
+
+  $(".multi-tabs .tab-head").on("click", function () {
     // Show the wanted .tab-content and hide its sibilings
     var target = $(this).attr("data-target");
-    $(target).fadeIn(600).siblings(".tab-content").hide(); // add .active   class on the clicked tab-head only
+    $(target).fadeIn(600).siblings(".tab-content").hide();
+    // add .active   class on the clicked tab-head only
     $(this).addClass("active").siblings().removeClass("active");
   }
   );
+
+
   /*             End show/hide tab-content              */
+
+
+
   /*                          Start show/hide Option Box                          */
   $(".box-handel").on("click", function () {
     $(this).parent().toggleClass('show-options-box'); //  change .box-handel icon

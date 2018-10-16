@@ -9,19 +9,17 @@
      .header-content {
          position: relative; // padding: 2rem 0;
          z-index: 3;
-     } 
-      .bread {
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: 20px;
-          z-index: 3;
-      }
+     }
+     .bread {
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         bottom: 20px;
+         z-index: 3;
+     }
  }
 
- @import '_breads.scss';
  @import '_features.scss';
  @import '_our-video.scss';
  @import '_our-team.scss';
  @import '_our-clients.scss';
- @import '_faq.scss';

@@ -35,7 +35,7 @@ h6 {
 .our-team .tm-role,
 .super-paragraph,
 .faq-accordion .card-header .btn-link,
-.our-info-tabs .tab-head,
+.multi-tabs .tab-head,
 .features .feature-content .fa,
 .gallery .filter-btn-list .filter-btn,
 .gallery .filter-group .hidden-info a.info-link:hover,
@@ -76,8 +76,8 @@ h6 {
 
 .sc-holder .sc-icon:hover,
 .blog-header .header-content .blog-heading,
-.our-info-tabs .tab-head.active,
-.our-info-tabs .tab-head:hover,
+.multi-tabs .tab-head.active,
+.multi-tabs .tab-head:hover,
 .butn,
 .butn:focus,
 .butn:hover,
@@ -159,8 +159,8 @@ nav {
 
 .sc-holder .sc-icon:hover,
 .tags-list .tag-lable:hover,
-.our-info-tabs .tab-head.active,
-.our-info-tabs .tab-head:hover,
+.multi-tabs .tab-head.active,
+.multi-tabs .tab-head:hover,
 .butn,
 .loading-screen .spinner > div,
 .features .feature-content:hover span.icon,
@@ -232,8 +232,8 @@ section,
   border-color: transparent; }
 
 .tags-list .tag-lable,
-.our-info-tabs .tab-head.active,
-.our-info-tabs .tab-head:hover {
+.multi-tabs .tab-head.active,
+.multi-tabs .tab-head:hover {
   border-color: #343a40; }
 
 .our-video .play-butn:hover,
@@ -244,7 +244,7 @@ section,
 .user-message-form input[type="email"]:focus,
 .user-message-form input[type="text"]:focus,
 .user-message-form textarea:focus,
-.our-info-tabs .tab-head,
+.multi-tabs .tab-head,
 .active:after,
 .box-handel,
 .butn,

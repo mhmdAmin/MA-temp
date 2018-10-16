@@ -26,22 +26,28 @@
 
 @import 'mixins.scss';
 @include responsive-heading-font-size();
-// @include wider-container();//
-// Start global Includes
+/*  @include wider-container(); */
+
+/* Start global Includes */
+
 @import 'global-includes/_globals.scss';
 @import 'global-includes/_navbar.scss';
 @import 'global-includes/_page-footer.scss';
-@import 'global-includes/_options-box.scss';
-@import 'global-includes/_back-to-top.scss';
-@import 'global-includes/_loading-screen.scss';
-// End global Includes
-//
-// Start page Styles  
+/*  End global Includes  */
+
+/* Start Index page Styles  */
+
 @import 'pages-styles/_header.scss';
 @import 'pages-styles/_features.scss';
 @import 'pages-styles/_gallery.scss';
 @import 'pages-styles/_testmonials.scss';
 @import 'pages-styles/_pricing.scss';
-@import 'pages-styles/_our-info-tabs.scss';
 @import 'pages-styles/_our-clients.scss';
-// End page Styles
+/*   End Index page Styles  */
+
+/*  Start Other Pages Styles  */
+
+@import 'pages-styles/_about-us-page.scss';
+@import'pages-styles/_all-posts-cards.scss';
+@import 'pages-styles/_contact-us-page.scss';
+/*  End Other Pages Styles  */

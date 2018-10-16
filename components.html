@@ -151,144 +151,65 @@
     </nav>
     <!--  End Navbar -->
 
-    <!-- Start Header -->
-    <header class="contact-us-header d-flex justify-content-center align-items-center">
-        <div class="overlay"></div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-8 mx-auto">
+    <!-- Start  multi-tabs   Section-->
+    <section id="multi-tabs" class="multi-tabs d-flex align-items-center">
+        <div class="container ">
 
-                    <div class="header-content text-center">
-                        <div class="section-title ">
-                            <h1 class="contact-us-heading text-capitalize title-center-border responsive-heading">we
-                                are
-                                waiting for your call
-                            </h1>
-                        </div>
-
+            <div class="multi-tabs-wraper  wow  fadeInUp " data-wow-delay=".5s" data-wow-duration=".5s">
+                <div class="row no-gutters pt-0 pt-lg-3 ">
+                    <div class="col-12 ">
+                        <!-- a list of the tabs heads  -->
+                        <ul class="list-unstyled tabs-head-list text-capitalize d-flex flex-row justify-content-start flex-wrap ">
+                            <li class="tab-head mr-3 active " data-target=".tab-content-1 ">tab head 1</li>
+                            <li class="tab-head mr-3 " data-target=".tab-content-2 ">tab head 2</li>
+                            <li class="tab-head " data-target=".tab-content-3 ">tab head 3</li>
+                        </ul>
                     </div>
 
-                </div>
-            </div>
-        </div>
-        <div class="bread  ">
-            <nav class="breadcrumb-nav d-inline-block" aria-label="breadcrumb">
-                <ol class="breadcrumb text-capitalize">
-                    <li class="breadcrumb-item"><a href="#"> <i class="fa fa-home mr-1"></i> Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">contact us</li>
-                </ol>
-            </nav>
-        </div>
-    </header>
-    <!-- End Header -->
-
-
-
-
-
-    <section class="contact-info">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-5 ">
-                    <!-- Form To have user messages -->
-                    <h5 class="  responsive-heading title-left-border text-capitalize">leave your message</h5>
-                    <form class="user-message-form  mb-5 mb-lg-0">
+                    <!-- tabs content panels -->
+                    <div class="col-12">
                         <div class="row ">
-                            <div class="col-12   ">
-                                <label for="user-name"> Name</label>
-                                <input id="user-name" name="user_name" type="text" placeholder=" ">
-                            </div>
-
-                            <div class="col-12  ">
-                                <label for="user-email">E-mail</label>
-                                <input id="user-email" name="user_email" type="email" placeholder=" ">
-                            </div>
-                            <div class="col-12 ">
-                                <label for="msg-subject">Subject</label>
-                                <input id="msg-subject" name="msg_subject" type="text" placeholder=" ">
-                            </div>
-                            <div class="col-12 ">
-                                <label for="msg">Message</label>
-                                <textarea id="msg" name="user_msg" placeholder=" "></textarea>
-                            </div>
-                        </div>
-                        <input type="submit" value="Send" class="butn">
-                    </form>
-                </div>
-
-                <!-- <div class="col-12 col-lg-4  d-none d-lg-flex align-items-center  ">
-
-                    <img src="assets/Images/contact-us/contact-us.jpeg " class="img-fluid img-frame " alt="Vertical Tabs Section Photo-2 ">
-
-                </div> -->
+                            <div class="col-12 tab-content tab-content-1  ">
+                                <div class="row ">
 
 
-                <div class="col-12 offset-lg-2 col-lg-5">
-                    <h5 class="  responsive-heading title-left-border text-capitalize">contact information</h5>
-                    <div class="row">
+                                    <div class="col-12 ">
+                                        Tab Content 1 [can Be divide to many Colmuns by the grid system]
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="col-12  ">
-                            <div class="contact-info-card  ">
-                                <i class="fa fa-envelope"></i>
-                                <a href="mailto:example@robo.com " class="text-lowercase  info">
-                                    example@support.com</a>
+                            <div class="col-12 tab-content tab-content-2 ">
+                                <div class="row ">
+
+                                    <div class="col-12   ">
+
+                                        Tab Content 2 [can Be divide to many Colmuns by the grid system]
+
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12  ">
-                            <div class="contact-info-card  ">
-                                <i class="fa fa-globe"></i>
-                                <a class="text-lowercase  info" href="http://robo-theme.bitballoon.com " target="_blank"
-                                    rel="noopener">
-                                    www.robo-theme.bitballoon.com</a>
-                            </div>
-                        </div>
-                        <div class="col-12  ">
-                            <div class="contact-info-card  ">
-                                <i class="fa fa-map-marker "></i>
-                                <span class="info text-capitalize">5 Xyz st., Abc, alexandria, egypt.</span>
-                            </div>
-                        </div>
-                        <div class="col-12  ">
-                            <div class="contact-info-card  ">
-                                <i class="fa fa-phone "></i>
-                                <a href="tel:+20123456789 " class="info">
-                                    +20123456789</a>
-                            </div>
-                        </div>
-                        <div class="col-12  ">
-                            <div class="sc-holder text-center ">
-                                <h6 class="sc-title text-capitalize">folow us on:</h6>
-                                <ul class="  sc-list sc-size-32">
-                                    <li class="sc-item"><a href="#" class="sc-link"><i class="fa fa-facebook sc-icon"></i></a></li>
-                                    <li class="sc-item"><a href="#" class="sc-link"><i class="fa fa-google-plus sc-icon"></i></a></li>
-                                    <li class="sc-item"><a href="#" class="sc-link"><i class="fa fa-youtube sc-icon"></i></a></li>
-                                    <li class="sc-item"><a href="#" class="sc-link"><i class="fa fa-instagram sc-icon"></i></a></li>
-                                    <li class="sc-item"><a href="#" class="sc-link"><i class="fa fa-twitter sc-icon"></i></a></li>
-                                </ul>
+
+                            <div class="col-12 tab-content tab-content-3 ">
+
+                                <div class="row ">
+
+
+                                    <div class="col-12   ">
+                                        Tab Content 3 [can Be divide to many Colmuns by the grid system]
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
-
-
-
             </div>
-
         </div>
     </section>
-
-    <div class="map-wrapper">
-        <div class="container">
-            <div class="col-12  ">
-                <!-- an empty div used to load the google map by javascript[please keep it empty]      -->
-                <div id="map" class="map "></div>
-            </div>
-        </div>
-    </div>
+    <!-- End multi-tabs Tabs Section-->
 
     <!-- Start page-footer -->
     <footer id="page-footer" class="page-footer wow fadeInUp " data-wow-delay=".5s" data-wow-duration=".5s">
@@ -296,10 +217,10 @@
 
             <div class="row py-3 py-lg-5 ">
 
-                <!-- <div class="col-12 col-lg-6 pb-5 pb-lg-0 ">
-                     an empty div used to load the google map by javascript[please keep it empty]      
-                <div id="map" class="map "></div>
-            </div> -->
+                <div class="col-12 col-lg-6 pb-5 pb-lg-0 ">
+                    <!-- an empty div used to load the google map by javascript[please keep it empty]      -->
+                    <div id="map" class="map "></div>
+                </div>
 
 
                 <div class="col-12 col-sm-6 col-lg-2 mx-lg-auto mb-5 mb-lg-0 ">

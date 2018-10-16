@@ -27,9 +27,13 @@
 @import 'mixins.scss';
 @include responsive-heading-font-size();
 // @include wider-container();
-/* Start global Includes */
+/* Start Importing global-modules */
 
+//First Thing Is First
+// _global-modules.scss Must Be The  First .scss File  To Import.
 @import 'global-modules/_globals.scss';
+/**/
+
 @import 'global-modules/_navbar.scss';
 @import 'global-modules/_social-icons-holder.scss';
 @import 'global-modules/_butn.scss';
@@ -50,12 +54,12 @@
 @import 'global-modules/_testmonials.scss';
 @import 'global-modules/_pricing.scss';
 @import 'global-modules/_page-footer.scss';
-/*  End global Includes  */
+/*  End  Importing global-modules  */
 
-/*  Start Other Pages Styles  */
+/*  Start Specific Pages Styles  */
 
 @import 'pages-styles/_index-page.scss';
 @import 'pages-styles/_about-us-page.scss';
 @import 'pages-styles/_blog-home-page.scss';
 @import 'pages-styles/_contact-us-page.scss';
-/*  End Other Pages Styles  */
+/*  End Specific Pages Styles  */

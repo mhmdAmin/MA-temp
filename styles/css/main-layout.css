@@ -49,7 +49,7 @@
   h6.responsive-heading {
     font-size: .9rem; } }
 
-/* Start global Includes */
+/* Start Importing global-modules */
 /*==========================    START GLOBAL RULES  ==========================*/
 /*  Importing Fonts  */
 .section-title {
@@ -157,6 +157,7 @@ a {
   font-family: "Montserrat", "sans-serif"; }
 
 /*==========================  END GLOBAL RULES  ==========================*/
+/**/
 /* ==========================     START NAVBAR    ========================== */
 .navbar {
   transition: all .3s ease-in-out;
@@ -972,8 +973,8 @@ a {
     border-top: 1px solid; }
 
 /*==========================  END page-footer   ==========================*/
-/*  End global Includes  */
-/*  Start Other Pages Styles  */
+/*  End  Importing global-modules  */
+/*  Start Specific Pages Styles  */
 /* Start Blog Pages Global Rules */
 .article-info-bar {
   display: flex;
@@ -1308,6 +1309,6 @@ ul.tags-list {
     font-size: .85rem;
     font-weight: 600; }
 
-/*  End Other Pages Styles  */
+/*  End Specific Pages Styles  */
 
 /*# sourceMappingURL=main-layout.css.map */

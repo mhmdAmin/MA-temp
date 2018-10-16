@@ -47,8 +47,8 @@ h6 {
 .navbar .navbar-toggler,
 .newsletter-form .newsletter-email .submit-btun,
 .option-box .box-handel,
-.page-footer .adress-info ul li a:hover,
-.page-footer .useful-links ul li a:hover,
+.page-footer .footer-link:hover,
+.page-footer .footer-link.active,
 .testmonials .customer-testmonial i.fa-quote-left,
 .testmonials .swiper-container .swiper-button-next i,
 .testmonials .swiper-container .swiper-button-prev i,
@@ -93,8 +93,7 @@ h6 {
 .navbar .navbar-brand,
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link,
 .page-footer .adress-info,
-.page-footer .adress-info ul li a,
-.page-footer .useful-links ul li a,
+.page-footer .footer-link,
 .home-page-header .header-content a.butn,
 .pricing .plan .plan-cost,
 .pricing .plan-cost h4,
@@ -154,9 +153,10 @@ nav {
 .navbar .navbar-mobile-menu-wrapper.mobile-navbar-show {
   background-color: rgba(0, 0, 0, 0.5); }
 
+.page-footer .images-feed .feed-image-wrapper::after,
 .article-section .article-body .end-of-article,
 .post-card .post-img::after {
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.2); }
 
 .sc-holder .sc-icon:hover,
 .tags-list .tag-lable:hover,
@@ -221,7 +221,6 @@ section,
 .img-frame,
 .info-tab .tab-head,
 .newsletter-form .newsletter-email .submit-btun,
-.page-footer input[type="email"],
 .post-card:hover .post-img::after {
   background-color: transparent; }
 

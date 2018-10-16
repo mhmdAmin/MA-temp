@@ -283,7 +283,7 @@ $(function () {
   /*                          Start show/hide Option Box                          */
   $(".box-handel").on("click", function () {
     $(this).parent().toggleClass('show-options-box'); //  change .box-handel icon
-    iconChanger($(this).find('.fa'), 'fa-cog', 'fa-times')
+    iconChanger($(this).find('.fa'), 'fa-sliders', 'fa-times')
   }
   );
   $(optionBoxWraper).on("click", function (e) {
@@ -293,8 +293,9 @@ $(function () {
 
   $(bdy).on("click", function (e) {
     if ($(optionBoxWraper).hasClass('show-options-box')) {
-      $(optionBoxWraper).removeClass('show-options-box') //change .box-handel icon
-      iconChanger($(this).find('.box-handel .fa'), 'fa-cog', 'fa-times')
+      $(optionBoxWraper).removeClass('show-options-box')
+      //change .box-handel icon
+      iconChanger($(this).find('.box-handel .fa'), 'fa-sliders', 'fa-times')
     }
   }
   );

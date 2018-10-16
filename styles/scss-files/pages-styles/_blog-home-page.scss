@@ -225,8 +225,8 @@ ul.tags-list {
             margin: 2rem 0;
         }
         .end-of-article {
-            margin: 1rem auto;
-            height: 2px;
+            margin: 1.5rem auto;
+            height: 1px;
         }
     }
     @media screen and (max-width:991px) {
@@ -250,7 +250,7 @@ ul.tags-list {
             width: 100%;
             padding: 1rem;
             outline: none;
-            border: none; // border-bottom: 1px solid;
+            border: 1px solid;
             border-radius: .25rem;
             margin-bottom: .5rem;
             transition: border-color .3s ease-in-out;

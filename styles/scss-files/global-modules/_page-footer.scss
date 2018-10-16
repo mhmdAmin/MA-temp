@@ -1,66 +1,72 @@
 /*==========================  START page-footer   ==========================*/
 
 .page-footer {
-    .map {
-        min-height: 360px;
-    }
     a,
     address {
         font-family: $bodyFontFamily;
     }
-    .adress-info ul li {
+    .footer-item {
         margin-bottom: 1rem;
         font-size: .85rem;
-        a {
+        .footer-link {
             text-decoration: none;
             transition: all .3s ease-in;
         }
         i {
-            padding-right: 1rem;
+            margin-right: .5rem;
         }
     }
-    /* Start Footer Social Icons */
-    .footer-social-icons {
-        margin-top: 20px;
-        a {
-            text-decoration: none;
-            margin-right: 10px;
-            &:last-of-type {
-                margin-right: 0;
+    .images-feed {
+        .feed-image-wrapper {
+            position: relative;
+            z-index: 0;
+            .feed-image {
+                width: 100%;
             }
-            i.fa {
-                transition: color .3s ease-in-out;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+            &:hover {
+                &:after {
+                    width: 0;
+                }
             }
         }
-        /* End Footer Social Icons */
     }
     /*========================== start Newsletter section  ==========================*/
-    .newsletter-form {
-        .newsletter-email {
-            position: relative;
-            input[type=email] {
-                padding: 6px;
-                font-size: 1rem;
-                outline: none;
-                width: 100%;
-                font-size: 1rem;
-                border: 1px solid;
-                border-radius: .25rem;
-                transition: all .3s ease-in-out;
-            }
-            .submit-btun {
-                display: inline-block;
-                position: absolute;
-                top: 50%;
-                transform: translatey(-50%);
-                right: 10px;
-                cursor: pointer;
-                border: none;
-                outline: none !important;
-                padding: 5px;
-            }
-        }
-    }
+    // .newsletter-form {
+    //     .newsletter-email {
+    //         position: relative;
+    //         input[type=email] {
+    //             padding: 6px;
+    //             font-size: 1rem;
+    //             outline: none;
+    //             width: 100%;
+    //             font-size: 1rem;
+    //             border: 1px solid;
+    //             border-radius: .25rem;
+    //             transition: all .3s ease-in-out;
+    //         }
+    //         .submit-btun {
+    //             display: inline-block;
+    //             position: absolute;
+    //             top: 50%;
+    //             transform: translatey(-50%);
+    //             right: 10px;
+    //             cursor: pointer;
+    //             border: none;
+    //             outline: none !important;
+    //             padding: 5px;
+    //         }
+    //     }
+    // }
     /*========================== End Newsletter section  ==========================*/
     .copyrights {
         padding: 1rem;

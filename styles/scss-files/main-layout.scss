@@ -31,7 +31,7 @@
 
 //First Thing Is First
 // _global-modules.scss Must Be The  First .scss File  To Import.
-@import 'global-modules/_globals.scss';
+@import 'global-modules/__globals.scss';
 /**/
 
 @import 'global-modules/_navbar.scss';

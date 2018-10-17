@@ -239,64 +239,48 @@ body {
   background-repeat: no-repeat;
   overflow: auto;
   z-index: 0; }
-
-.social-signin-links {
-  margin-bottom: 1.5rem; }
-
-.social-butn {
-  padding: .5rem 1rem;
-  font-family: "Montserrat", "sans-serif";
-  font-size: .85rem;
-  margin: .5rem;
-  display: block;
-  position: relative;
-  border-radius: .25rem; }
-  .social-butn i.fa {
-    margin-right: 5px;
-    font-size: 1.25rem;
-    position: absolute;
-    left: 2rem; }
-
-.signin-divider {
-  margin-bottom: 2rem;
-  position: relative; }
-  .signin-divider:before, .signin-divider:after {
-    content: '';
-    border-bottom: 3px solid;
-    width: 45%;
-    display: block;
-    position: absolute;
-    top: .5rem; }
-  .signin-divider:before {
-    left: 0; }
-  .signin-divider:after {
-    right: 0; }
-
-.signin-content-holder {
-  position: relative;
-  z-index: 3; }
-
-.site-name-heading {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem; }
-  .site-name-heading span {
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: "Exo", "sans-serif"; }
-
-.sginin-form-area {
-  position: relative;
-  z-index: 3; }
-  .sginin-form-area .signin-heading {
-    font-family: "Exo", "sans-serif";
+  .signin-wrapper .social-signin-links {
     margin-bottom: 1.5rem; }
-
-.signin-form-holder label {
-  display: block;
-  margin-bottom: .5rem;
-  font-size: .75rem; }
-  .signin-form-holder label .forgot-password {
-    float: right; }
+    .signin-wrapper .social-signin-links .social-butn {
+      padding: .5rem 1rem;
+      font-family: "Montserrat", "sans-serif";
+      font-size: .85rem;
+      margin: .75rem 0;
+      display: block;
+      position: relative;
+      border-radius: .25rem; }
+      .signin-wrapper .social-signin-links .social-butn i.fa {
+        margin-right: 5px;
+        font-size: 1.25rem;
+        position: absolute;
+        left: .5rem; }
+  .signin-wrapper .signin-divider {
+    margin-bottom: 2rem;
+    position: relative; }
+    .signin-wrapper .signin-divider:before, .signin-wrapper .signin-divider:after {
+      content: '';
+      border-bottom: 3px solid;
+      width: 45%;
+      display: block;
+      position: absolute;
+      top: .5rem; }
+    .signin-wrapper .signin-divider:before {
+      left: 0; }
+    .signin-wrapper .signin-divider:after {
+      right: 0; }
+  .signin-wrapper .sginin-form-area {
+    position: relative;
+    z-index: 3; }
+    .signin-wrapper .sginin-form-area .signin-heading {
+      font-family: "Exo", "sans-serif";
+      margin-bottom: 1.5rem; }
+  .signin-wrapper .signin-form-holder label {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: .75rem; }
+    .signin-wrapper .signin-form-holder label .forgot-password {
+      float: right; }
+  .signin-wrapper .signin-form-holder .disclaimer {
+    font-size: .7rem; }
 
 /*# sourceMappingURL=signin-layout.css.map */

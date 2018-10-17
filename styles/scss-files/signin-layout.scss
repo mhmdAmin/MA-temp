@@ -19,80 +19,62 @@ body {
     background-repeat: no-repeat;
     overflow: auto;
     z-index: 0;
-}
-
-.social-signin-links {
-    margin-bottom: 1.5rem
-}
-
-.social-butn {
-    padding: .5rem 1rem;
-    font-family: $bodyFontFamily;
-    font-size: .85rem;
-    margin: .5rem;
-    display: block;
-    position: relative;
-    border-radius: .25rem;
-    i.fa {
-        margin-right: 5px;
-        font-size: 1.25rem;
-        position: absolute;
-        left: 2rem;
+    .social-signin-links {
+        margin-bottom: 1.5rem;
+        .social-butn {
+            padding: .5rem 1rem;
+            font-family: $bodyFontFamily;
+            font-size: .85rem;
+            margin: .75rem 0;
+            display: block;
+            position: relative;
+            border-radius: .25rem;
+            i.fa {
+                margin-right: 5px;
+                font-size: 1.25rem;
+                position: absolute;
+                left: .5rem;
+            }
+        }
     }
-}
-
-.signin-divider {
-    margin-bottom: 2rem;
-    position: relative;
-    &:before,
-    &:after {
-        content: '';
-        border-bottom: 3px solid;
-        width: 45%;
-        display: block;
-        position: absolute;
-        top: .5rem;
+    .signin-divider {
+        margin-bottom: 2rem;
+        position: relative;
+        &:before,
+        &:after {
+            content: '';
+            border-bottom: 3px solid;
+            width: 45%;
+            display: block;
+            position: absolute;
+            top: .5rem;
+        }
+        &:before {
+            left: 0
+        }
+        &:after {
+            right: 0;
+        }
     }
-    &:before {
-        left: 0
+    .sginin-form-area {
+        position: relative;
+        z-index: 3;
+        .signin-heading {
+            font-family: $headingFontFamily;
+            margin-bottom: 1.5rem
+        }
     }
-    &:after {
-        right: 0;
-    }
-}
-
-.signin-content-holder {
-    position: relative;
-    z-index: 3;
-}
-
-.site-name-heading {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    span {
-        font-size: 1rem;
-        font-weight: 400;
-        font-family: $headingFontFamily;
-    }
-}
-
-.sginin-form-area {
-    position: relative;
-    z-index: 3;
-    .signin-heading {
-        font-family: $headingFontFamily;
-        margin-bottom: 1.5rem
-    }
-}
-
-.signin-form-holder {
-    label {
-        display: block;
-        margin-bottom: .5rem;
-        font-size: .75rem;
-        .forgot-password {
-            float: right;
+    .signin-form-holder {
+        label {
+            display: block;
+            margin-bottom: .5rem;
+            font-size: .75rem;
+            .forgot-password {
+                float: right;
+            }
+        }
+        .disclaimer {
+            font-size: .7rem;
         }
     }
 }

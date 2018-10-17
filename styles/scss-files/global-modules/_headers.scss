@@ -1,9 +1,6 @@
 /*==========================   START MAIN HEADER  ========================== */
 
 .main-header {
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -22,6 +19,9 @@
 
 .home-page-header {
     background: url('../../assets/Images/header/main-header.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     height: 100vh;
     .header-content {
         .disc-heading-1 {
@@ -89,6 +89,9 @@
 .about-us-header {
     min-height: 60vh;
     background: url('../../assets/Images/about-us/about-us-header.jpeg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 /* End About-us page Header  */
@@ -98,6 +101,9 @@
 .blog-home-header {
     height: 60vh;
     background: url('../../assets/Images/blog-images/blog-header.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
     .blog-heading {
         font-size: 2rem;
         font-weight: 700;
@@ -111,6 +117,9 @@
 .contact-us-header {
     min-height: 60vh;
     background: url('../../assets/Images/contact-us/contact-us.jpeg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 /* End contact-us-header Header  */

@@ -96,7 +96,7 @@
   border-bottom: 4px solid;
   border-radius: 5px;
   width: 65px;
-  margin-top: 1rem;
+  margin-top: .75rem;
   margin-bottom: 1rem;
   display: block; }
 
@@ -521,9 +521,6 @@ a {
 /*  END lOADING SCREEN   */
 /*==========================   START MAIN HEADER  ========================== */
 .main-header {
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
   position: relative;
   z-index: 1;
   overflow: hidden; }
@@ -539,6 +536,9 @@ a {
 
 .home-page-header {
   background: url("../../assets/Images/header/main-header.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   height: 100vh; }
   .home-page-header .header-content .disc-heading-1 {
     font-size: 6rem;
@@ -585,13 +585,19 @@ a {
 /* Start About-us page Header  */
 .about-us-header {
   min-height: 60vh;
-  background: url("../../assets/Images/about-us/about-us-header.jpeg"); }
+  background: url("../../assets/Images/about-us/about-us-header.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 /* End About-us page Header  */
 /* Start blog-home-page Header  */
 .blog-home-header {
   height: 60vh;
-  background: url("../../assets/Images/blog-images/blog-header.jpg"); }
+  background: url("../../assets/Images/blog-images/blog-header.jpg");
+  background-size: cover;
+  background-position: 50% 30%;
+  background-repeat: no-repeat; }
   .blog-home-header .blog-heading {
     font-size: 2rem;
     font-weight: 700; }
@@ -600,7 +606,10 @@ a {
 /* Start contact-us-header Header  */
 .contact-us-header {
   min-height: 60vh;
-  background: url("../../assets/Images/contact-us/contact-us.jpeg"); }
+  background: url("../../assets/Images/contact-us/contact-us.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 /* End contact-us-header Header  */
 /*========================== START FEATURES SECTION  ==========================*/
@@ -697,17 +706,18 @@ a {
       margin-bottom: .5rem;
       margin-top: .5rem; } }
 
-.user-message-form {
+.user-form {
   margin-bottom: 3rem; }
-  .user-message-form label {
+  .user-form label {
     text-transform: capitalize;
     margin-bottom: 0;
     font-family: "Exo", "sans-serif";
     font-weight: 600;
     font-size: .8rem; }
-  .user-message-form input[type=email],
-  .user-message-form input[type=text],
-  .user-message-form textarea {
+  .user-form input[type=email],
+  .user-form input[type=text],
+  .user-form input[type=password],
+  .user-form textarea {
     display: block;
     width: 100%;
     padding: 5px;
@@ -718,9 +728,9 @@ a {
     transition: border-color .3s ease-in-out;
     font-size: .85rem;
     font-family: "Montserrat", "sans-serif"; }
-  .user-message-form textarea {
+  .user-form textarea {
     min-height: 8rem; }
-  .user-message-form input[type=submit] {
+  .user-form input[type=submit] {
     display: block;
     margin-right: auto;
     margin-top: 10px; }

@@ -214,9 +214,10 @@ section,
 .comments-area .leave-comment .user-comment,
 .faq-accordion .card-header,
 .faq-accordion .card-header .btn-link,
-.user-message-form input[type="email"],
-.user-message-form input[type="text"],
-.user-message-form textarea,
+.user-form input[type="email"],
+.user-form input[type="text"],
+.user-form input[type="password"],
+.user-form textarea,
 .gallery .filter-btn-list .filter-btn,
 .img-frame,
 .info-tab .tab-head,
@@ -241,9 +242,10 @@ section,
 .comments-area .comment-body,
 .faq-accordion .card-body,
 .faq-accordion .card-header,
-.user-message-form input[type="email"]:focus,
-.user-message-form input[type="text"]:focus,
-.user-message-form textarea:focus,
+.user-form input[type="email"]:focus,
+.user-form input[type="text"]:focus,
+.user-form input[type="password"]:focus,
+.user-form textarea:focus,
 .multi-tabs .tab-head,
 .active:after,
 .box-handel,
@@ -267,9 +269,10 @@ section,
   border-color: #ff9700; }
 
 .comments-area .leave-comment .user-comment,
-.user-message-form input[type="email"],
-.user-message-form input[type="text"],
-.user-message-form textarea,
+.user-form input[type="email"],
+.user-form input[type="text"],
+.user-form input[type="password"],
+.user-form textarea,
 .news-letter input[type="email"],
 .page-footer .copyrights,
 .page-footer .newsletter-form .newsletter-email input[type="email"] {
@@ -350,6 +353,6 @@ span::-moz-selection {
   outline-color: #ff9700; }
 
 .overlay {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); }
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)); }
 
 /*# sourceMappingURL=color-yellow.css.map */

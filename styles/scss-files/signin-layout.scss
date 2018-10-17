@@ -1,0 +1,54 @@
+@import'global-modules/__globals.scss';
+@import'global-modules/_loading-screen.scss';
+@import'global-modules/_user-form.scss';
+@import'global-modules/_butn.scss';
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+.signin-wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    position: relative;
+    background: url('../../assets/Images/header/main-header-4.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+.signin-content-holder {
+    position: relative;
+    z-index: 3;
+}
+
+.site-name-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    span {
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: $headingFontFamily;
+    }
+}
+
+.sginin-form-area {
+    .signin-heading {
+        font-family: $headingFontFamily;
+    }
+}
+
+.signin-form-holder {
+    label {
+        display: block;
+        margin-bottom: .5rem;
+        font-size: .75rem;
+        .forgot-password {
+            float: right;
+        }
+    }
+}

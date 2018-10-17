@@ -76,6 +76,10 @@ h6 {
 .side-bar .search-box i.fa {
   color: rgba(0, 175, 88, 0.7); }
 
+.facebook-butn,
+.google-plus-butn,
+.facebook-butn:hover,
+.google-plus-butn:hover,
 .sc-holder .sc-icon:hover,
 .blog-home-header .header-content .blog-heading,
 .multi-tabs .tab-head.active,
@@ -227,6 +231,12 @@ section,
 .post-card:hover .post-img::after {
   background-color: transparent; }
 
+.facebook-butn {
+  background-color: #3b5998; }
+
+.google-plus-butn {
+  background-color: #dd4b39; }
+
 /*=================== 3- borders group ==================*/
 .pricing .plan .plan-cost .plan-highlight:after {
   border-color: transparent transparent transparent #00af58; }
@@ -239,6 +249,8 @@ section,
 .multi-tabs .tab-head:hover {
   border-color: #343a40; }
 
+.sginin-form-area .signin-divider:before,
+.sginin-form-area .signin-divider:after,
 .our-video .play-butn:hover,
 .comments-area .leave-comment .user-comment:focus,
 .comments-area .comment-body,

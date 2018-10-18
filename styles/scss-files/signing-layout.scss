@@ -7,7 +7,7 @@ body {
     overflow: hidden;
 }
 
-.signin-wrapper {
+.signing-wrapper {
     width: 100vw;
     height: 100vh;
     padding-bottom: 3rem;
@@ -19,12 +19,12 @@ body {
     background-repeat: no-repeat;
     overflow: auto;
     z-index: 0;
-    .social-signin-links {
+    .social-signing-links {
         margin-bottom: 1.5rem;
         .social-butn {
             padding: .5rem 1rem;
             font-family: $bodyFontFamily;
-            font-size: .85rem;
+            font-size: .8rem;
             margin: .75rem 0;
             display: block;
             position: relative;
@@ -37,14 +37,14 @@ body {
             }
         }
     }
-    .signin-divider {
+    .signing-divider {
         margin-bottom: 2rem;
         position: relative;
         &:before,
         &:after {
             content: '';
             border-bottom: 3px solid;
-            width: 45%;
+            width: 40%;
             display: block;
             position: absolute;
             top: .5rem;
@@ -59,12 +59,12 @@ body {
     .sginin-form-area {
         position: relative;
         z-index: 3;
-        .signin-heading {
+        .signing-heading {
             font-family: $headingFontFamily;
             margin-bottom: 1.5rem
         }
     }
-    .signin-form-holder {
+    .signing-form-holder {
         label {
             display: block;
             margin-bottom: .5rem;
@@ -75,6 +75,9 @@ body {
         }
         .disclaimer {
             font-size: .7rem;
+            a {
+                font-weight: 600;
+            }
         }
     }
 }

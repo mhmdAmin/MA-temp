@@ -227,7 +227,7 @@ body {
   position: relative;
   overflow: hidden; }
 
-.signin-wrapper {
+.signing-wrapper {
   width: 100vw;
   height: 100vh;
   padding-bottom: 3rem;
@@ -239,48 +239,50 @@ body {
   background-repeat: no-repeat;
   overflow: auto;
   z-index: 0; }
-  .signin-wrapper .social-signin-links {
+  .signing-wrapper .social-signing-links {
     margin-bottom: 1.5rem; }
-    .signin-wrapper .social-signin-links .social-butn {
+    .signing-wrapper .social-signing-links .social-butn {
       padding: .5rem 1rem;
       font-family: "Montserrat", "sans-serif";
-      font-size: .85rem;
+      font-size: .8rem;
       margin: .75rem 0;
       display: block;
       position: relative;
       border-radius: .25rem; }
-      .signin-wrapper .social-signin-links .social-butn i.fa {
+      .signing-wrapper .social-signing-links .social-butn i.fa {
         margin-right: 5px;
         font-size: 1.25rem;
         position: absolute;
         left: .5rem; }
-  .signin-wrapper .signin-divider {
+  .signing-wrapper .signing-divider {
     margin-bottom: 2rem;
     position: relative; }
-    .signin-wrapper .signin-divider:before, .signin-wrapper .signin-divider:after {
+    .signing-wrapper .signing-divider:before, .signing-wrapper .signing-divider:after {
       content: '';
       border-bottom: 3px solid;
-      width: 45%;
+      width: 40%;
       display: block;
       position: absolute;
       top: .5rem; }
-    .signin-wrapper .signin-divider:before {
+    .signing-wrapper .signing-divider:before {
       left: 0; }
-    .signin-wrapper .signin-divider:after {
+    .signing-wrapper .signing-divider:after {
       right: 0; }
-  .signin-wrapper .sginin-form-area {
+  .signing-wrapper .sginin-form-area {
     position: relative;
     z-index: 3; }
-    .signin-wrapper .sginin-form-area .signin-heading {
+    .signing-wrapper .sginin-form-area .signing-heading {
       font-family: "Exo", "sans-serif";
       margin-bottom: 1.5rem; }
-  .signin-wrapper .signin-form-holder label {
+  .signing-wrapper .signing-form-holder label {
     display: block;
     margin-bottom: .5rem;
     font-size: .75rem; }
-    .signin-wrapper .signin-form-holder label .forgot-password {
+    .signing-wrapper .signing-form-holder label .forgot-password {
       float: right; }
-  .signin-wrapper .signin-form-holder .disclaimer {
+  .signing-wrapper .signing-form-holder .disclaimer {
     font-size: .7rem; }
+    .signing-wrapper .signing-form-holder .disclaimer a {
+      font-weight: 600; }
 
-/*# sourceMappingURL=signin-layout.css.map */
+/*# sourceMappingURL=signing-layout.css.map */

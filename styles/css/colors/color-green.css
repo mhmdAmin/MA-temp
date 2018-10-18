@@ -184,7 +184,7 @@ nav {
 .goals .goal-img:after {
   background-color: rgba(0, 175, 88, 0.5); }
 
-.signin-wrapper .sginin-form-area,
+.signing-wrapper .sginin-form-area,
 .navbar .menu-opend-btn i,
 .loading-screen,
 .features .feature-content,
@@ -249,8 +249,8 @@ section,
 .multi-tabs .tab-head:hover {
   border-color: #343a40; }
 
-.sginin-form-area .signin-divider:before,
-.sginin-form-area .signin-divider:after,
+.sginin-form-area .signing-divider:before,
+.sginin-form-area .signing-divider:after,
 .our-video .play-butn:hover,
 .comments-area .leave-comment .user-comment:focus,
 .comments-area .comment-body,

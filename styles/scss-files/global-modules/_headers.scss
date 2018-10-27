@@ -12,8 +12,15 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 20px;
+        bottom: 0;
         z-index: 3;
+        border-radius: .25rem .25rem 0 0;
+        ol {
+            margin-bottom: 0;
+        }
+        .breadcrumb-item>a {
+            font-size: .85rem;
+        }
     }
 }
 

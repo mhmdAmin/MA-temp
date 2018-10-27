@@ -16,6 +16,7 @@
 /* 1- Start Global Varibals*/
 /* End Global Varibals*/
 /*======================== 2- color group ========================*/
+.contact-info .contact-info-card .info,
 .pricing .plan-details li,
 .post-card .post-title-link,
 .text-dark-color,
@@ -33,7 +34,7 @@ h6 {
 .site-name-heading span,
 .contact-info .contact-info-card i.fa,
 .contact-info .contact-info-card a.info:hover,
-.breadcrumb-nav .breadcrumb .breadcrumb-item > a,
+.bread .breadcrumb-item > a,
 .our-team .tm-role,
 .super-paragraph,
 .faq-accordion .card-header .btn-link,
@@ -128,7 +129,6 @@ footer .copyrights,
 .home-page-header .header-content p.paragraph {
   color: #f5f5f5; }
 
-.contact-info .contact-info-card .info,
 .sc-holder .sc-icon,
 .breadcrumb-nav .breadcrumb .breadcrumb-item > .active,
 .article-info-bar .auther-info .auther-contact-info > li > a,
@@ -139,6 +139,7 @@ footer .copyrights,
   color: #a1a1a1; }
 
 /*==================== 2- Background color group=================*/
+.bread,
 .footer-social-icons,
 .option-box,
 .option-box .box-handel,

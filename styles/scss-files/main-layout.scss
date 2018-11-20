@@ -24,7 +24,7 @@
 
 *****************************************************************/
 
-@import 'mixins.scss';
+@import '_mixins.scss';
 @include responsive-heading-font-size();
 // @include wider-container();
 /* Start Importing global-modules */

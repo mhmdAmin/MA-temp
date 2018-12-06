@@ -31,6 +31,7 @@ h5,
 h6 {
   color: #343a40; }
 
+.service-card .service-title > i.fa,
 .site-name-heading span,
 .contact-info .contact-info-card i.fa,
 .contact-info .contact-info-card a.info:hover,
@@ -167,6 +168,9 @@ nav {
 .post-card .post-img::after {
   background-color: rgba(0, 0, 0, 0.2); }
 
+.ma-bg-light {
+  background-color: #f5f5f5; }
+
 .sc-holder .sc-icon:hover,
 .tags-list .tag-lable:hover,
 .multi-tabs .tab-head.active,
@@ -199,10 +203,8 @@ section,
 
 @media (max-width: 991px) {
   .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
+    background-color: rgba(255, 81, 0, 0.8);
     color: #fff !important; }
-
-  .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
-    background-color: rgba(255, 81, 0, 0.8); }
 
   .navbar-mobile-menu-wrapper .navbar-mobile-menu .nav-link:hover {
     background-color: rgba(255, 81, 0, 0.5) !important;
@@ -371,5 +373,8 @@ span::-moz-selection {
 
 .overlay {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)); }
+
+svg.wave {
+  fill: #f5f5f5; }
 
 /*# sourceMappingURL=color-orange.css.map */

@@ -50,6 +50,7 @@ h6 {
     color: $darkColor;
 }
 
+.service-card .service-title>i.fa,
 .site-name-heading span,
 .contact-info .contact-info-card i.fa,
 .contact-info .contact-info-card a.info:hover,
@@ -198,6 +199,10 @@ nav {
     background-color: rgba($BlackColor, 0.2);
 }
 
+.ma-bg-light {
+    background-color: $extraLightColor;
+}
+
 .sc-holder .sc-icon:hover,
 .tags-list .tag-lable:hover,
 .multi-tabs .tab-head.active,
@@ -233,10 +238,8 @@ section,
 
 @media (max-width: 991px) {
     .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
-        color: $WhiteColor !important;
-    }
-    .navbar-mobile-menu-wrapper .navbar-mobile-menu .active {
         background-color: rgba($mainThemeColor, 0.8);
+        color: $WhiteColor !important;
     }
     .navbar-mobile-menu-wrapper .navbar-mobile-menu .nav-link:hover {
         background-color: rgba($mainThemeColor, 0.5) !important;
@@ -438,4 +441,8 @@ span {
 
 .overlay {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35));
+}
+
+svg.wave {
+    fill: $extraLightColor;
 }

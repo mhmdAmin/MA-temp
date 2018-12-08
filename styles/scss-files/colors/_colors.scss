@@ -50,55 +50,8 @@ h6 {
     color: $darkColor;
 }
 
-.service-card .service-title>i.fa,
-.site-name-heading span,
-.contact-info .contact-info-card i.fa,
-.contact-info .contact-info-card a.info:hover,
-.bread .breadcrumb-item>a,
-.our-team .tm-role,
-.super-paragraph,
-.faq-accordion .card-header .btn-link,
-.multi-tabs .tab-head,
-.features .feature-content .fa,
-.gallery .filter-btn-list .filter-btn,
-.gallery .filter-group .hidden-info a.info-link:hover,
-.goals .goal-icon i,
-.navbar .navbar-brand span,
-.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.active,
-.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link:hover,
-.navbar .navbar-toggler,
-.newsletter-form .newsletter-email .submit-btun,
-.option-box .box-handel,
-.page-footer .footer-link:hover,
-.page-footer .footer-link.active,
-.testmonials .customer-testmonial i.fa-quote-left,
-.testmonials .swiper-container .swiper-button-next i,
-.testmonials .swiper-container .swiper-button-prev i,
-.testmonials .testmonial-content .customer-details .customer-role,
-.useful-links ul li a:before,
-.home-page-header .header-content span,
-.post-card i.fa-tags,
-.home-page-header .header-content span,
-.post-card .post-title-link:hover,
-.article-info-bar .publish-date,
-.pages-nav .the-page-item:hover,
-.side-bar .category .cat-link:hover,
-.side-bar .recent-post .post-heading-link:hover,
-.side-bar .archive .arch-link:hover,
-.count-badge,
-.article-info-bar .auther-info .auther-name,
-.article-info-bar .auther-info .auther-contact-info>li>a:hover,
-.comments-area .engagment-bar i.fa,
-.comments-area .commenter-name>a,
-.comments-area .engagment-bar .reply-action:hover,
-.box-heading i.fa {
-    color: $mainThemeColor;
-}
-
-.side-bar .search-box i.fa {
-    color: rgba($mainThemeColor, 0.7);
-}
-
+.services-cta-area .cta-title,
+.services-cta-area .cta:hover,
 .facebook-butn,
 .google-plus-butn,
 .facebook-butn:hover,
@@ -145,6 +98,57 @@ footer .copyrights,
 .our-video .video-desc,
 .our-video .play-butn {
     color: $WhiteColor;
+}
+
+.services-cta-area .cta,
+.service-card .service-title>i.fa,
+.site-name-heading span,
+.contact-info .contact-info-card i.fa,
+.contact-info .contact-info-card a.info:hover,
+.bread .breadcrumb-item>a,
+.our-team .tm-role,
+.super-paragraph,
+.faq-accordion .card-header .btn-link,
+.multi-tabs .tab-head,
+.features .feature-content .fa,
+.gallery .filter-btn-list .filter-btn,
+.gallery .filter-group .hidden-info a.info-link:hover,
+.goals .goal-icon i,
+.navbar .navbar-brand span,
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-toggler,
+.newsletter-form .newsletter-email .submit-btun,
+.option-box .box-handel,
+.page-footer .footer-link:hover,
+.page-footer .footer-link.active,
+.testmonials .customer-testmonial i.fa-quote-left,
+.testmonials .swiper-container .swiper-button-next i,
+.testmonials .swiper-container .swiper-button-prev i,
+.testmonials .testmonial-content .customer-details .customer-role,
+.useful-links ul li a:before,
+.home-page-header .header-content span,
+.post-card i.fa-tags,
+.home-page-header .header-content span,
+.post-card .post-title-link:hover,
+.article-info-bar .publish-date,
+.pages-nav .the-page-item:hover,
+.side-bar .category .cat-link:hover,
+.side-bar .recent-post .post-heading-link:hover,
+.side-bar .archive .arch-link:hover,
+.count-badge,
+.article-info-bar .auther-info .auther-name,
+.article-info-bar .auther-info .auther-contact-info>li>a:hover,
+.comments-area .engagment-bar i.fa,
+.comments-area .commenter-name>a,
+.comments-area .engagment-bar .reply-action:hover,
+.box-heading i.fa,
+    {
+    color: $mainThemeColor;
+}
+
+.side-bar .search-box i.fa {
+    color: rgba($mainThemeColor, 0.7);
 }
 
 .option-box .color-options .color-options-title,
@@ -199,10 +203,12 @@ nav {
     background-color: rgba($BlackColor, 0.2);
 }
 
-.ma-bg-light {
+.ma-bg-extra-light-color {
     background-color: $extraLightColor;
 }
 
+.services-cta-area .cta:hover,
+.ma-bg-main-theme-color,
 .sc-holder .sc-icon:hover,
 .tags-list .tag-lable:hover,
 .multi-tabs .tab-head.active,
@@ -226,6 +232,7 @@ nav {
     background-color: rgba($mainThemeColor, 0.5);
 }
 
+.services-cta-area .cta,
 .signing-wrapper .sginin-form-area,
 .navbar .menu-opend-btn i,
 .loading-screen, // .features .feature-content,
@@ -365,6 +372,7 @@ section,
     border-color: rgba($mainThemeColor, 0.5);
 }
 
+.services-cta-area .cta:hover,
 .pricing .plan .plan-cost h3,
 .our-video .play-butn {
     border-color: $WhiteColor;
@@ -443,6 +451,25 @@ span {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35));
 }
 
-svg.wave {
+// START SVG Fill COLORS
+svg.ma-fill-extra-light-color {
     fill: $extraLightColor;
 }
+
+svg.ma-fill-white-color {
+    fill: $WhiteColor;
+}
+
+svg.ma-fill-dark-color {
+    fill: $darkColor;
+}
+
+// END SVG Fill COLORS
+/**/
+
+// Start Text Shadows
+.icon-theme-color-shadow {
+    text-shadow: 0 15px 30px rgba($mainThemeColor, .5)
+}
+
+// End Text Shadows

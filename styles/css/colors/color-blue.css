@@ -31,53 +31,8 @@ h5,
 h6 {
   color: #343a40; }
 
-.service-card .service-title > i.fa,
-.site-name-heading span,
-.contact-info .contact-info-card i.fa,
-.contact-info .contact-info-card a.info:hover,
-.bread .breadcrumb-item > a,
-.our-team .tm-role,
-.super-paragraph,
-.faq-accordion .card-header .btn-link,
-.multi-tabs .tab-head,
-.features .feature-content .fa,
-.gallery .filter-btn-list .filter-btn,
-.gallery .filter-group .hidden-info a.info-link:hover,
-.goals .goal-icon i,
-.navbar .navbar-brand span,
-.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.active,
-.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link:hover,
-.navbar .navbar-toggler,
-.newsletter-form .newsletter-email .submit-btun,
-.option-box .box-handel,
-.page-footer .footer-link:hover,
-.page-footer .footer-link.active,
-.testmonials .customer-testmonial i.fa-quote-left,
-.testmonials .swiper-container .swiper-button-next i,
-.testmonials .swiper-container .swiper-button-prev i,
-.testmonials .testmonial-content .customer-details .customer-role,
-.useful-links ul li a:before,
-.home-page-header .header-content span,
-.post-card i.fa-tags,
-.home-page-header .header-content span,
-.post-card .post-title-link:hover,
-.article-info-bar .publish-date,
-.pages-nav .the-page-item:hover,
-.side-bar .category .cat-link:hover,
-.side-bar .recent-post .post-heading-link:hover,
-.side-bar .archive .arch-link:hover,
-.count-badge,
-.article-info-bar .auther-info .auther-name,
-.article-info-bar .auther-info .auther-contact-info > li > a:hover,
-.comments-area .engagment-bar i.fa,
-.comments-area .commenter-name > a,
-.comments-area .engagment-bar .reply-action:hover,
-.box-heading i.fa {
-  color: #01ceff; }
-
-.side-bar .search-box i.fa {
-  color: rgba(1, 206, 255, 0.7); }
-
+.services-cta-area .cta-title,
+.services-cta-area .cta:hover,
 .facebook-butn,
 .google-plus-butn,
 .facebook-butn:hover,
@@ -125,6 +80,54 @@ footer .copyrights,
 .our-video .play-butn {
   color: #fff; }
 
+.services-cta-area .cta,
+.service-card .service-title > i.fa,
+.site-name-heading span,
+.contact-info .contact-info-card i.fa,
+.contact-info .contact-info-card a.info:hover,
+.bread .breadcrumb-item > a,
+.our-team .tm-role,
+.super-paragraph,
+.faq-accordion .card-header .btn-link,
+.multi-tabs .tab-head,
+.features .feature-content .fa,
+.gallery .filter-btn-list .filter-btn,
+.gallery .filter-group .hidden-info a.info-link:hover,
+.goals .goal-icon i,
+.navbar .navbar-brand span,
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-toggler,
+.newsletter-form .newsletter-email .submit-btun,
+.option-box .box-handel,
+.page-footer .footer-link:hover,
+.page-footer .footer-link.active,
+.testmonials .customer-testmonial i.fa-quote-left,
+.testmonials .swiper-container .swiper-button-next i,
+.testmonials .swiper-container .swiper-button-prev i,
+.testmonials .testmonial-content .customer-details .customer-role,
+.useful-links ul li a:before,
+.home-page-header .header-content span,
+.post-card i.fa-tags,
+.home-page-header .header-content span,
+.post-card .post-title-link:hover,
+.article-info-bar .publish-date,
+.pages-nav .the-page-item:hover,
+.side-bar .category .cat-link:hover,
+.side-bar .recent-post .post-heading-link:hover,
+.side-bar .archive .arch-link:hover,
+.count-badge,
+.article-info-bar .auther-info .auther-name,
+.article-info-bar .auther-info .auther-contact-info > li > a:hover,
+.comments-area .engagment-bar i.fa,
+.comments-area .commenter-name > a,
+.comments-area .engagment-bar .reply-action:hover,
+.box-heading i.fa {
+  color: #01ceff; }
+
+.side-bar .search-box i.fa {
+  color: rgba(1, 206, 255, 0.7); }
+
 .option-box .color-options .color-options-title,
 .text-extra-light-color,
 .home-page-header .header-content p.paragraph {
@@ -168,9 +171,11 @@ nav {
 .post-card .post-img::after {
   background-color: rgba(0, 0, 0, 0.2); }
 
-.ma-bg-light {
+.ma-bg-extra-light-color {
   background-color: #f5f5f5; }
 
+.services-cta-area .cta:hover,
+.ma-bg-main-theme-color,
 .sc-holder .sc-icon:hover,
 .tags-list .tag-lable:hover,
 .multi-tabs .tab-head.active,
@@ -192,6 +197,7 @@ nav {
 .goals .goal-img:after {
   background-color: rgba(1, 206, 255, 0.5); }
 
+.services-cta-area .cta,
 .signing-wrapper .sginin-form-area,
 .navbar .menu-opend-btn i,
 .loading-screen,
@@ -297,6 +303,7 @@ section,
 .page-footer .newsletter-form .newsletter-email input[type="email"] {
   border-color: rgba(1, 206, 255, 0.5); }
 
+.services-cta-area .cta:hover,
 .pricing .plan .plan-cost h3,
 .our-video .play-butn {
   border-color: #fff; }
@@ -374,7 +381,17 @@ span::-moz-selection {
 .overlay {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)); }
 
-svg.wave {
+svg.ma-fill-extra-light-color {
   fill: #f5f5f5; }
+
+svg.ma-fill-white-color {
+  fill: #fff; }
+
+svg.ma-fill-dark-color {
+  fill: #343a40; }
+
+/**/
+.icon-theme-color-shadow {
+  text-shadow: 0 15px 30px rgba(1, 206, 255, 0.5); }
 
 /*# sourceMappingURL=color-blue.css.map */

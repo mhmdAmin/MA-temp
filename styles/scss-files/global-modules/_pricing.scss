@@ -1,6 +1,26 @@
 /*==========================  START PRICING SECTION  ==========================*/
 
 .pricing {
+    position: relative;
+    //     .square {
+    //         width: 30vw;
+    //         height: 30vw;
+    //         background-color: #cccccc;
+    //         border-radius: 1vw;
+    //         position: absolute;
+    //         top: -15vw;
+    //         left: 0;
+    //         transform: rotate(45deg); // opacity: .4;
+    //         mix-blend-mode: multiply;
+    //     }
+    //     .square-1 {
+    //         background-color: #f51;
+    //         left: 0;
+    //     }
+    //     .square-2 {
+    //         background-color: #343a40;
+    //         left: 50px;
+    //     }
     .plan {
         padding-bottom: 1rem;
         transition: all .3s ease-in-out;
